@@ -1,0 +1,28 @@
+/* Custom styles can be added here */
+.badge {
+    font-size: 0.9em;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+    border-bottom: 0;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-danger {
+    padding: 0.25rem 0.5rem;
+}
+
+.bi {
+    font-size: 1.1em;
+} 
