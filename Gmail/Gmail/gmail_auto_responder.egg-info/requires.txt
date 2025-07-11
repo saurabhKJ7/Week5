@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+python-dotenv
+openai
+faiss-cpu
+pydantic
+pydantic-settings
+redis
+apscheduler
+python-multipart
+PyPDF2
+aiofiles

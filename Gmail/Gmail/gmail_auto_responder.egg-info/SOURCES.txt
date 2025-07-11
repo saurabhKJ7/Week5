@@ -1,0 +1,15 @@
+README.md
+setup.py
+app/__init__.py
+app/cache.py
+app/config.py
+app/embeddings.py
+app/gmail_service.py
+app/main.py
+app/responder.py
+app/scheduler.py
+gmail_auto_responder.egg-info/PKG-INFO
+gmail_auto_responder.egg-info/SOURCES.txt
+gmail_auto_responder.egg-info/dependency_links.txt
+gmail_auto_responder.egg-info/requires.txt
+gmail_auto_responder.egg-info/top_level.txt

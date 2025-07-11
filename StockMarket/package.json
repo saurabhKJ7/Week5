@@ -1,0 +1,15 @@
+{
+  "name": "stock-market-chat",
+  "version": "1.0.0",
+  "description": "Real-time stock market data and AI-powered chat application",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && uvicorn main:app --reload",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "install:all": "npm install && cd frontend && npm install",
+    "test": "cd frontend && npm test && cd ../backend && pytest"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
