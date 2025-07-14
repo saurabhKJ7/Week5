@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillTrainer AI - AI-Powered Workforce Skills Assessment Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header .tagline {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .header .market-stat {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 10px;
+            box-shadow: 0 10px 25px rgba(240, 147, 251, 0.3);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px 40px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .section-content {
+            padding: 40px;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .problem-card {
+            background: linear-gradient(135deg, #ff6b6b, #ffa726);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: scale(1.05);
+        }
+
+        .problem-stat {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .impact-card {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(78, 205, 196, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: scale(1.05);
+        }
+
+        .impact-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .solution-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(168, 237, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .tech-category {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(252, 182, 159, 0.3);
+        }
+
+        .tech-title {
+            font-weight: 600;
+            color: #e65100;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .tech-list {
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .implementation-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .phase-card {
+            background: linear-gradient(135deg, #c471ed, #f64f59);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(196, 113, 237, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .phase-card:hover {
+            transform: scale(1.05);
+        }
+
+        .phase-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .success-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: scale(1.05);
+        }
+
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .key-points {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .key-points li {
+            background: rgba(102, 126, 234, 0.1);
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .key-points li:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateX(5px);
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .competitor-comparison {
+            overflow-x: auto;
+            margin-top: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        .check-mark {
+            color: #4ecdc4;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .cross-mark {
+            color: #ff6b6b;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-header {
+                font-size: 1.5rem;
+                padding: 20px 25px;
+            }
+            
+            .section-content {
+                padding: 25px;
+            }
+            
+            .problem-grid,
+            .impact-grid,
+            .solution-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SkillTrainer AI</h1>
+            <p class="tagline">AI-Powered Workforce Skills Assessment & Personalized Learning Platform</p>
+            <div class="market-stat">₹75,000 Cr Market Opportunity</div>
+            <div class="market-stat">85% Professionals Planning AI Upskilling</div>
+        </div>
+
+        <!-- Problem Statement -->
+        <div class="section">
+            <div class="section-header">
+                🚨 Problem Statement
+            </div>
+            <div class="section-content">
+                <p style="font-size: 1.2rem; margin-bottom: 25px; text-align: center;">
+                    <strong>The AI Skills Crisis is Real and Growing</strong>
+                </p>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-stat">46%</div>
+                        <p>of business leaders identify skill gaps as the biggest barrier to AI adoption</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-stat">75%</div>
+                        <p>companies are adopting AI, but only 35% of employees received AI training</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-stat">40%</div>
+                        <p>of workforce needs reskilling due to AI implementation</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-stat">43%</div>
+                        <p>workplace training is ineffective. 43% of employees find training programs irrelevant to their roles</p>
+                    </div>
+                </div>
+                <ul class="key-points">
+                    <li><strong>Generic Training Gap:</strong> Current solutions provide one-size-fits-all content that doesn't match specific job requirements
+                        <ul style="margin-top: 10px; margin-left: 20px; list-style-type: disc;">
+                            <li><strong>One-size-fits-all content:</strong> Current training solutions often offer generic material not tailored to specific roles or industries.</li>
+                            <li><strong>Lack of industry relevance:</strong> Training doesn't align with the day-to-day responsibilities unique to different sectors.</li>
+                            <li><strong>Pharmaceutical sales example:</strong> A sales executive in pharma requires knowledge of drug regulations, medical terminology, and ethical sales practices — areas often ignored in generic sales training.</li>
+                            <li><strong>FMCG sales example:</strong> In contrast, an FMCG sales professional needs to understand supply chain dynamics, seasonal demand trends, and consumer psychology.</li>
+                            <li><strong>Training mismatch leads to inefficiency:</strong> Without domain-specific skills, employees take longer to ramp up and may underperform despite being 'trained'.</li>
+                        </ul>
+                    </li>
+                    <li><strong>No Measurable ROI:</strong> Companies can't track actual productivity gains or business impact from AI training investments</li>
+                    <li><strong>Assessment Void:</strong> No platform accurately measures current AI skills vs. what employees actually need for their roles</li>
+                    <li><strong>India-Specific Gap:</strong> Existing solutions lack vernacular language support and Indian business context</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Why It Matters -->
+        <div class="section">
+            <div class="section-header">
+                📈 Why It Matters (Impact)
+            </div>
+            <div class="section-content">
+                <p style="font-size: 1.2rem; margin-bottom: 25px; text-align: center;">
+                    <strong>The Economic and Strategic Implications</strong>
+                </p>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-value">$805.6B</div>
+                        <p>Global corporate training market by 2035</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-value">₹15,000 Cr</div>
+                        <p>Serviceable market in India for enterprise AI training</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-value">20-40%</div>
+                        <p>salary hikes expected through AI skill enhancement</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-value">2M+</div>
+                        <p>Indians targeted for AI skilling by Microsoft alone</p>
+                    </div>
+                </div>
+                <ul class="key-points">
+                    <li><strong>Competitive Advantage:</strong> Companies with skilled AI workforce will dominate their markets while others struggle with adoption</li>
+                    <li><strong>Economic Growth:</strong> India's AI market growing at 25-35% CAGR - skilled workforce is critical for capturing this opportunity</li>
+                    <li><strong>Employee Retention:</strong> 85% of professionals planning upskilling - companies must provide this or lose talent</li>
+                    <li><strong>Productivity Crisis:</strong> Without proper AI training, companies waste technology investments and fall behind competitors</li>
+                    <li><strong>National Priority:</strong> Government struggling with AI talent gap - private sector solutions are urgently needed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Proposed Solution -->
+        <div class="section">
+            <div class="section-header">
+                💡 Proposed Solution
+            </div>
+            <div class="section-content">
+                <p style="font-size: 1.3rem; margin-bottom: 25px; text-align: center;">
+                    <strong class="highlight">SkillTrainer AI: India's First AI-Powered Workforce Skills Assessment & Personalized Learning Platform</strong>
+                </p>
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-title">Real-Time Assessment</div>
+                        <p>AI-powered skills gap analysis for specific job roles using practical scenarios</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <div class="feature-title">Personalized Learning</div>
+                        <p>Custom curriculum based on learning style, current skills, and role requirements</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-title">ROI Tracking</div>
+                        <p>Measures actual productivity gains, error reduction, and business impact</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🇮🇳</div>
+                        <div class="feature-title">India-First Design</div>
+                        <p>Vernacular language support and integration with Indian business workflows</p>
+                    </div>
+                </div>
+                <ul class="key-points">
+                    <li><strong>Unique Value Proposition:</strong> First platform combining assessment + personalization + ROI measurement in one solution</li>
+                    <li><strong>Practical Focus:</strong> Real-world scenarios using actual AI tools (ChatGPT, Claude, Midjourney) employees will use</li>
+                    <li><strong>Business Integration:</strong> Seamless integration with existing HR systems and Indian business workflows</li>
+                    <li><strong>Measurable Results:</strong> Track productivity gains, time savings, and actual business impact - not just course completion</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="section">
+            <div class="section-header">
+                🔧 Key Features
+            </div>
+            <div class="section-content">
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <div class="feature-title">AI Skills Diagnostic Engine</div>
+                        <p>• Role-specific assessments for 50+ job roles<br>
+                        • Real-world scenarios with actual AI tools<br>
+                        • Multi-language support (English, Hindi)<br>
+                        • Benchmark scoring against industry standards</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <div class="feature-title">Personalized Learning Paths</div>
+                        <p>• Adaptive curriculum based on learning style<br>
+                        • 500+ micro-learning modules (5-15 min each)<br>
+                        • Industry-specific use cases and examples<br>
+                        • Hands-on projects with company data</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <div class="feature-title">Real-Time ROI Analytics</div>
+                        <p>• Productivity gains and time savings tracking<br>
+                        • Error reduction and quality improvement metrics<br>
+                        • Executive dashboards with business impact<br>
+                        • Predictive analytics for future training needs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <div class="feature-title">Enterprise Integration Suite</div>
+                        <p>• HR Systems: Greytip, Darwinbox, Zoho People<br>
+                        • Communication: Slack, Teams, WhatsApp Business<br>
+                        • Analytics: Power BI, Tableau integration<br>
+                        • Single Sign-On with existing systems</p>
+                    </div>
+                </div>
+                <div class="competitor-comparison">
+                    <h3 style="text-align: center; margin-bottom: 20px; color: #667eea;">Competitive Advantage Analysis</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Platform</th>
+                                <th>Personalized Assessment</th>
+                                <th>ROI Tracking</th>
+                                <th>Vernacular Support</th>
+                                <th>Indian Context</th>
+                                <th>HR/LMS Integration</th>
+                                <th>Affordable Pricing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(102, 126, 234, 0.1); font-weight: 600;">
+                                <td><strong>SkillTrainer AI</strong></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn Learning</td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Coursera Business</td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>UpGrad Enterprise</td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>TCS/Infosys Training</td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="cross-mark">✗</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                                <td><span class="check-mark">✓</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section">
+            <div class="section-header">
+                💻 Technology Stack
+            </div>
+            <div class="section-content">
+                <div class="tech-stack">
+                    <div class="tech-category">
+                        <div class="tech-title">Frontend</div>
+                        <div class="tech-list">
+                            React.js + TypeScript<br>
+                            Material-UI<br>
+                            Redux Toolkit<br>
+                            React Native (Mobile)
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <div class="tech-title">Backend</div>
+                        <div class="tech-list">
+                            Node.js + Express.js<br>
+                            PostgreSQL + Redis<br>
+                            JWT Authentication<br>
+                            RESTful APIs
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <div class="tech-title">AI/ML</div>
+                        <div class="tech-list">
+                            Python + TensorFlow<br>
+                            Hugging Face Transformers<br>
+                            scikit-learn<br>
+                            Apache Spark
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <div class="tech-title">Cloud Infrastructure</div>
+                        <div class="tech-list">
+                            AWS (Mumbai Region)<br>
+                            Docker + Kubernetes<br>
+                            Auto-scaling<br>
+                            CDN + Security
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <div class="tech-title">Analytics</div>
+                        <div class="tech-list">
+                            D3.js + Recharts<br>
+                            Elasticsearch<br>
+                            Power BI Integration<br>
+                            Real-time Dashboards
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <div class="tech-title">Integrations</div>
+                        <div class="tech-list">
+                            HR Systems APIs<br>
+                            Slack/Teams Bots<br>
+                            Payment Gateways<br>
+                            SSO/OAuth 2.0
+                        </div>
+                    </div>
+                </div>
+                <ul class="key-points">
+                    <li><strong>Scalable Architecture:</strong> Microservices design for handling 50,000+ concurrent users</li>
+                    <li><strong>AI-First Design:</strong> ML models for personalization, assessment, and predictive analytics</li>
+                    <li><strong>India-Optimized:</strong> AWS Mumbai region for low latency, local payment gateways</li>
+                    <li><strong>Enterprise-Ready:</strong> SOC 2 compliance, encryption, automated backups</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Implementation Strategy -->
+        <div class="section">
+            <div class="section-header">
+                🚀 Implementation Strategy
+            </div>
+            <div class="section-content">
+                <div class="implementation-timeline">
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 1: Foundation</div>
+                        <p><strong>Duration:</strong> 3-4 periods</p>
+                        <p>• MVP development with core features<br>
+                        • 10 job roles, 5 AI tools<br>
+                        • Basic analytics dashboard<br>
+                        • Pilot with 3 enterprise clients</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 2: Scale</div>
+                        <p><strong>Duration:</strong> 4-6 periods</p>
+                        <p>• Expand to 50+ job roles<br>
+                        • Multi-language support<br>
+                        • Enterprise integrations<br>
+                        • 25 enterprise clients</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 3: Market Leadership</div>
+                        <p><strong>Duration:</strong> 6-8 periods</p>
+                        <p>• AI-powered recommendations<br>
+                        • Predictive analytics<br>
+                        • Industry-specific modules<br>
+                        • 100+ enterprise clients</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 4: Expansion</div>
+                        <p><strong>Duration:</strong> Ongoing</p>
+                        <p>• Southeast Asia expansion<br>
+                        • Advanced AI features<br>
+                        • University partnerships<br>
+                        • 500+ enterprise clients</p>
+                    </div>
+                </div>
+                <ul class="key-points">
+                    <li><strong>Go-to-Market:</strong> Target Fortune 500 Indian companies and IT services firms first</li>
+                    <li><strong>Customer Acquisition:</strong> Direct sales to HR/L&D heads, partner with HR consultants</li>
+                    <li><strong>Pricing Strategy:</strong> ₹1,000-2,000 per employee annually, volume discounts</li>
+                    <li><strong>Revenue Model:</strong> SaaS subscription + professional services for customization</li>
+                    <li><strong>Partnerships:</strong> HR software vendors, corporate training companies, AI tool providers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Success Criteria -->
+        <div class="section">
+            <div class="section-header">
+                📊 Success Criteria & Expected Outcomes
+            </div>
+            <div class="section

@@ -1,0 +1,68 @@
+# FastAPI and ASGI server
+fastapi
+uvicorn[standard]
+
+# Document parsing and processing
+unstructured
+pymupdf
+pdfplumber
+python-docx
+python-pptx
+pandas
+openpyxl
+beautifulsoup4
+nbformat
+markdown2
+tika
+Pillow
+
+# LLM + OpenAI integration
+openai
+langchain
+langchain-openai
+langchain-community
+tiktoken
+
+# Vision model (for multimodal support)
+transformers
+torch
+accelerate
+opencv-python
+
+# Vector database
+faiss-cpu
+chromadb
+weaviate-client
+
+# Query decomposition and reasoning
+nltk
+spacy
+scikit-learn
+networkx
+
+# Smart summarization
+sumy
+sentence-transformers
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+
+# General utilities
+requests
+httpx
+pydantic
+python-multipart
+python-dotenv
+loguru
+
+# Optional - Real-time collaboration
+websockets
+socketio
+aiofiles
+
+# Optional - Diagram/flowchart parsing (future support)
+diagrams
+
+# Optional - Exporting content
+fpdf2
