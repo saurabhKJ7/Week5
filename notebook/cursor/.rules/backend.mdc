@@ -1,5 +1,51 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+
+# ⚙️ Backend Specification - Notebook LLM
+
+## 1. Objective
+
+Develop a modular, secure, and scalable backend API that handles multimodal document ingestion, semantic search, summarization, and concept mapping using a RAG architecture.
+
+---
+
+## 2. Tech Stack
+
+- **Framework**: FastAPI
+- **Language**: Python 3.10+
+- **Vector Store**: FAISS or Weaviate
+- **Embedding**: OpenAI, Hugging Face models
+- **Storage**: Local (MVP),
+- **DB**: sqllite (users, metadata)
+- **Auth**: JWT or OAuth2 (via Authlib)
+
+---
+
+## 3. Core Services
+
+| Service | Description |
+|---------|-------------|
+| **Document Ingest** | Parses uploaded files and chunks content |
+| **Chunk Embedding** | Converts text/images/tables to vector form |
+| **RAG Query** | Fetch relevant chunks + generate answer |
+| **Vision Processing** | GPT-4V / BLIP2 integration for images, charts |
+| **Summarizer** | Document-level executive summaries |
+| **Concept Graph** | Extract and return entity relations |
+| **User Management** | Auth, preferences, history tracking |
+
+---
+
+## 4. API Endpoints
+
+```http
+POST /upload               # Upload and parse document
+POST /query                # Run query through RAG pipeline
+GET  /summary              # Return doc summary
+GET  /graph                # Return concept graph
+GET  /history              # Return user’s query history
+POST /auth/login           # Login endpoint
+GET  /auth/user            # Get current user
+POST /export               # Export response in format
+

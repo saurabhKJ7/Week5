@@ -1,5 +1,86 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+# 🎨 Frontend Specification - Notebook LLM
+
+## 1. Objective
+
+Design an intuitive and responsive user interface to interact with a multimodal AI assistant. The UI should support document uploads, semantic queries, response rendering, and concept visualization.
+
+---
+
+## 2. Tech Stack
+
+- **Framework**: React.js (Vite or Next.js optional)
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand or Redux Toolkit
+- **UI Components**: Shadcn/UI or Radix UI
+- **Graph Visualization**: D3.js or Vis.js
+- **WebSocket Support**: Socket.io-client
+- **Auth**: JWT or OAuth 2.0 via Auth0/Clerk/Firebase
+
+---
+
+## 3. Core UI Components
+
+| Component | Description |
+|----------|-------------|
+| **Navbar** | Login/logout, user profile, theme toggle |
+| **Sidebar** | Document list, folders, upload button |
+| **Upload Panel** | Drag-and-drop or browse for file types |
+| **Query Box** | Input box with autocomplete, history recall |
+| **Streaming Answer Box** | Typing animation with sources + references |
+| **Document Viewer** | Rendered file preview with highlighted segments |
+| **Concept Graph** | Interactive concept mapping between entities |
+| **Summary Panel** | Toggle switch to show TL;DR or executive summary |
+| **Export Panel** | Select format: PDF, Markdown, JSON |
+
+---
+
+## 4. User Flows
+
+### a. Upload & Index
+- Drag and drop document → Shows processing status → Indexed and added to sidebar.
+
+### b. Ask a Query
+- Input a question → Live stream response → Show references → Option to expand document snippets.
+
+### c. Explore Concept Map
+- Click “Concept Graph” → Opens knowledge graph → Clickable nodes to fetch relevant info.
+
+### d. Export & Share
+- Choose export format → Download or copy to clipboard → Optional link generation.
+
+---
+
+## 5. APIs Consumed
+
+| Endpoint | Method | Usage |
+|----------|--------|-------|
+| `/upload` | POST | Upload and parse documents |
+| `/query` | POST | RAG + reasoning |
+| `/summary` | GET | Fetch auto-summary |
+| `/graph` | GET | Get concept relationship graph |
+| `/export` | POST | Export insight in selected format |
+| `/history` | GET | Get previous queries and responses |
+| `/auth/user` | GET | Current user info |
+
+---
+
+## 6. Visual Design Considerations
+
+- **Dark/light theme toggle**
+- Skeleton loaders for LLM outputs
+- Tags/chips for tracked sources
+- Visual feedback for query confidence
+- Optional speech-to-text for input
+
+---
+
+## 7. Tools
+
+- [Figma](https://figma.com) for UI/UX design
+- [Storybook](https://storybook.js.org) for component documentation
+- [Jest + React Testing Library] for testing
+

@@ -1,5 +1,155 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+# 📘 Product Requirements Document (PRD)
+## 🧠 Notebook LLM – Complete Multimodal Research Assistant
+
+---
+
+## 1. Objective
+
+To build a production-ready, multimodal RAG (Retrieval-Augmented Generation) system that can ingest, process, and reason over complex documents containing text, images, tables, charts, and code snippets. The tool will resemble Google’s NotebookLM but with deeper multimodal and reasoning capabilities for technical and research documents.
+
+---
+
+## 2. Problem Statement
+
+Researchers and analysts often work with complex documents that span across formats like PDF, DOCX, XLSX, HTML, Markdown, Jupyter notebooks, and more. Existing AI systems fall short in:
+- Understanding interlinked elements (e.g., code + output + image).
+- Preserving document structure.
+- Enabling reasoning across different modalities (text + image + table).
+
+---
+
+## 3. Key Features
+
+| Feature                      | Description |
+|-----------------------------|-------------|
+| 📁 Document Upload          | Support for PDF, DOCX, PPTX, XLSX, CSV, HTML, Jupyter, Markdown, images |
+| 🧠 Multimodal Parsing       | Use tools like Unstructured, Tika, PDFPlumber, PyMuPDF, Python-docx |
+| 🧱 Document Hierarchy       | Retain section headings, table of contents, and references |
+| 🔍 Query Decomposition      | Break down user queries for fine-grained retrieval |
+| 🤖 Multimodal RAG           | Use GPT-4V + LangChain + hybrid search over embeddings |
+| 📊 Visual & Table Parsing   | Extract and interpret charts, tables, figures |
+| 📎 Concept Relationship     | Show concept maps and entity relations across documents |
+| 📑 Smart Summarization      | Generate executive summaries of entire folders or linked docs |
+| 🔐 User Management          | Login, auth, and document sharing support |
+| 🔄 Real-Time Collaboration  | View and edit documents with multiple users |
+| 📤 Export                   | Download summaries, concept maps, and citations as PDF, JSON |
+
+---
+
+## 4. Technical Architecture
+
+### 4.1 Frontend
+- Framework: React + Tailwind CSS or Streamlit (MVP)
+- Key Components:
+  - File uploader
+  - Query box with streaming answers
+  - Concept graph visualizer
+  - Summary view panel
+  - User dashboard and history
+
+### 4.2 Backend
+- Framework: FastAPI
+- Components:
+  - File parsing pipeline (Unstructured, Docling, PDF tools)
+  - LLM integration via LangChain + OpenAI (GPT-4 Turbo + GPT-4V)
+  - Embedding generation and chunking
+  - Vector search with FAISS or Weaviate
+  - Query router and response generator
+  - Secure file storage and access control
+
+---
+
+## 5. Supported File Formats
+
+| Format       | Tool Used        | Output                                |
+|--------------|------------------|----------------------------------------|
+| PDF          | PyMuPDF          | Text, layout, image chunks             |
+| DOCX         | python-docx      | Paragraphs with styles                 |
+| XLSX / CSV   | Pandas           | Structured tables                      |
+| PPTX         | python-pptx      | Slide-level content                    |
+| HTML         | BeautifulSoup    | Cleaned article segments               |
+| Markdown     | Markdown2        | Text + headings                        |
+| .ipynb       | nbformat         | Code cells, output, markdown           |
+| Images       | PIL + GPT-4V     | Captions, table detection, OCR         |
+| Diagrams     | LayoutLM/BLIP    | Structural interpretation              |
+
+---
+
+## 6. User Personas
+
+### 👩‍🔬 Researcher
+> Wants summaries of scientific papers with charts, figures, and references.
+
+### 👨‍💼 Analyst
+> Wants comparison and reasoning across documents with financial tables and reports.
+
+### 👩‍💻 Engineer
+> Needs RAG across Jupyter notebooks and technical manuals with code snippets.
+
+---
+
+## 7. User Journeys
+
+- **Upload Workflow**: User uploads a document or folder → Backend parses, chunks, and indexes → Status updates shown in UI.
+- **Query Workflow**: User enters a complex query → Decomposition → Relevant chunks retrieved → Answer composed with references.
+- **Export Workflow**: User exports summary or graph → Chooses format → Download initiated.
+
+---
+
+## 8. AI Operation Rules (CursorAI Compliance)
+
+| Rule                         | Description |
+|-----------------------------|-------------|
+| ❌ No Assumptions           | AI never invents facts not in source |
+| ✅ Clarify Ambiguity        | Always ask user if prompt is vague |
+| 📚 Maintain Structure       | Output respects original document hierarchy |
+| 🔍 Decompose Queries        | Break down multi-step queries logically |
+| 📎 Reference Tracking       | Responses link to source content |
+| ⚖️ Tradeoff Transparency   | AI explains alternative paths when needed |
+| 🧪 Risk Flagging            | Flag low-confidence or hallucinated outputs clearly |
+
+---
+
+## 9. Development Phases
+
+| Phase | Milestone |
+|-------|-----------|
+| Phase 1 | FastAPI backend, React UI, text-based RAG |
+| Phase 2 | Add PDF/DOCX/XLSX parsing and vector DB |
+| Phase 3 | Integrate vision (GPT-4V/BLIP) and chart extraction |
+| Phase 4 | Query decomposition, smart summarization |
+| Phase 5 | Export + concept mapping + real-time collaboration |
+| Phase 6 | Testing, monitoring, production hardening (Docker/K8s) |
+
+---
+
+## 10. Deliverables
+
+- `README.md`: Project setup and overview  
+- `PRD.md`: Product Requirements Document (this file)  
+- `AI_RULES.md`: Grounding rules, hallucination policy  
+- `ARCHITECTURE.md`: Tech stack, system design  
+- `USER_JOURNEYS.md`: UX scenarios  
+- `requirements.txt`: Dependencies  
+- `ROADMAP.md`: Task planning and phasing  
+- `EVALUATION.md`: Accuracy and performance metrics  
+
+---
+
+## 11. Metrics for Success
+
+| Metric                        | Target |
+|------------------------------|--------|
+| ⏱ Avg. response latency     | < 3 seconds |
+| 📊 Answer accuracy (RAG)     | > 85% in benchmarked QA sets |
+| 🧠 Hallucination rate        | < 5% |
+| 📈 User satisfaction         | > 90% (internal tests) |
+| 🧩 File format support       | 10+ file types end-to-end |
+| 🚀 Uptime (prod)             | 99.9% |
+
+---
+

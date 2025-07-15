@@ -1,0 +1,53 @@
+---
+alwaysApply: true
+---
+
+
+---
+
+### 📁 `expectation.md`
+
+```markdown
+# 🎯 Expectations - Notebook LLM Project
+
+## 1. Development Principles
+
+- Use **modular code structure** and scalable architecture
+- Maintain **100% traceability** from raw data to generated response
+- Enforce **AI grounding rules** (no hallucinations, always reference source)
+- Promote **team clarity** via shared docs, tickets, and design specs
+- Maintain high **collaboration frequency** via weekly demos
+
+---
+
+## 2. Engineering Expectations
+
+| Area | Expectation |
+|------|-------------|
+| ✅ Code Quality | PEP8-compliant, tested, typed (where possible) |
+| 🧪 Test Coverage | > 80% coverage for core modules |
+| 🔐 Security | JWT auth, file sanitization, safe prompt injection |
+| 📄 Documentation | Every module must be self-documented |
+| ⛓️ Dependency Control | Lock file (`requirements.lock.txt`) tracked in repo |
+| ⏱️ Performance | Queries under 3 seconds for small docs (<5MB) |
+| 📊 Monitoring | Basic logs + query tracking |
+
+---
+
+## 3. Design Expectations
+
+- Consistent component naming
+- Responsive UI
+- A11y compliant (screen reader, keyboard nav)
+- Clear UX flows with breadcrumbs and context
+
+---
+
+## 4. AI Output Expectations
+
+| Rule | Description |
+|------|-------------|
+| ✅ Confidence Flag | Output should include confidence score |
+| ✅ Source Linking | Answers must cite retrieved chunk |
+| ❌ No Guessing | Do not guess if document lacks answer |
+| ✅ Decomposition | Complex queries should be split logically |

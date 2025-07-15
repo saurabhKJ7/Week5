@@ -1,5 +1,74 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+# 🗂️ Execution Plan - Notebook LLM
+
+## Phase-wise Breakdown 
+
+### Phase 1: MVP 
+- [ ] Setup Git repo, CI pipeline
+- [ ] Setup FastAPI skeleton
+- [ ] Basic React UI with upload + query
+- [ ] Implement text-only RAG pipeline
+- [ ] Use FAISS for vector search
+
+---
+
+### Phase 2: Document Parsing 
+- [ ] Add support for PDF, DOCX, CSV
+- [ ] Integrate Unstructured & PDFPlumber
+- [ ] Chunking + embedding service
+- [ ] Store chunks in FAISS w/ metadata
+
+---
+
+### Phase 3: Multimodal Support 
+- [ ] Add image/chart/code snippet parsing
+- [ ] Integrate GPT-4V / BLIP2
+- [ ] Add vision → caption → embedding pipeline
+
+---
+
+### Phase 4: Smart Query & Summarization 
+- [ ] Add query decomposition
+- [ ] Implement smart summarizer module
+- [ ] Add long-document navigation UI
+
+---
+
+### Phase 5: Concept Mapping + Export 
+- [ ] Graph extraction logic
+- [ ] Add export (PDF/JSON/Markdown)
+- [ ] Concept graph frontend panel
+
+---
+
+### Phase 6: User + Collab + Launch 
+- [ ] JWT Auth + user history
+- [ ] WebSocket for real-time collab
+- [ ] Final bug fixes, polish
+- [ ] Deploy to production (Docker + GCP)
+
+---
+
+## Key Roles
+
+| Role | Name | Responsibility |
+|------|------|----------------|
+| PM | You | Vision, planning, feedback |
+| Backend Lead | TBD | Core APIs, embeddings, RAG |
+| Frontend Lead | TBD | UI architecture, UX |
+| AI Engineer | TBD | Prompting, vision integration |
+| QA | TBD | Testing, performance |
+
+---
+
+## Tools
+
+- GitHub + Issues + Projects
+- Slack or Discord for team chat
+- Figma for UI
+- Postman for API tests
+- Grafana (optional) for monitoring
+
