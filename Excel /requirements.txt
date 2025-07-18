@@ -1,0 +1,41 @@
+# Core LangChain packages
+langchain
+langchain-core
+langchain-community
+langchain-experimental
+langchain-openai
+langchain-anthropic
+
+# Excel and data processing
+pandas
+openpyxl
+xlrd
+xlsxwriter
+
+# Database
+# sqlite3 is built-in to Python
+psutil
+
+# Fuzzy matching and NLP
+fuzzywuzzy
+python-Levenshtein
+nltk
+
+# Web interface
+streamlit
+plotly
+
+# LLM providers
+openai
+anthropic
+
+# Utilities
+python-dotenv
+pydantic
+numpy
+python-multipart
+
+# Development and testing
+pytest
+black
+flake8 

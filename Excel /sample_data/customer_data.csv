@@ -1,0 +1,1001 @@
+Customer_ID,First Name,Last Name,Email,Phone,Age,Gender,City,State,Registration Date,Total Orders,Total Spent,Status
+CUST1000,Chris,Johnson,chris.johnson@email.com,+1-403-270-7597,22,Male,Houston,NY,2024-08-02,8,2102.68,Inactive
+CUST1001,David,Thomas,david.thomas@email.com,+1-243-777-1515,64,Male,New York,CA,2024-09-02,10,2020.99,Inactive
+CUST1002,John,Davis,john.davis@email.com,+1-284-777-5480,67,Female,Chicago,IL,2024-01-29,11,4725.95,VIP
+CUST1003,Emma,Wilson,emma.wilson@email.com,+1-139-511-4627,64,Male,Phoenix,NY,2023-05-06,48,505.85,VIP
+CUST1004,Lisa,Jackson,lisa.jackson@email.com,+1-171-846-5347,49,Male,Chicago,IL,2023-05-22,50,1009.75,Inactive
+CUST1005,Lisa,Jackson,lisa.jackson@email.com,+1-464-180-5271,67,Male,Los Angeles,TX,2023-10-12,42,4000.2,VIP
+CUST1006,Anna,Davis,anna.davis@email.com,+1-898-321-3092,76,Male,Los Angeles,AZ,2023-09-16,32,3868.78,Inactive
+CUST1007,Sarah,Johnson,sarah.johnson@email.com,+1-543-153-8112,28,Female,Phoenix,IL,2024-12-16,25,1547.27,Active
+CUST1008,Mike,Moore,mike.moore@email.com,+1-208-304-6265,59,Male,Los Angeles,NY,2023-04-16,39,2228.59,Active
+CUST1009,Chris,Anderson,chris.anderson@email.com,+1-825-244-6520,35,Female,Los Angeles,NY,2024-08-20,16,318.87,Active
+CUST1010,Tom,Wilson,tom.wilson@email.com,+1-423-257-4454,64,Male,Houston,CA,2024-12-31,20,3293.89,VIP
+CUST1011,Sarah,Jackson,sarah.jackson@email.com,+1-556-337-7742,68,Female,New York,CA,2024-06-28,12,3859.18,VIP
+CUST1012,Lisa,Moore,lisa.moore@email.com,+1-916-192-4434,30,Female,New York,TX,2023-08-07,9,604.25,Active
+CUST1013,Sarah,Taylor,sarah.taylor@email.com,+1-718-147-7395,70,Male,Houston,AZ,2023-02-28,1,1911.72,Inactive
+CUST1014,Emma,Brown,emma.brown@email.com,+1-889-404-2667,31,Male,Phoenix,TX,2023-07-09,32,1240.68,Active
+CUST1015,Mike,Taylor,mike.taylor@email.com,+1-706-211-9772,33,Female,Los Angeles,NY,2024-09-25,13,391.76,VIP
+CUST1016,David,Wilson,david.wilson@email.com,+1-854-955-8691,47,Female,Los Angeles,IL,2024-06-28,31,4239.35,Active
+CUST1017,Tom,Jackson,tom.jackson@email.com,+1-541-838-5340,77,Female,Chicago,NY,2023-05-02,7,2106.07,Active
+CUST1018,Anna,Smith,anna.smith@email.com,+1-655-215-9684,54,Male,Phoenix,NY,2024-03-30,22,984.16,Active
+CUST1019,Lisa,Jackson,lisa.jackson@email.com,+1-662-928-3684,54,Male,Phoenix,IL,2023-06-06,5,3435.32,Inactive
+CUST1020,Sarah,Wilson,sarah.wilson@email.com,+1-573-848-1555,34,Female,Phoenix,IL,2023-05-19,33,1171.15,VIP
+CUST1021,Chris,Brown,chris.brown@email.com,+1-567-547-3928,61,Male,Phoenix,NY,2024-08-03,31,4491.67,Inactive
+CUST1022,John,Moore,john.moore@email.com,+1-362-942-2693,57,Male,Phoenix,NY,2023-01-06,15,2854.86,Active
+CUST1023,Tom,Brown,tom.brown@email.com,+1-154-503-7841,23,Male,Los Angeles,TX,2024-04-12,31,3302.69,Inactive
+CUST1024,Mike,Anderson,mike.anderson@email.com,+1-412-294-6503,62,Male,Phoenix,TX,2024-05-20,31,185.28,Inactive
+CUST1025,David,Smith,david.smith@email.com,+1-555-366-4468,39,Male,Houston,TX,2024-08-18,23,1740.74,Active
+CUST1026,Lisa,Taylor,lisa.taylor@email.com,+1-737-465-9003,39,Male,Chicago,CA,2023-09-01,13,3022.31,Active
+CUST1027,Jane,Moore,jane.moore@email.com,+1-950-366-2505,52,Female,Houston,AZ,2023-05-12,33,4819.18,Active
+CUST1028,Anna,Thomas,anna.thomas@email.com,+1-453-385-6030,59,Female,Phoenix,AZ,2024-03-23,32,303.27,Inactive
+CUST1029,John,Jackson,john.jackson@email.com,+1-920-899-7540,80,Male,Los Angeles,TX,2023-08-31,41,2597.46,Active
+CUST1030,Jane,Thomas,jane.thomas@email.com,+1-508-697-6773,38,Female,New York,IL,2023-10-29,50,1247.37,Active
+CUST1031,Lisa,Davis,lisa.davis@email.com,+1-166-389-7413,31,Male,Los Angeles,AZ,2023-02-19,45,3098.38,Active
+CUST1032,John,Johnson,john.johnson@email.com,+1-100-291-9075,39,Male,Phoenix,TX,2023-01-22,28,915.46,Inactive
+CUST1033,Emma,Brown,emma.brown@email.com,+1-990-990-5181,58,Male,Chicago,TX,2023-06-01,45,3293.82,Active
+CUST1034,Jane,Thomas,jane.thomas@email.com,+1-588-782-8733,67,Male,Chicago,NY,2023-01-17,10,1575.56,Inactive
+CUST1035,Chris,Thomas,chris.thomas@email.com,+1-533-284-1171,51,Male,Houston,AZ,2024-09-05,34,3495.83,VIP
+CUST1036,David,Brown,david.brown@email.com,+1-355-268-9853,78,Male,New York,CA,2024-01-08,50,3236.46,Inactive
+CUST1037,John,Taylor,john.taylor@email.com,+1-113-324-4271,62,Male,Phoenix,NY,2024-06-03,22,1435.54,Inactive
+CUST1038,Sarah,Wilson,sarah.wilson@email.com,+1-748-743-9111,39,Male,Los Angeles,CA,2024-11-30,16,4376.42,Inactive
+CUST1039,Sarah,Anderson,sarah.anderson@email.com,+1-601-321-6958,79,Female,Houston,CA,2024-02-12,36,1588.79,VIP
+CUST1040,Anna,Moore,anna.moore@email.com,+1-616-394-2594,65,Female,New York,TX,2023-07-20,12,1181.92,Active
+CUST1041,Emma,Davis,emma.davis@email.com,+1-990-239-7638,52,Male,New York,TX,2024-08-21,9,4670.66,VIP
+CUST1042,Lisa,Taylor,lisa.taylor@email.com,+1-895-809-1091,63,Female,Houston,NY,2024-04-08,29,305.29,Active
+CUST1043,Jane,Wilson,jane.wilson@email.com,+1-814-961-3739,24,Male,Chicago,TX,2024-03-03,32,4399.19,Inactive
+CUST1044,Jane,Johnson,jane.johnson@email.com,+1-914-469-8536,39,Male,Phoenix,IL,2023-07-31,36,600.03,VIP
+CUST1045,Chris,Wilson,chris.wilson@email.com,+1-855-262-8448,53,Female,Phoenix,IL,2024-12-24,7,4287.44,Inactive
+CUST1046,David,Moore,david.moore@email.com,+1-175-962-1476,43,Female,Los Angeles,IL,2023-09-30,35,2431.81,Active
+CUST1047,Mike,Smith,mike.smith@email.com,+1-716-402-6616,67,Male,Houston,NY,2024-12-12,14,2141.28,VIP
+CUST1048,Anna,Taylor,anna.taylor@email.com,+1-920-744-5637,71,Female,Phoenix,AZ,2023-04-26,1,4050.73,VIP
+CUST1049,Lisa,Brown,lisa.brown@email.com,+1-175-371-2610,18,Male,Houston,IL,2023-08-20,33,2642.97,Inactive
+CUST1050,David,Davis,david.davis@email.com,+1-831-504-2355,29,Male,New York,IL,2023-07-06,29,2022.56,VIP
+CUST1051,Anna,Davis,anna.davis@email.com,+1-807-847-4901,78,Female,Phoenix,TX,2024-11-28,28,3974.83,VIP
+CUST1052,Chris,Johnson,chris.johnson@email.com,+1-423-308-4910,42,Female,Chicago,AZ,2024-05-23,40,3185.12,VIP
+CUST1053,Emma,Thomas,emma.thomas@email.com,+1-949-587-6378,78,Male,Chicago,AZ,2023-11-29,27,491.07,VIP
+CUST1054,Lisa,Brown,lisa.brown@email.com,+1-547-285-1494,23,Male,New York,IL,2023-02-10,46,2939.26,Active
+CUST1055,Lisa,Thomas,lisa.thomas@email.com,+1-572-194-6694,80,Female,Phoenix,TX,2023-01-31,30,1891.4,Inactive
+CUST1056,Emma,Smith,emma.smith@email.com,+1-503-609-5541,45,Female,Phoenix,CA,2023-05-01,37,1708.93,Active
+CUST1057,Sarah,Moore,sarah.moore@email.com,+1-323-791-4262,75,Male,Chicago,TX,2024-05-29,23,3707.02,VIP
+CUST1058,Mike,Anderson,mike.anderson@email.com,+1-503-156-8712,54,Female,Phoenix,IL,2024-09-16,27,4528.47,VIP
+CUST1059,Anna,Smith,anna.smith@email.com,+1-655-161-8739,29,Male,New York,CA,2024-10-04,45,2615.02,Active
+CUST1060,David,Smith,david.smith@email.com,+1-123-185-7486,33,Female,Chicago,NY,2023-06-07,16,213.63,Inactive
+CUST1061,David,Brown,david.brown@email.com,+1-115-874-7752,55,Male,Phoenix,NY,2024-12-20,8,3242.54,Active
+CUST1062,Sarah,Jackson,sarah.jackson@email.com,+1-606-230-3839,39,Female,Houston,CA,2024-09-13,36,3771.7,Inactive
+CUST1063,Anna,Jackson,anna.jackson@email.com,+1-615-774-4989,41,Female,New York,AZ,2024-02-18,38,4190.02,VIP
+CUST1064,Tom,Taylor,tom.taylor@email.com,+1-307-258-3915,18,Female,New York,CA,2023-03-11,8,1785.05,Active
+CUST1065,Lisa,Wilson,lisa.wilson@email.com,+1-311-247-4390,80,Female,Houston,AZ,2024-06-27,22,1125.61,Active
+CUST1066,Tom,Taylor,tom.taylor@email.com,+1-186-879-3055,57,Male,New York,AZ,2024-08-19,44,1354.5,VIP
+CUST1067,Anna,Brown,anna.brown@email.com,+1-347-564-1064,68,Female,Phoenix,IL,2023-11-03,41,1618.52,Inactive
+CUST1068,Chris,Johnson,chris.johnson@email.com,+1-828-352-5376,76,Male,Chicago,TX,2023-06-23,43,1554.4,VIP
+CUST1069,Chris,Anderson,chris.anderson@email.com,+1-943-915-6571,64,Female,Los Angeles,TX,2023-08-03,32,3595.62,Inactive
+CUST1070,Emma,Smith,emma.smith@email.com,+1-494-436-2244,63,Female,New York,CA,2024-02-10,44,2519.72,Active
+CUST1071,John,Johnson,john.johnson@email.com,+1-172-867-7148,41,Female,Houston,AZ,2023-03-10,46,4383.42,Inactive
+CUST1072,Sarah,Smith,sarah.smith@email.com,+1-598-438-2618,18,Female,Chicago,IL,2024-04-28,13,2101.94,Inactive
+CUST1073,Mike,Smith,mike.smith@email.com,+1-167-516-4603,59,Male,Chicago,IL,2024-08-01,29,4674.19,Inactive
+CUST1074,John,Davis,john.davis@email.com,+1-777-889-9981,56,Female,Phoenix,TX,2023-11-06,12,629.26,VIP
+CUST1075,Sarah,Anderson,sarah.anderson@email.com,+1-744-643-3954,33,Female,Chicago,NY,2023-02-13,14,2018.25,Inactive
+CUST1076,Chris,Davis,chris.davis@email.com,+1-786-514-4528,76,Female,Phoenix,IL,2024-10-28,41,2815.66,VIP
+CUST1077,Lisa,Wilson,lisa.wilson@email.com,+1-182-307-1968,79,Female,Phoenix,CA,2024-06-24,20,352.24,Inactive
+CUST1078,John,Smith,john.smith@email.com,+1-280-104-6849,80,Female,Los Angeles,AZ,2024-12-07,40,4867.1,Inactive
+CUST1079,Emma,Davis,emma.davis@email.com,+1-162-193-8865,53,Male,Chicago,CA,2024-01-13,14,2645.2,Inactive
+CUST1080,Sarah,Davis,sarah.davis@email.com,+1-925-726-8903,56,Male,New York,TX,2024-06-20,1,3362.97,Inactive
+CUST1081,Chris,Brown,chris.brown@email.com,+1-969-851-3494,33,Female,Chicago,TX,2024-04-08,34,2356.47,Active
+CUST1082,Tom,Jackson,tom.jackson@email.com,+1-971-117-7817,23,Female,Los Angeles,IL,2023-09-12,29,255.53,Active
+CUST1083,Sarah,Brown,sarah.brown@email.com,+1-507-357-4074,78,Female,Los Angeles,TX,2023-06-20,46,3180.17,VIP
+CUST1084,Anna,Thomas,anna.thomas@email.com,+1-341-412-1526,34,Male,Phoenix,CA,2024-04-04,10,4368.9,Inactive
+CUST1085,Tom,Johnson,tom.johnson@email.com,+1-485-497-6850,34,Male,New York,TX,2024-02-15,33,372.34,VIP
+CUST1086,John,Johnson,john.johnson@email.com,+1-813-155-7787,57,Female,Houston,AZ,2023-12-18,27,1050.24,Inactive
+CUST1087,John,Wilson,john.wilson@email.com,+1-182-893-2120,78,Male,New York,TX,2024-11-04,36,3145.76,VIP
+CUST1088,Jane,Thomas,jane.thomas@email.com,+1-327-341-3726,55,Male,Phoenix,CA,2024-11-26,47,4547.62,Active
+CUST1089,Chris,Jackson,chris.jackson@email.com,+1-519-498-8766,34,Female,Phoenix,IL,2024-05-24,41,3309.08,VIP
+CUST1090,John,Smith,john.smith@email.com,+1-383-218-7276,21,Male,Houston,TX,2023-11-04,15,1321.57,VIP
+CUST1091,Anna,Johnson,anna.johnson@email.com,+1-767-310-5071,73,Male,New York,IL,2023-04-15,12,299.42,VIP
+CUST1092,Anna,Smith,anna.smith@email.com,+1-732-674-3944,58,Male,New York,NY,2024-08-06,11,409.5,VIP
+CUST1093,Emma,Anderson,emma.anderson@email.com,+1-274-584-9065,63,Male,Phoenix,AZ,2023-02-08,12,4722.09,Active
+CUST1094,Mike,Taylor,mike.taylor@email.com,+1-844-179-9761,78,Female,Phoenix,CA,2023-07-06,41,2588.32,VIP
+CUST1095,Chris,Anderson,chris.anderson@email.com,+1-490-950-7324,33,Female,Chicago,NY,2023-08-04,20,1275.49,Inactive
+CUST1096,Chris,Davis,chris.davis@email.com,+1-641-329-6472,55,Male,Houston,AZ,2023-09-02,49,990.42,Inactive
+CUST1097,John,Davis,john.davis@email.com,+1-670-925-2028,28,Male,Houston,NY,2023-04-04,6,1800.88,Inactive
+CUST1098,Jane,Davis,jane.davis@email.com,+1-191-376-9902,45,Male,Phoenix,AZ,2023-03-04,11,103.1,Active
+CUST1099,Tom,Smith,tom.smith@email.com,+1-465-185-5847,18,Male,Chicago,TX,2023-04-21,12,2942.35,VIP
+CUST1100,Anna,Jackson,anna.jackson@email.com,+1-903-794-1029,71,Female,Phoenix,NY,2023-10-06,45,1261.35,VIP
+CUST1101,Lisa,Jackson,lisa.jackson@email.com,+1-243-500-5118,66,Male,Chicago,IL,2023-01-04,3,2263.37,VIP
+CUST1102,Sarah,Jackson,sarah.jackson@email.com,+1-185-777-2838,57,Male,Phoenix,TX,2023-07-19,22,3649.39,Inactive
+CUST1103,Emma,Davis,emma.davis@email.com,+1-470-495-6525,18,Female,New York,AZ,2023-04-30,47,4349.48,Active
+CUST1104,Anna,Smith,anna.smith@email.com,+1-900-114-6375,33,Female,Los Angeles,TX,2023-08-22,36,772.32,Inactive
+CUST1105,Jane,Smith,jane.smith@email.com,+1-628-131-2912,47,Female,Houston,NY,2024-03-10,34,2334.06,VIP
+CUST1106,Emma,Anderson,emma.anderson@email.com,+1-825-252-3404,31,Female,Los Angeles,IL,2023-06-29,19,4800.03,VIP
+CUST1107,Emma,Anderson,emma.anderson@email.com,+1-623-673-4634,49,Male,New York,CA,2024-04-20,18,4465.91,Inactive
+CUST1108,Sarah,Smith,sarah.smith@email.com,+1-191-477-7781,27,Female,New York,CA,2024-02-23,41,1003.98,Active
+CUST1109,John,Smith,john.smith@email.com,+1-902-153-6975,68,Male,New York,IL,2023-09-10,24,3705.49,VIP
+CUST1110,John,Taylor,john.taylor@email.com,+1-696-806-7947,64,Female,Los Angeles,NY,2024-09-27,25,3766.49,Active
+CUST1111,Sarah,Wilson,sarah.wilson@email.com,+1-998-794-5276,59,Male,Chicago,TX,2024-05-25,20,4976.48,VIP
+CUST1112,Sarah,Thomas,sarah.thomas@email.com,+1-126-146-7673,20,Female,New York,TX,2024-01-04,10,1003.68,Inactive
+CUST1113,Mike,Moore,mike.moore@email.com,+1-919-449-8034,34,Female,Los Angeles,IL,2023-03-09,19,4856.12,VIP
+CUST1114,Chris,Anderson,chris.anderson@email.com,+1-171-687-6979,58,Male,Phoenix,CA,2023-02-11,34,3543.03,Active
+CUST1115,Anna,Moore,anna.moore@email.com,+1-262-492-2927,25,Female,New York,CA,2023-08-30,4,3123.47,Active
+CUST1116,Emma,Wilson,emma.wilson@email.com,+1-525-133-6064,66,Female,Chicago,AZ,2023-06-28,31,1588.47,VIP
+CUST1117,David,Davis,david.davis@email.com,+1-363-338-9133,69,Female,New York,AZ,2023-12-31,49,4079.03,Active
+CUST1118,David,Taylor,david.taylor@email.com,+1-967-887-6469,19,Female,Chicago,NY,2023-04-02,16,3957.43,Inactive
+CUST1119,David,Wilson,david.wilson@email.com,+1-892-400-6063,25,Male,New York,AZ,2024-12-03,45,3189.27,Active
+CUST1120,Anna,Brown,anna.brown@email.com,+1-953-675-4225,71,Male,Houston,AZ,2023-11-27,32,4702.58,Active
+CUST1121,Tom,Johnson,tom.johnson@email.com,+1-639-906-3590,42,Male,Los Angeles,CA,2023-03-24,3,327.12,VIP
+CUST1122,John,Brown,john.brown@email.com,+1-814-210-2283,24,Male,Houston,AZ,2024-07-23,26,2383.95,VIP
+CUST1123,David,Smith,david.smith@email.com,+1-492-249-6928,69,Male,Phoenix,TX,2023-05-21,38,3679.66,VIP
+CUST1124,John,Davis,john.davis@email.com,+1-278-802-7387,78,Female,Chicago,NY,2024-12-07,25,4215.6,Active
+CUST1125,Mike,Johnson,mike.johnson@email.com,+1-252-402-1360,52,Male,Chicago,IL,2023-09-23,23,2177.41,VIP
+CUST1126,Lisa,Smith,lisa.smith@email.com,+1-854-478-1373,54,Male,New York,IL,2023-06-03,33,249.64,Active
+CUST1127,Jane,Taylor,jane.taylor@email.com,+1-140-214-8705,56,Male,Phoenix,CA,2024-07-15,19,2377.64,Active
+CUST1128,Lisa,Wilson,lisa.wilson@email.com,+1-613-736-9997,40,Female,Chicago,AZ,2023-12-08,44,2573.16,VIP
+CUST1129,Chris,Wilson,chris.wilson@email.com,+1-594-633-3105,50,Male,Los Angeles,IL,2024-10-04,31,744.24,Active
+CUST1130,Tom,Wilson,tom.wilson@email.com,+1-313-251-6976,51,Female,Los Angeles,IL,2024-08-14,40,3732.59,Inactive
+CUST1131,Anna,Anderson,anna.anderson@email.com,+1-680-486-8542,59,Male,Houston,CA,2024-08-12,25,3335.59,Active
+CUST1132,Tom,Taylor,tom.taylor@email.com,+1-891-838-5216,68,Female,Chicago,TX,2024-01-01,28,4517.87,Active
+CUST1133,Chris,Anderson,chris.anderson@email.com,+1-980-306-8224,58,Female,Chicago,IL,2023-01-19,23,3063.12,Active
+CUST1134,Chris,Brown,chris.brown@email.com,+1-260-131-1404,24,Male,Houston,TX,2024-01-01,27,3168.52,Inactive
+CUST1135,David,Johnson,david.johnson@email.com,+1-921-934-7520,39,Female,Phoenix,TX,2023-03-17,23,2166.99,Active
+CUST1136,John,Anderson,john.anderson@email.com,+1-442-972-2437,26,Female,New York,NY,2024-07-20,23,890.54,VIP
+CUST1137,Anna,Thomas,anna.thomas@email.com,+1-982-298-4136,32,Male,Los Angeles,NY,2024-05-12,39,4906.67,Inactive
+CUST1138,David,Davis,david.davis@email.com,+1-118-569-4952,23,Male,Houston,IL,2024-04-29,18,1217.4,VIP
+CUST1139,David,Moore,david.moore@email.com,+1-318-970-8651,69,Female,Phoenix,TX,2024-04-29,14,3848.03,Inactive
+CUST1140,Chris,Thomas,chris.thomas@email.com,+1-324-275-1857,32,Male,Chicago,NY,2024-12-27,50,174.88,Inactive
+CUST1141,Mike,Taylor,mike.taylor@email.com,+1-745-172-6453,22,Female,Chicago,CA,2023-01-14,5,1397.49,Active
+CUST1142,Tom,Anderson,tom.anderson@email.com,+1-418-837-9194,76,Male,Chicago,CA,2023-08-21,12,254.34,VIP
+CUST1143,David,Moore,david.moore@email.com,+1-147-656-1544,23,Female,Chicago,AZ,2023-06-03,11,3465.37,VIP
+CUST1144,John,Taylor,john.taylor@email.com,+1-758-955-3377,23,Female,Phoenix,AZ,2023-11-18,36,2449.16,Inactive
+CUST1145,Jane,Smith,jane.smith@email.com,+1-735-247-6592,70,Female,Los Angeles,TX,2023-01-14,49,213.19,Active
+CUST1146,David,Brown,david.brown@email.com,+1-775-706-4811,71,Male,Chicago,CA,2024-03-21,20,674.6,VIP
+CUST1147,Mike,Thomas,mike.thomas@email.com,+1-544-517-1654,59,Male,Los Angeles,CA,2024-05-25,15,714.3,VIP
+CUST1148,John,Davis,john.davis@email.com,+1-704-437-6568,43,Female,Los Angeles,NY,2024-01-22,9,3689.56,Inactive
+CUST1149,David,Johnson,david.johnson@email.com,+1-400-546-6942,28,Female,New York,TX,2024-07-13,41,1085.33,Active
+CUST1150,Mike,Brown,mike.brown@email.com,+1-373-149-3532,59,Male,Houston,IL,2024-10-06,22,1237.8,VIP
+CUST1151,John,Moore,john.moore@email.com,+1-975-170-5968,57,Female,Phoenix,TX,2024-03-01,28,4269.08,Active
+CUST1152,Chris,Johnson,chris.johnson@email.com,+1-681-239-8990,44,Female,Houston,CA,2023-06-21,22,4187.5,Active
+CUST1153,David,Davis,david.davis@email.com,+1-334-737-3895,69,Male,Chicago,AZ,2024-12-23,12,3775.26,VIP
+CUST1154,Emma,Thomas,emma.thomas@email.com,+1-459-645-3460,53,Female,Houston,TX,2024-07-07,36,367.96,Active
+CUST1155,Tom,Brown,tom.brown@email.com,+1-263-372-5391,73,Female,Houston,AZ,2024-09-13,39,4599.88,VIP
+CUST1156,Jane,Anderson,jane.anderson@email.com,+1-461-741-1878,69,Female,Los Angeles,AZ,2024-01-28,15,1364.04,Inactive
+CUST1157,David,Moore,david.moore@email.com,+1-994-846-9298,77,Male,New York,IL,2023-03-21,44,2113.6,Active
+CUST1158,Tom,Wilson,tom.wilson@email.com,+1-921-490-5624,73,Male,Los Angeles,TX,2023-05-30,1,1899.63,Active
+CUST1159,John,Brown,john.brown@email.com,+1-163-594-8685,72,Male,Phoenix,CA,2024-07-29,21,1302.36,Active
+CUST1160,Tom,Smith,tom.smith@email.com,+1-276-663-1171,27,Male,Los Angeles,TX,2024-11-18,33,2147.6,Inactive
+CUST1161,Sarah,Anderson,sarah.anderson@email.com,+1-529-101-6130,69,Female,New York,NY,2023-10-20,27,2754.55,Active
+CUST1162,Emma,Thomas,emma.thomas@email.com,+1-747-616-2182,45,Male,Houston,NY,2023-08-27,45,2331.92,Active
+CUST1163,Lisa,Moore,lisa.moore@email.com,+1-752-250-8691,63,Female,Phoenix,NY,2023-07-07,28,3102.09,VIP
+CUST1164,David,Brown,david.brown@email.com,+1-632-678-1193,36,Female,Los Angeles,IL,2023-10-30,31,4168.44,Inactive
+CUST1165,Chris,Thomas,chris.thomas@email.com,+1-136-815-7040,80,Female,Houston,IL,2023-09-18,28,2304.01,Inactive
+CUST1166,David,Anderson,david.anderson@email.com,+1-310-151-8979,42,Female,Chicago,NY,2023-09-25,29,1458.1,VIP
+CUST1167,Jane,Brown,jane.brown@email.com,+1-553-530-6307,32,Female,Houston,CA,2023-11-23,15,1951.62,Active
+CUST1168,Chris,Davis,chris.davis@email.com,+1-671-667-5688,45,Male,New York,NY,2024-07-09,39,3493.92,VIP
+CUST1169,Mike,Smith,mike.smith@email.com,+1-716-754-7614,63,Male,Houston,AZ,2023-06-30,15,2969.51,Inactive
+CUST1170,David,Smith,david.smith@email.com,+1-600-198-6139,74,Female,Los Angeles,NY,2023-10-12,4,1315.2,Active
+CUST1171,David,Smith,david.smith@email.com,+1-190-789-7669,53,Female,Los Angeles,TX,2023-03-20,16,4647.89,VIP
+CUST1172,Emma,Jackson,emma.jackson@email.com,+1-324-705-1863,57,Male,Los Angeles,NY,2024-12-27,42,1848.25,Active
+CUST1173,John,Jackson,john.jackson@email.com,+1-517-623-1289,28,Female,Los Angeles,TX,2024-08-24,19,1976.65,Inactive
+CUST1174,Mike,Jackson,mike.jackson@email.com,+1-636-686-8946,27,Female,Chicago,AZ,2024-03-15,36,4714.83,VIP
+CUST1175,Sarah,Jackson,sarah.jackson@email.com,+1-746-730-8323,54,Male,Chicago,NY,2023-07-01,12,4825.6,Inactive
+CUST1176,David,Smith,david.smith@email.com,+1-390-480-8476,72,Male,Los Angeles,NY,2023-12-08,26,4986.87,VIP
+CUST1177,Chris,Johnson,chris.johnson@email.com,+1-324-431-8740,43,Male,Los Angeles,IL,2024-01-18,28,186.16,Active
+CUST1178,Anna,Anderson,anna.anderson@email.com,+1-448-979-8012,50,Female,Chicago,IL,2024-06-24,48,3885.22,VIP
+CUST1179,Tom,Taylor,tom.taylor@email.com,+1-147-838-5788,35,Male,Houston,AZ,2023-10-14,36,2547.27,VIP
+CUST1180,Mike,Johnson,mike.johnson@email.com,+1-670-574-7558,53,Male,Phoenix,AZ,2023-01-13,23,4641.22,VIP
+CUST1181,Sarah,Taylor,sarah.taylor@email.com,+1-222-324-6050,49,Female,Houston,AZ,2024-10-20,35,2872.64,Inactive
+CUST1182,Sarah,Taylor,sarah.taylor@email.com,+1-831-815-7753,79,Female,Chicago,TX,2023-09-07,30,3096.94,Active
+CUST1183,Lisa,Jackson,lisa.jackson@email.com,+1-854-542-2442,66,Male,Houston,IL,2023-05-23,50,3370.72,Inactive
+CUST1184,Anna,Anderson,anna.anderson@email.com,+1-366-388-1300,73,Male,Chicago,TX,2024-05-09,9,1343.76,VIP
+CUST1185,John,Brown,john.brown@email.com,+1-381-468-9548,21,Female,New York,IL,2023-07-12,3,1605.03,Inactive
+CUST1186,Mike,Thomas,mike.thomas@email.com,+1-369-946-7555,71,Female,Chicago,IL,2024-11-22,28,1778.0,Active
+CUST1187,Emma,Smith,emma.smith@email.com,+1-321-967-6382,70,Male,Los Angeles,NY,2023-01-03,49,1787.26,Active
+CUST1188,Chris,Moore,chris.moore@email.com,+1-557-746-8323,47,Male,Houston,CA,2024-10-10,23,4456.92,VIP
+CUST1189,Anna,Jackson,anna.jackson@email.com,+1-203-971-9654,60,Female,New York,AZ,2023-05-14,25,509.99,VIP
+CUST1190,John,Davis,john.davis@email.com,+1-377-678-4531,66,Female,Chicago,IL,2024-06-25,17,708.11,Active
+CUST1191,Anna,Thomas,anna.thomas@email.com,+1-427-405-5591,34,Male,Chicago,TX,2023-07-22,18,793.94,Active
+CUST1192,Chris,Brown,chris.brown@email.com,+1-713-895-4034,64,Male,Los Angeles,AZ,2024-08-17,26,1243.67,VIP
+CUST1193,Anna,Davis,anna.davis@email.com,+1-396-649-6195,31,Male,Houston,CA,2023-06-14,24,4269.47,Active
+CUST1194,Mike,Brown,mike.brown@email.com,+1-291-160-9129,64,Male,Phoenix,CA,2024-03-09,7,4479.6,VIP
+CUST1195,John,Wilson,john.wilson@email.com,+1-811-817-4409,22,Female,Houston,TX,2023-08-30,13,1654.15,Active
+CUST1196,Anna,Moore,anna.moore@email.com,+1-355-632-2575,34,Male,Phoenix,NY,2023-10-09,31,771.9,Active
+CUST1197,Emma,Jackson,emma.jackson@email.com,+1-581-771-6546,48,Male,Houston,CA,2024-03-01,2,2533.62,VIP
+CUST1198,Chris,Johnson,chris.johnson@email.com,+1-186-910-9159,60,Male,New York,CA,2023-09-01,17,1978.46,Active
+CUST1199,Lisa,Smith,lisa.smith@email.com,+1-938-291-6744,63,Female,Houston,AZ,2023-06-15,23,4087.11,Active
+CUST1200,Anna,Moore,anna.moore@email.com,+1-552-548-3997,46,Male,Los Angeles,CA,2024-04-22,47,401.92,Active
+CUST1201,Emma,Moore,emma.moore@email.com,+1-798-929-1350,77,Female,New York,IL,2023-06-05,17,911.18,Active
+CUST1202,Chris,Brown,chris.brown@email.com,+1-604-877-8540,49,Male,Los Angeles,CA,2023-05-26,19,1887.53,Active
+CUST1203,Emma,Smith,emma.smith@email.com,+1-165-332-4080,19,Male,New York,IL,2024-07-15,49,391.81,Inactive
+CUST1204,Tom,Johnson,tom.johnson@email.com,+1-857-684-1866,50,Male,Houston,IL,2024-04-10,46,1688.46,Inactive
+CUST1205,Chris,Moore,chris.moore@email.com,+1-766-390-9068,75,Male,Los Angeles,AZ,2023-02-24,20,4338.12,Inactive
+CUST1206,Jane,Moore,jane.moore@email.com,+1-733-127-3041,68,Male,Chicago,AZ,2024-10-08,20,697.95,Inactive
+CUST1207,Lisa,Thomas,lisa.thomas@email.com,+1-871-453-5236,33,Male,Los Angeles,TX,2024-07-04,50,4148.05,VIP
+CUST1208,Sarah,Johnson,sarah.johnson@email.com,+1-786-678-3864,71,Male,Houston,CA,2023-02-14,3,4888.87,VIP
+CUST1209,David,Wilson,david.wilson@email.com,+1-634-136-1016,56,Female,Houston,CA,2023-02-03,49,1105.19,VIP
+CUST1210,Mike,Wilson,mike.wilson@email.com,+1-486-599-5318,28,Female,Los Angeles,IL,2023-06-13,5,2569.69,VIP
+CUST1211,Chris,Anderson,chris.anderson@email.com,+1-266-547-3250,54,Male,Los Angeles,TX,2024-03-24,1,2002.07,VIP
+CUST1212,David,Taylor,david.taylor@email.com,+1-154-565-8483,51,Male,New York,IL,2023-11-21,1,3162.36,VIP
+CUST1213,Lisa,Davis,lisa.davis@email.com,+1-248-196-4538,63,Female,Houston,TX,2024-03-09,37,1085.5,VIP
+CUST1214,Sarah,Moore,sarah.moore@email.com,+1-522-855-2920,67,Female,Los Angeles,NY,2024-11-05,48,4329.69,Inactive
+CUST1215,David,Taylor,david.taylor@email.com,+1-515-370-7540,39,Female,New York,IL,2024-11-10,12,1912.99,VIP
+CUST1216,Jane,Smith,jane.smith@email.com,+1-911-153-2962,58,Female,New York,NY,2023-06-26,40,3484.93,Active
+CUST1217,John,Thomas,john.thomas@email.com,+1-366-129-2864,41,Male,Los Angeles,NY,2023-11-16,25,3364.0,Inactive
+CUST1218,Sarah,Thomas,sarah.thomas@email.com,+1-161-939-5445,35,Male,New York,AZ,2023-11-28,2,1192.79,Active
+CUST1219,Mike,Wilson,mike.wilson@email.com,+1-555-413-9327,56,Female,Los Angeles,AZ,2023-02-11,6,885.36,Active
+CUST1220,Emma,Moore,emma.moore@email.com,+1-993-862-5142,50,Male,New York,TX,2023-10-08,11,1442.3,Inactive
+CUST1221,David,Jackson,david.jackson@email.com,+1-890-708-9645,79,Female,Houston,CA,2024-08-04,31,4942.29,Active
+CUST1222,Lisa,Wilson,lisa.wilson@email.com,+1-906-488-7311,56,Female,Phoenix,NY,2024-06-15,7,4791.74,Active
+CUST1223,Emma,Wilson,emma.wilson@email.com,+1-219-597-5996,33,Male,New York,AZ,2024-07-25,43,3359.35,Inactive
+CUST1224,Emma,Brown,emma.brown@email.com,+1-723-322-6841,27,Female,Chicago,TX,2024-07-17,15,2357.95,Inactive
+CUST1225,Tom,Moore,tom.moore@email.com,+1-931-340-9310,77,Male,Los Angeles,AZ,2023-09-11,37,2751.47,Inactive
+CUST1226,Mike,Brown,mike.brown@email.com,+1-760-615-1778,22,Male,Phoenix,CA,2024-06-30,3,2476.81,VIP
+CUST1227,Chris,Jackson,chris.jackson@email.com,+1-102-765-9706,68,Male,Chicago,AZ,2023-09-22,22,605.41,Inactive
+CUST1228,John,Brown,john.brown@email.com,+1-142-413-3156,19,Female,Houston,NY,2024-01-03,31,3382.26,Inactive
+CUST1229,Chris,Brown,chris.brown@email.com,+1-414-189-6265,78,Male,Chicago,TX,2024-10-16,5,1250.16,Inactive
+CUST1230,Sarah,Anderson,sarah.anderson@email.com,+1-879-910-9287,75,Male,Houston,TX,2024-04-22,3,1697.36,Active
+CUST1231,Anna,Moore,anna.moore@email.com,+1-282-286-1585,26,Male,New York,AZ,2024-05-19,11,3558.99,Active
+CUST1232,Emma,Davis,emma.davis@email.com,+1-453-276-6383,51,Female,Los Angeles,TX,2024-08-12,43,3192.96,Inactive
+CUST1233,Sarah,Davis,sarah.davis@email.com,+1-577-227-1941,69,Male,New York,AZ,2024-10-13,6,3450.4,VIP
+CUST1234,John,Thomas,john.thomas@email.com,+1-110-875-4384,69,Female,Los Angeles,IL,2024-07-26,23,710.62,Active
+CUST1235,John,Smith,john.smith@email.com,+1-830-133-6210,27,Male,Los Angeles,NY,2023-06-11,46,3559.37,VIP
+CUST1236,John,Moore,john.moore@email.com,+1-128-868-4578,53,Male,New York,CA,2024-07-02,20,4319.14,Inactive
+CUST1237,Emma,Wilson,emma.wilson@email.com,+1-397-513-9957,25,Male,Houston,IL,2023-08-27,48,4770.59,Active
+CUST1238,Tom,Johnson,tom.johnson@email.com,+1-159-256-3075,48,Male,Phoenix,TX,2024-11-08,45,3773.94,VIP
+CUST1239,Jane,Taylor,jane.taylor@email.com,+1-252-391-9166,31,Female,Chicago,CA,2023-01-27,15,3404.49,VIP
+CUST1240,David,Moore,david.moore@email.com,+1-984-984-2246,71,Male,Houston,IL,2024-06-08,6,1434.43,Inactive
+CUST1241,Mike,Davis,mike.davis@email.com,+1-386-881-2089,67,Male,Chicago,AZ,2024-09-22,4,146.66,VIP
+CUST1242,Sarah,Smith,sarah.smith@email.com,+1-216-332-5349,57,Male,Houston,NY,2024-09-15,15,4739.67,Inactive
+CUST1243,Emma,Brown,emma.brown@email.com,+1-725-273-2837,40,Female,Phoenix,AZ,2023-03-28,48,4263.51,Inactive
+CUST1244,Emma,Thomas,emma.thomas@email.com,+1-580-283-8099,54,Female,New York,CA,2023-11-24,12,1733.02,VIP
+CUST1245,Chris,Davis,chris.davis@email.com,+1-172-727-5511,73,Female,Chicago,NY,2024-10-12,11,2804.47,Active
+CUST1246,John,Jackson,john.jackson@email.com,+1-970-951-6162,52,Female,Los Angeles,NY,2023-09-20,39,3713.16,Active
+CUST1247,Mike,Johnson,mike.johnson@email.com,+1-337-966-3085,51,Female,Chicago,IL,2024-03-12,10,2896.5,Inactive
+CUST1248,Lisa,Jackson,lisa.jackson@email.com,+1-913-290-6996,32,Male,Los Angeles,AZ,2023-09-01,47,163.39,Active
+CUST1249,Lisa,Moore,lisa.moore@email.com,+1-935-793-6404,77,Male,Houston,CA,2023-01-02,12,619.62,VIP
+CUST1250,John,Wilson,john.wilson@email.com,+1-191-328-3474,75,Male,Phoenix,NY,2024-05-10,9,115.17,VIP
+CUST1251,David,Brown,david.brown@email.com,+1-736-219-6351,53,Male,Chicago,NY,2023-12-27,21,1720.2,VIP
+CUST1252,Sarah,Anderson,sarah.anderson@email.com,+1-778-697-3490,69,Male,Los Angeles,NY,2024-10-01,16,2071.78,VIP
+CUST1253,Jane,Wilson,jane.wilson@email.com,+1-385-966-8093,54,Female,Phoenix,CA,2023-12-13,18,3124.04,Inactive
+CUST1254,Anna,Thomas,anna.thomas@email.com,+1-804-374-7357,58,Male,Los Angeles,CA,2023-12-28,40,1706.75,Active
+CUST1255,Emma,Brown,emma.brown@email.com,+1-236-233-7991,73,Male,New York,IL,2024-05-27,28,1944.95,Active
+CUST1256,Lisa,Smith,lisa.smith@email.com,+1-741-579-5416,50,Male,Los Angeles,CA,2024-09-11,40,1227.14,VIP
+CUST1257,Chris,Johnson,chris.johnson@email.com,+1-402-625-7383,80,Male,New York,NY,2023-06-23,18,3086.52,VIP
+CUST1258,Anna,Moore,anna.moore@email.com,+1-660-749-1177,67,Male,Houston,NY,2024-10-28,6,4245.88,Active
+CUST1259,Sarah,Jackson,sarah.jackson@email.com,+1-373-316-5864,33,Female,Houston,TX,2023-04-14,37,4148.18,VIP
+CUST1260,Chris,Brown,chris.brown@email.com,+1-652-194-6516,52,Male,Chicago,TX,2024-09-26,25,1272.05,Inactive
+CUST1261,Chris,Thomas,chris.thomas@email.com,+1-918-393-6839,74,Male,Phoenix,NY,2024-07-31,42,578.39,Active
+CUST1262,John,Jackson,john.jackson@email.com,+1-554-508-5616,70,Female,Houston,IL,2023-08-23,5,4687.16,Inactive
+CUST1263,David,Jackson,david.jackson@email.com,+1-599-618-4546,54,Female,Phoenix,TX,2024-07-20,9,3794.96,VIP
+CUST1264,Jane,Wilson,jane.wilson@email.com,+1-132-578-4018,19,Male,Chicago,IL,2024-08-16,7,3900.96,Active
+CUST1265,Jane,Moore,jane.moore@email.com,+1-828-349-6424,74,Female,New York,IL,2024-01-18,12,1718.39,Inactive
+CUST1266,Jane,Moore,jane.moore@email.com,+1-524-726-9294,39,Female,Los Angeles,IL,2024-08-12,29,2662.04,Inactive
+CUST1267,Chris,Johnson,chris.johnson@email.com,+1-443-808-7255,38,Female,Los Angeles,TX,2023-12-21,13,3484.93,Inactive
+CUST1268,Mike,Thomas,mike.thomas@email.com,+1-431-772-8276,43,Female,Houston,IL,2023-05-03,35,3265.41,Active
+CUST1269,Jane,Moore,jane.moore@email.com,+1-448-266-8015,80,Female,Houston,AZ,2024-01-01,42,2466.82,VIP
+CUST1270,Chris,Anderson,chris.anderson@email.com,+1-944-638-2038,51,Female,New York,CA,2024-02-14,7,2884.2,Active
+CUST1271,Tom,Moore,tom.moore@email.com,+1-845-939-5337,29,Male,Chicago,CA,2024-01-10,31,3141.94,Inactive
+CUST1272,John,Taylor,john.taylor@email.com,+1-674-877-1037,39,Female,Chicago,IL,2024-02-19,18,4311.94,Active
+CUST1273,Jane,Moore,jane.moore@email.com,+1-724-842-6467,33,Male,Chicago,AZ,2023-06-20,25,1861.09,Inactive
+CUST1274,David,Brown,david.brown@email.com,+1-583-124-6430,78,Male,Chicago,TX,2024-09-01,36,1704.13,Active
+CUST1275,Tom,Anderson,tom.anderson@email.com,+1-685-922-1823,54,Male,Houston,TX,2023-06-22,17,818.09,VIP
+CUST1276,Jane,Wilson,jane.wilson@email.com,+1-714-972-1805,53,Male,Los Angeles,CA,2024-02-06,47,103.63,Inactive
+CUST1277,Anna,Wilson,anna.wilson@email.com,+1-789-656-4270,80,Female,Phoenix,AZ,2023-09-21,3,3296.74,VIP
+CUST1278,Sarah,Thomas,sarah.thomas@email.com,+1-866-767-2220,50,Male,Phoenix,TX,2023-02-15,49,1089.6,Active
+CUST1279,Anna,Taylor,anna.taylor@email.com,+1-763-114-3986,41,Male,Phoenix,NY,2024-12-04,23,4178.77,Active
+CUST1280,Emma,Jackson,emma.jackson@email.com,+1-438-411-5890,75,Male,Los Angeles,CA,2024-05-16,5,3045.89,Active
+CUST1281,Emma,Johnson,emma.johnson@email.com,+1-999-267-8028,74,Female,Chicago,CA,2023-09-02,35,3906.79,Inactive
+CUST1282,John,Thomas,john.thomas@email.com,+1-810-644-1595,34,Male,Phoenix,NY,2024-07-16,13,1501.25,Inactive
+CUST1283,Chris,Anderson,chris.anderson@email.com,+1-812-524-9752,25,Female,Los Angeles,AZ,2024-08-21,26,4525.94,Inactive
+CUST1284,Anna,Brown,anna.brown@email.com,+1-701-311-3409,80,Male,New York,CA,2024-09-22,42,149.79,VIP
+CUST1285,Lisa,Thomas,lisa.thomas@email.com,+1-925-706-6911,40,Female,Houston,AZ,2024-11-10,42,2743.19,VIP
+CUST1286,John,Smith,john.smith@email.com,+1-500-107-7958,27,Female,Phoenix,TX,2024-10-22,10,2268.56,Inactive
+CUST1287,Tom,Smith,tom.smith@email.com,+1-658-240-9349,76,Male,Phoenix,IL,2024-01-30,8,1256.21,VIP
+CUST1288,Lisa,Thomas,lisa.thomas@email.com,+1-266-256-8571,31,Female,Houston,NY,2023-10-21,40,4857.51,Inactive
+CUST1289,Tom,Anderson,tom.anderson@email.com,+1-415-524-8414,65,Male,Los Angeles,NY,2023-11-26,38,2613.82,Active
+CUST1290,Emma,Jackson,emma.jackson@email.com,+1-156-630-9806,19,Male,Chicago,AZ,2023-04-02,39,4206.2,VIP
+CUST1291,Chris,Davis,chris.davis@email.com,+1-133-418-2443,40,Male,Houston,CA,2023-05-02,26,440.92,Active
+CUST1292,Anna,Thomas,anna.thomas@email.com,+1-256-993-6966,48,Female,Chicago,IL,2023-09-29,44,1380.68,Inactive
+CUST1293,Sarah,Brown,sarah.brown@email.com,+1-451-826-1901,79,Female,Los Angeles,NY,2024-10-30,15,4647.94,Active
+CUST1294,Anna,Smith,anna.smith@email.com,+1-888-327-9971,18,Female,Chicago,IL,2023-07-10,4,4670.44,Active
+CUST1295,Emma,Smith,emma.smith@email.com,+1-990-149-4241,56,Female,Houston,TX,2024-08-20,36,1233.88,VIP
+CUST1296,Jane,Jackson,jane.jackson@email.com,+1-770-578-5410,19,Male,New York,IL,2024-11-06,38,2660.02,Active
+CUST1297,Anna,Johnson,anna.johnson@email.com,+1-529-983-7640,19,Male,Phoenix,IL,2024-12-07,23,2867.17,Active
+CUST1298,Sarah,Smith,sarah.smith@email.com,+1-569-256-8747,58,Female,New York,IL,2023-11-17,30,142.1,Inactive
+CUST1299,Sarah,Johnson,sarah.johnson@email.com,+1-391-892-6780,65,Female,Los Angeles,TX,2024-11-01,41,4544.04,VIP
+CUST1300,Tom,Brown,tom.brown@email.com,+1-403-465-8217,47,Female,Phoenix,NY,2024-08-19,19,1868.79,Active
+CUST1301,Tom,Smith,tom.smith@email.com,+1-445-561-6943,24,Male,Los Angeles,NY,2023-02-21,24,2329.58,VIP
+CUST1302,David,Johnson,david.johnson@email.com,+1-108-183-1476,28,Male,Phoenix,NY,2023-02-18,50,2097.97,Inactive
+CUST1303,Tom,Johnson,tom.johnson@email.com,+1-864-578-3075,41,Male,Los Angeles,IL,2024-06-20,18,4798.25,VIP
+CUST1304,Lisa,Davis,lisa.davis@email.com,+1-833-432-9430,25,Female,Chicago,TX,2024-01-31,8,329.45,Active
+CUST1305,Anna,Anderson,anna.anderson@email.com,+1-814-986-9142,59,Male,Phoenix,IL,2023-12-21,18,4453.16,VIP
+CUST1306,Mike,Jackson,mike.jackson@email.com,+1-327-302-2122,26,Female,New York,AZ,2024-04-03,22,3813.45,Active
+CUST1307,Jane,Taylor,jane.taylor@email.com,+1-373-698-9289,53,Male,Phoenix,AZ,2023-01-07,12,4033.79,VIP
+CUST1308,Emma,Brown,emma.brown@email.com,+1-149-783-8217,50,Male,Houston,AZ,2024-05-12,1,4986.11,Inactive
+CUST1309,Mike,Jackson,mike.jackson@email.com,+1-654-809-9050,18,Male,Los Angeles,IL,2023-02-17,37,4223.74,Inactive
+CUST1310,Emma,Taylor,emma.taylor@email.com,+1-764-526-9381,55,Female,Los Angeles,AZ,2024-12-29,40,4871.69,Active
+CUST1311,Lisa,Anderson,lisa.anderson@email.com,+1-823-895-8120,63,Female,New York,CA,2024-10-24,26,2672.78,Active
+CUST1312,John,Moore,john.moore@email.com,+1-557-678-3793,66,Female,Phoenix,IL,2023-09-27,41,3917.91,VIP
+CUST1313,John,Davis,john.davis@email.com,+1-883-613-6043,54,Male,Los Angeles,NY,2024-05-29,27,4634.12,Active
+CUST1314,Lisa,Jackson,lisa.jackson@email.com,+1-381-434-2419,79,Female,New York,AZ,2023-12-22,3,1775.11,Active
+CUST1315,Emma,Moore,emma.moore@email.com,+1-152-848-9491,33,Male,Phoenix,TX,2024-05-09,3,2118.73,Active
+CUST1316,Chris,Moore,chris.moore@email.com,+1-637-141-6817,21,Male,Chicago,NY,2024-01-30,10,3049.1,Inactive
+CUST1317,Sarah,Thomas,sarah.thomas@email.com,+1-758-241-6325,28,Female,Houston,NY,2023-08-29,24,555.19,VIP
+CUST1318,David,Jackson,david.jackson@email.com,+1-146-502-3416,39,Female,New York,CA,2024-11-08,23,4175.72,Active
+CUST1319,Mike,Johnson,mike.johnson@email.com,+1-878-396-8542,38,Female,Houston,CA,2024-10-29,26,1443.94,Inactive
+CUST1320,Mike,Wilson,mike.wilson@email.com,+1-151-426-8558,70,Female,Los Angeles,AZ,2024-05-16,24,944.0,Inactive
+CUST1321,Anna,Johnson,anna.johnson@email.com,+1-499-111-5361,22,Male,New York,CA,2024-11-28,27,1441.41,VIP
+CUST1322,John,Moore,john.moore@email.com,+1-731-786-4264,66,Male,Houston,AZ,2023-11-19,15,3741.82,VIP
+CUST1323,Jane,Anderson,jane.anderson@email.com,+1-481-185-8848,62,Female,Houston,IL,2024-05-11,43,1358.51,Active
+CUST1324,David,Anderson,david.anderson@email.com,+1-108-522-9282,30,Male,Phoenix,NY,2023-02-23,30,1358.35,Inactive
+CUST1325,Mike,Smith,mike.smith@email.com,+1-922-796-1964,73,Female,Los Angeles,NY,2023-07-21,12,2726.45,Inactive
+CUST1326,David,Moore,david.moore@email.com,+1-698-769-8279,41,Female,Los Angeles,AZ,2024-09-14,29,1143.21,VIP
+CUST1327,David,Moore,david.moore@email.com,+1-376-955-1458,61,Female,Chicago,TX,2023-01-01,17,4984.87,Active
+CUST1328,David,Davis,david.davis@email.com,+1-184-428-5683,43,Female,Houston,TX,2024-04-25,26,772.79,Active
+CUST1329,Chris,Davis,chris.davis@email.com,+1-251-213-1999,52,Male,Chicago,TX,2023-09-12,4,1032.44,Inactive
+CUST1330,Tom,Taylor,tom.taylor@email.com,+1-951-525-7517,72,Male,New York,CA,2024-11-02,10,190.31,Inactive
+CUST1331,John,Jackson,john.jackson@email.com,+1-489-185-4057,39,Male,New York,NY,2024-05-11,38,2623.59,Active
+CUST1332,John,Brown,john.brown@email.com,+1-431-292-5276,44,Male,Los Angeles,CA,2024-03-23,11,4202.05,Inactive
+CUST1333,Jane,Brown,jane.brown@email.com,+1-286-522-8833,23,Female,Houston,CA,2023-10-22,19,3513.6,VIP
+CUST1334,Tom,Davis,tom.davis@email.com,+1-704-233-9281,53,Male,New York,NY,2023-03-19,19,1816.19,VIP
+CUST1335,Chris,Thomas,chris.thomas@email.com,+1-913-147-7860,79,Male,Chicago,NY,2023-12-16,11,551.61,VIP
+CUST1336,Sarah,Jackson,sarah.jackson@email.com,+1-885-139-8825,67,Female,Chicago,TX,2023-04-10,46,610.58,Inactive
+CUST1337,Jane,Brown,jane.brown@email.com,+1-942-978-4068,47,Male,Houston,CA,2023-08-01,2,692.04,VIP
+CUST1338,Sarah,Johnson,sarah.johnson@email.com,+1-445-440-1880,61,Female,Chicago,TX,2023-01-18,36,1962.7,Active
+CUST1339,Anna,Davis,anna.davis@email.com,+1-670-315-6565,42,Female,Houston,NY,2024-05-23,5,550.44,Inactive
+CUST1340,Jane,Johnson,jane.johnson@email.com,+1-409-224-1272,72,Male,Houston,IL,2024-05-02,21,287.57,Inactive
+CUST1341,David,Anderson,david.anderson@email.com,+1-352-981-8541,40,Female,Los Angeles,TX,2024-09-16,6,4712.87,Inactive
+CUST1342,Tom,Jackson,tom.jackson@email.com,+1-370-498-2219,37,Female,Phoenix,AZ,2024-08-27,33,4422.7,Active
+CUST1343,Anna,Davis,anna.davis@email.com,+1-342-135-9370,71,Male,Phoenix,AZ,2024-11-24,8,3289.89,Active
+CUST1344,Lisa,Johnson,lisa.johnson@email.com,+1-903-347-5767,67,Male,New York,IL,2024-01-15,30,974.99,VIP
+CUST1345,Sarah,Thomas,sarah.thomas@email.com,+1-342-665-8944,70,Female,New York,AZ,2024-05-02,13,2242.34,Active
+CUST1346,Lisa,Wilson,lisa.wilson@email.com,+1-892-854-4656,27,Female,Los Angeles,TX,2023-08-11,50,324.96,Inactive
+CUST1347,Emma,Davis,emma.davis@email.com,+1-257-513-7936,61,Female,Phoenix,IL,2023-04-18,29,1508.53,Inactive
+CUST1348,Tom,Johnson,tom.johnson@email.com,+1-569-235-6617,53,Male,Houston,TX,2024-11-08,46,2966.18,Active
+CUST1349,Tom,Smith,tom.smith@email.com,+1-170-710-4900,27,Male,Chicago,TX,2024-09-13,28,1232.88,Inactive
+CUST1350,Mike,Thomas,mike.thomas@email.com,+1-185-838-5672,63,Female,Houston,CA,2023-10-29,49,903.54,Active
+CUST1351,David,Smith,david.smith@email.com,+1-472-661-3807,55,Male,Chicago,IL,2024-02-19,47,4469.07,Active
+CUST1352,Lisa,Thomas,lisa.thomas@email.com,+1-978-352-4510,58,Female,Los Angeles,AZ,2024-11-22,48,4317.03,Inactive
+CUST1353,Anna,Brown,anna.brown@email.com,+1-212-368-3235,49,Male,Los Angeles,TX,2024-01-08,9,683.92,VIP
+CUST1354,Tom,Johnson,tom.johnson@email.com,+1-231-258-2882,70,Female,New York,CA,2023-07-21,12,4801.19,Inactive
+CUST1355,John,Thomas,john.thomas@email.com,+1-987-532-7604,25,Female,Los Angeles,IL,2023-05-20,24,4567.81,Inactive
+CUST1356,Sarah,Smith,sarah.smith@email.com,+1-579-246-3102,47,Female,Chicago,AZ,2024-11-02,44,4550.38,VIP
+CUST1357,Jane,Smith,jane.smith@email.com,+1-795-770-2710,26,Male,Los Angeles,AZ,2024-08-28,17,2950.74,VIP
+CUST1358,John,Smith,john.smith@email.com,+1-300-389-4370,38,Female,Los Angeles,NY,2024-07-25,27,347.04,Inactive
+CUST1359,David,Davis,david.davis@email.com,+1-564-871-2473,33,Female,Phoenix,NY,2024-12-09,24,4983.31,Active
+CUST1360,Chris,Wilson,chris.wilson@email.com,+1-257-790-3015,48,Male,Houston,AZ,2023-02-23,49,3353.28,Active
+CUST1361,John,Anderson,john.anderson@email.com,+1-570-803-1330,33,Female,Phoenix,CA,2023-05-13,5,3081.48,Active
+CUST1362,Sarah,Moore,sarah.moore@email.com,+1-841-328-6091,62,Female,Los Angeles,IL,2023-03-31,20,4394.44,VIP
+CUST1363,Lisa,Davis,lisa.davis@email.com,+1-288-518-3782,34,Female,New York,CA,2023-07-14,17,464.55,VIP
+CUST1364,David,Anderson,david.anderson@email.com,+1-698-645-9111,77,Male,Phoenix,TX,2024-08-28,49,998.73,VIP
+CUST1365,Jane,Taylor,jane.taylor@email.com,+1-869-623-6158,48,Male,Houston,NY,2023-03-19,12,3721.8,Inactive
+CUST1366,Sarah,Davis,sarah.davis@email.com,+1-122-739-3080,69,Female,Chicago,AZ,2024-08-19,35,3706.14,Active
+CUST1367,Jane,Anderson,jane.anderson@email.com,+1-102-351-5136,44,Male,New York,IL,2023-07-04,30,3684.98,Inactive
+CUST1368,Tom,Anderson,tom.anderson@email.com,+1-637-656-5089,65,Male,Houston,CA,2023-01-17,37,4572.59,Inactive
+CUST1369,Sarah,Moore,sarah.moore@email.com,+1-803-485-1881,72,Female,Phoenix,IL,2024-02-12,23,995.33,VIP
+CUST1370,Emma,Wilson,emma.wilson@email.com,+1-120-136-2902,46,Male,Los Angeles,NY,2023-02-12,42,1347.64,VIP
+CUST1371,Lisa,Moore,lisa.moore@email.com,+1-553-177-2655,74,Female,Chicago,AZ,2024-06-07,7,1328.99,Inactive
+CUST1372,Mike,Moore,mike.moore@email.com,+1-671-195-2163,46,Female,Chicago,CA,2023-08-09,37,3183.04,Inactive
+CUST1373,Anna,Smith,anna.smith@email.com,+1-942-171-6100,26,Male,Los Angeles,TX,2024-10-22,42,324.49,Inactive
+CUST1374,Emma,Wilson,emma.wilson@email.com,+1-207-279-9330,65,Female,Los Angeles,IL,2023-05-16,47,2580.63,Inactive
+CUST1375,Anna,Taylor,anna.taylor@email.com,+1-196-566-6657,50,Female,Los Angeles,IL,2023-11-20,1,1900.49,VIP
+CUST1376,Emma,Jackson,emma.jackson@email.com,+1-686-110-9943,80,Male,Houston,TX,2024-02-06,43,787.77,Active
+CUST1377,Lisa,Moore,lisa.moore@email.com,+1-717-343-9527,23,Male,Chicago,NY,2023-06-21,1,4355.14,Inactive
+CUST1378,Tom,Johnson,tom.johnson@email.com,+1-581-588-3179,71,Female,Houston,NY,2024-01-27,48,2708.96,Active
+CUST1379,Lisa,Davis,lisa.davis@email.com,+1-396-306-4976,20,Male,Phoenix,NY,2023-11-30,17,353.32,Inactive
+CUST1380,Tom,Taylor,tom.taylor@email.com,+1-525-958-1405,24,Female,Chicago,AZ,2023-05-06,7,122.09,Inactive
+CUST1381,Jane,Taylor,jane.taylor@email.com,+1-695-313-9543,32,Male,New York,TX,2024-02-02,49,2442.76,VIP
+CUST1382,David,Wilson,david.wilson@email.com,+1-139-454-4332,52,Female,New York,AZ,2024-07-24,29,3349.77,Active
+CUST1383,Jane,Thomas,jane.thomas@email.com,+1-944-739-7513,43,Female,Houston,NY,2023-09-21,33,3067.97,Inactive
+CUST1384,Chris,Anderson,chris.anderson@email.com,+1-726-407-8068,55,Male,Los Angeles,NY,2023-03-13,20,1797.5,Inactive
+CUST1385,Mike,Thomas,mike.thomas@email.com,+1-414-701-2452,41,Male,New York,CA,2023-06-16,1,2558.4,Inactive
+CUST1386,Anna,Thomas,anna.thomas@email.com,+1-188-520-9292,42,Male,Los Angeles,NY,2023-12-28,47,3026.79,Active
+CUST1387,Anna,Anderson,anna.anderson@email.com,+1-705-411-3566,25,Female,Los Angeles,NY,2024-08-21,46,926.79,VIP
+CUST1388,Emma,Johnson,emma.johnson@email.com,+1-420-622-7643,57,Male,Phoenix,CA,2023-03-12,2,2127.91,Inactive
+CUST1389,Chris,Taylor,chris.taylor@email.com,+1-363-869-2508,27,Male,Phoenix,IL,2023-03-05,2,720.28,Active
+CUST1390,Sarah,Anderson,sarah.anderson@email.com,+1-998-501-3072,47,Female,Phoenix,TX,2023-01-22,28,3479.55,Inactive
+CUST1391,Mike,Wilson,mike.wilson@email.com,+1-563-583-6833,78,Female,New York,TX,2024-05-26,33,2734.7,Inactive
+CUST1392,David,Thomas,david.thomas@email.com,+1-359-518-2143,75,Female,Los Angeles,CA,2024-08-17,23,260.64,Inactive
+CUST1393,Emma,Johnson,emma.johnson@email.com,+1-339-606-5869,68,Female,Houston,IL,2023-01-06,41,3936.05,Inactive
+CUST1394,Sarah,Thomas,sarah.thomas@email.com,+1-857-537-3713,61,Male,New York,IL,2023-10-28,45,1573.7,Active
+CUST1395,Tom,Brown,tom.brown@email.com,+1-464-919-1998,57,Female,Phoenix,CA,2023-07-28,42,1429.45,Inactive
+CUST1396,Anna,Moore,anna.moore@email.com,+1-654-110-7552,26,Female,Phoenix,NY,2024-06-02,47,2012.57,Active
+CUST1397,Chris,Davis,chris.davis@email.com,+1-747-728-6980,34,Female,Chicago,NY,2023-03-20,19,3731.42,VIP
+CUST1398,Emma,Smith,emma.smith@email.com,+1-142-618-8256,68,Female,Houston,TX,2024-06-23,10,4082.52,Inactive
+CUST1399,Emma,Davis,emma.davis@email.com,+1-183-571-5788,39,Male,Chicago,AZ,2024-12-14,13,2544.47,Active
+CUST1400,John,Johnson,john.johnson@email.com,+1-461-259-4851,31,Male,Los Angeles,TX,2024-09-26,40,4989.97,Active
+CUST1401,Tom,Anderson,tom.anderson@email.com,+1-272-516-6645,37,Female,Los Angeles,CA,2024-06-25,16,184.7,Inactive
+CUST1402,Sarah,Taylor,sarah.taylor@email.com,+1-508-373-7933,73,Male,New York,CA,2023-10-21,9,3076.76,VIP
+CUST1403,Chris,Davis,chris.davis@email.com,+1-655-877-9237,65,Female,Houston,AZ,2023-03-23,11,126.56,Active
+CUST1404,Chris,Johnson,chris.johnson@email.com,+1-189-580-5371,79,Female,Los Angeles,TX,2024-08-13,37,996.79,Active
+CUST1405,Tom,Anderson,tom.anderson@email.com,+1-630-140-2908,70,Male,Phoenix,AZ,2024-07-22,14,2197.61,Active
+CUST1406,John,Smith,john.smith@email.com,+1-361-208-8677,24,Male,Houston,CA,2024-06-23,42,558.91,Inactive
+CUST1407,Lisa,Wilson,lisa.wilson@email.com,+1-466-192-6178,34,Male,Los Angeles,IL,2023-12-26,40,228.62,VIP
+CUST1408,Lisa,Brown,lisa.brown@email.com,+1-388-197-8030,42,Female,New York,IL,2023-02-15,18,3086.05,Active
+CUST1409,Mike,Taylor,mike.taylor@email.com,+1-312-340-6393,74,Female,Los Angeles,AZ,2024-09-28,12,270.58,Active
+CUST1410,Anna,Taylor,anna.taylor@email.com,+1-692-629-6939,71,Female,Phoenix,NY,2024-12-24,22,2089.72,VIP
+CUST1411,Chris,Brown,chris.brown@email.com,+1-529-434-9612,48,Male,Houston,IL,2024-02-28,43,4886.65,Inactive
+CUST1412,Tom,Johnson,tom.johnson@email.com,+1-732-868-6003,45,Female,Los Angeles,TX,2024-05-24,29,1987.76,VIP
+CUST1413,Lisa,Thomas,lisa.thomas@email.com,+1-219-403-8030,73,Female,Houston,NY,2024-04-21,37,2018.86,VIP
+CUST1414,Tom,Johnson,tom.johnson@email.com,+1-731-904-8334,73,Female,Phoenix,AZ,2023-03-03,24,1675.31,Active
+CUST1415,Emma,Thomas,emma.thomas@email.com,+1-494-979-3211,24,Male,Phoenix,IL,2024-01-13,22,4367.39,VIP
+CUST1416,Jane,Moore,jane.moore@email.com,+1-860-572-8015,49,Male,Chicago,CA,2024-05-11,9,555.12,Inactive
+CUST1417,David,Thomas,david.thomas@email.com,+1-582-840-2636,33,Male,Phoenix,TX,2023-09-17,1,2674.25,Active
+CUST1418,Jane,Davis,jane.davis@email.com,+1-548-405-6567,37,Female,Chicago,IL,2023-10-10,36,1991.04,Inactive
+CUST1419,Emma,Jackson,emma.jackson@email.com,+1-216-475-6398,48,Female,New York,AZ,2024-10-07,27,4600.76,Active
+CUST1420,Tom,Anderson,tom.anderson@email.com,+1-323-918-4839,61,Male,Chicago,IL,2024-05-30,40,108.54,Active
+CUST1421,Tom,Davis,tom.davis@email.com,+1-591-406-8041,30,Female,Phoenix,AZ,2023-09-04,45,2557.55,VIP
+CUST1422,Chris,Smith,chris.smith@email.com,+1-338-589-1577,75,Male,Phoenix,NY,2023-11-27,18,3308.05,VIP
+CUST1423,Sarah,Smith,sarah.smith@email.com,+1-741-955-9180,73,Male,New York,AZ,2023-10-11,19,3879.4,Inactive
+CUST1424,Anna,Jackson,anna.jackson@email.com,+1-347-718-4722,63,Female,New York,IL,2023-06-13,20,1378.03,Active
+CUST1425,David,Thomas,david.thomas@email.com,+1-643-347-1198,72,Female,Chicago,TX,2023-07-07,15,217.45,Inactive
+CUST1426,Jane,Anderson,jane.anderson@email.com,+1-440-148-3310,52,Female,Los Angeles,NY,2024-05-02,20,4764.41,Inactive
+CUST1427,Tom,Anderson,tom.anderson@email.com,+1-538-202-3451,41,Male,Phoenix,TX,2024-11-10,37,1596.67,VIP
+CUST1428,Lisa,Davis,lisa.davis@email.com,+1-897-367-6526,29,Female,Houston,TX,2024-01-29,48,3479.68,Active
+CUST1429,John,Wilson,john.wilson@email.com,+1-613-275-9112,50,Male,Houston,TX,2023-10-13,50,492.47,Inactive
+CUST1430,Tom,Davis,tom.davis@email.com,+1-148-788-1287,33,Female,Houston,IL,2023-10-15,9,4850.72,VIP
+CUST1431,David,Taylor,david.taylor@email.com,+1-128-743-7100,24,Female,Phoenix,NY,2024-11-14,43,3404.02,Active
+CUST1432,Lisa,Smith,lisa.smith@email.com,+1-266-939-7239,75,Female,Chicago,CA,2023-10-31,13,2574.57,VIP
+CUST1433,Anna,Brown,anna.brown@email.com,+1-801-407-9116,73,Female,Chicago,IL,2024-07-17,18,1965.91,Active
+CUST1434,Mike,Johnson,mike.johnson@email.com,+1-288-620-6272,72,Male,New York,CA,2023-05-05,50,3057.42,VIP
+CUST1435,Lisa,Jackson,lisa.jackson@email.com,+1-474-553-4238,70,Male,Phoenix,NY,2024-01-21,42,4437.6,VIP
+CUST1436,David,Moore,david.moore@email.com,+1-300-564-3002,66,Female,Phoenix,IL,2023-01-08,27,2215.58,VIP
+CUST1437,Emma,Wilson,emma.wilson@email.com,+1-894-133-8829,72,Female,Chicago,AZ,2023-05-09,36,1022.71,Inactive
+CUST1438,Jane,Brown,jane.brown@email.com,+1-857-640-9012,76,Male,Houston,NY,2024-01-01,20,3607.86,VIP
+CUST1439,Anna,Johnson,anna.johnson@email.com,+1-919-515-9565,68,Male,Houston,TX,2023-02-01,13,4739.66,Inactive
+CUST1440,Sarah,Davis,sarah.davis@email.com,+1-815-296-6914,49,Female,Los Angeles,CA,2023-03-19,40,4724.67,VIP
+CUST1441,Emma,Davis,emma.davis@email.com,+1-751-846-8272,54,Female,Phoenix,TX,2024-05-03,15,3256.74,VIP
+CUST1442,Sarah,Smith,sarah.smith@email.com,+1-934-324-7558,51,Male,Houston,IL,2024-04-09,35,4824.88,VIP
+CUST1443,Jane,Davis,jane.davis@email.com,+1-599-146-6190,21,Male,Phoenix,IL,2023-01-27,2,314.44,VIP
+CUST1444,Anna,Moore,anna.moore@email.com,+1-972-610-1785,45,Male,Houston,CA,2023-09-23,41,1060.38,Active
+CUST1445,Chris,Taylor,chris.taylor@email.com,+1-157-629-7999,70,Male,Los Angeles,CA,2024-03-10,27,1373.42,Inactive
+CUST1446,Lisa,Wilson,lisa.wilson@email.com,+1-579-323-2401,62,Male,New York,TX,2023-01-12,48,4879.88,Active
+CUST1447,Mike,Jackson,mike.jackson@email.com,+1-277-324-9234,69,Male,Los Angeles,NY,2024-04-17,31,1757.86,Inactive
+CUST1448,Anna,Wilson,anna.wilson@email.com,+1-692-114-7537,22,Male,Houston,CA,2024-07-09,13,2020.32,Inactive
+CUST1449,Emma,Taylor,emma.taylor@email.com,+1-126-196-5307,49,Female,Chicago,CA,2024-05-26,44,3700.86,VIP
+CUST1450,John,Jackson,john.jackson@email.com,+1-597-825-7916,57,Female,Phoenix,AZ,2023-06-22,2,1836.15,Active
+CUST1451,John,Jackson,john.jackson@email.com,+1-817-912-6932,68,Female,Los Angeles,TX,2023-02-27,50,3411.87,VIP
+CUST1452,Anna,Taylor,anna.taylor@email.com,+1-792-522-1865,24,Male,Houston,AZ,2023-12-15,12,977.28,Active
+CUST1453,Mike,Davis,mike.davis@email.com,+1-433-111-6489,56,Female,New York,IL,2023-05-18,2,2641.69,VIP
+CUST1454,Emma,Moore,emma.moore@email.com,+1-782-707-2417,78,Female,Houston,TX,2024-08-16,43,3523.1,Inactive
+CUST1455,Tom,Taylor,tom.taylor@email.com,+1-274-267-1940,38,Female,Chicago,AZ,2023-11-18,6,3293.88,VIP
+CUST1456,David,Taylor,david.taylor@email.com,+1-698-491-9864,23,Male,Chicago,AZ,2023-02-20,50,3864.83,Active
+CUST1457,Lisa,Taylor,lisa.taylor@email.com,+1-800-712-2865,46,Male,New York,TX,2024-08-09,27,3057.16,Inactive
+CUST1458,Sarah,Smith,sarah.smith@email.com,+1-824-846-9677,64,Female,Los Angeles,NY,2023-10-02,4,1796.92,Active
+CUST1459,John,Smith,john.smith@email.com,+1-474-659-3322,36,Male,Houston,AZ,2023-08-17,18,3574.82,VIP
+CUST1460,Tom,Davis,tom.davis@email.com,+1-658-749-9634,65,Female,New York,NY,2024-12-03,7,4266.92,VIP
+CUST1461,Jane,Johnson,jane.johnson@email.com,+1-504-217-9343,50,Male,Chicago,AZ,2023-04-24,45,1200.9,Inactive
+CUST1462,Jane,Anderson,jane.anderson@email.com,+1-261-892-6200,70,Male,Phoenix,IL,2024-10-20,25,4154.98,VIP
+CUST1463,Mike,Taylor,mike.taylor@email.com,+1-775-820-5143,25,Male,Los Angeles,NY,2023-05-29,14,1245.09,Active
+CUST1464,Anna,Brown,anna.brown@email.com,+1-410-914-3684,79,Male,Phoenix,NY,2023-06-18,27,4563.59,VIP
+CUST1465,Jane,Davis,jane.davis@email.com,+1-576-983-8041,35,Male,Houston,CA,2024-12-19,50,1468.15,Inactive
+CUST1466,Lisa,Davis,lisa.davis@email.com,+1-322-284-5207,31,Female,New York,TX,2023-05-10,9,853.9,Active
+CUST1467,Jane,Davis,jane.davis@email.com,+1-438-300-1146,58,Female,Chicago,CA,2023-10-11,1,3657.11,Inactive
+CUST1468,Mike,Brown,mike.brown@email.com,+1-169-184-5585,34,Female,Phoenix,NY,2024-07-08,19,3929.96,Active
+CUST1469,Mike,Davis,mike.davis@email.com,+1-167-544-2533,20,Male,Houston,IL,2024-06-13,34,2488.15,Inactive
+CUST1470,Chris,Brown,chris.brown@email.com,+1-758-905-9010,25,Male,Los Angeles,IL,2024-10-16,30,1195.36,Active
+CUST1471,Mike,Johnson,mike.johnson@email.com,+1-140-909-1337,55,Male,Phoenix,AZ,2023-06-22,46,4927.81,VIP
+CUST1472,Chris,Smith,chris.smith@email.com,+1-557-899-4283,49,Female,New York,CA,2023-08-09,19,2142.53,Inactive
+CUST1473,Tom,Johnson,tom.johnson@email.com,+1-554-483-1885,53,Male,New York,AZ,2024-07-15,17,1305.49,VIP
+CUST1474,Lisa,Johnson,lisa.johnson@email.com,+1-608-715-6133,20,Male,Phoenix,NY,2024-08-06,14,2152.73,Active
+CUST1475,Jane,Brown,jane.brown@email.com,+1-299-123-5754,76,Male,Houston,NY,2024-03-01,48,2055.26,Active
+CUST1476,Lisa,Brown,lisa.brown@email.com,+1-248-245-3652,28,Male,Phoenix,IL,2023-06-18,48,235.87,Inactive
+CUST1477,Emma,Wilson,emma.wilson@email.com,+1-301-797-3265,23,Female,Chicago,CA,2023-06-19,4,4889.26,Inactive
+CUST1478,Jane,Wilson,jane.wilson@email.com,+1-520-661-4482,23,Female,Los Angeles,NY,2023-06-20,26,3172.68,VIP
+CUST1479,Mike,Johnson,mike.johnson@email.com,+1-556-622-2719,68,Male,Los Angeles,AZ,2023-01-01,18,4053.18,Active
+CUST1480,Jane,Brown,jane.brown@email.com,+1-181-195-6839,48,Male,Los Angeles,NY,2024-09-30,2,2920.97,Inactive
+CUST1481,Jane,Davis,jane.davis@email.com,+1-844-573-6153,37,Male,Chicago,AZ,2024-04-22,29,3281.74,Inactive
+CUST1482,Lisa,Brown,lisa.brown@email.com,+1-656-581-7286,40,Male,Chicago,TX,2023-12-10,10,3086.41,Inactive
+CUST1483,David,Wilson,david.wilson@email.com,+1-359-954-8235,21,Female,Chicago,CA,2024-09-27,36,681.56,VIP
+CUST1484,Tom,Davis,tom.davis@email.com,+1-584-525-7817,19,Female,Los Angeles,TX,2023-06-28,7,447.41,VIP
+CUST1485,Sarah,Wilson,sarah.wilson@email.com,+1-566-794-3886,66,Female,Phoenix,NY,2024-03-09,39,2185.29,Inactive
+CUST1486,Chris,Jackson,chris.jackson@email.com,+1-554-576-7945,50,Female,Chicago,CA,2024-09-24,1,1646.84,Inactive
+CUST1487,Emma,Brown,emma.brown@email.com,+1-586-165-7835,78,Male,Phoenix,NY,2024-07-07,49,3506.5,VIP
+CUST1488,Tom,Taylor,tom.taylor@email.com,+1-749-205-8015,41,Male,Chicago,IL,2023-06-27,28,1595.58,VIP
+CUST1489,Anna,Brown,anna.brown@email.com,+1-920-576-6380,30,Male,Phoenix,IL,2023-06-29,32,725.9,Inactive
+CUST1490,Lisa,Smith,lisa.smith@email.com,+1-366-164-8905,59,Male,Houston,NY,2024-01-24,13,818.22,Inactive
+CUST1491,Chris,Jackson,chris.jackson@email.com,+1-434-770-1008,40,Female,Los Angeles,TX,2023-12-06,38,755.57,VIP
+CUST1492,John,Thomas,john.thomas@email.com,+1-750-723-2265,80,Male,Chicago,CA,2023-06-08,8,2308.68,Inactive
+CUST1493,John,Wilson,john.wilson@email.com,+1-674-841-8089,56,Male,Chicago,TX,2024-08-02,12,2946.92,Active
+CUST1494,Jane,Wilson,jane.wilson@email.com,+1-953-591-6614,72,Female,Chicago,TX,2023-07-13,48,1102.25,Inactive
+CUST1495,Mike,Thomas,mike.thomas@email.com,+1-394-857-7235,55,Male,Phoenix,CA,2023-10-03,36,1511.4,Active
+CUST1496,Anna,Thomas,anna.thomas@email.com,+1-412-549-7250,45,Male,Phoenix,CA,2024-10-27,3,2257.3,Inactive
+CUST1497,Emma,Anderson,emma.anderson@email.com,+1-504-329-7164,22,Male,Houston,AZ,2023-07-08,19,3035.94,Inactive
+CUST1498,Jane,Moore,jane.moore@email.com,+1-808-645-8629,27,Female,Los Angeles,NY,2024-08-19,25,891.89,Inactive
+CUST1499,David,Jackson,david.jackson@email.com,+1-384-570-4190,28,Male,Phoenix,TX,2023-11-02,16,592.03,VIP
+CUST1500,David,Thomas,david.thomas@email.com,+1-549-720-3699,53,Male,Los Angeles,IL,2023-08-25,15,4064.59,Active
+CUST1501,Mike,Thomas,mike.thomas@email.com,+1-799-116-8382,23,Female,Phoenix,CA,2024-04-24,14,3467.07,VIP
+CUST1502,David,Moore,david.moore@email.com,+1-588-100-2563,63,Male,Los Angeles,CA,2023-10-27,25,4185.33,Active
+CUST1503,Emma,Davis,emma.davis@email.com,+1-412-827-2727,67,Female,Houston,CA,2023-11-23,10,1339.59,Active
+CUST1504,John,Taylor,john.taylor@email.com,+1-504-853-7328,23,Female,Los Angeles,TX,2023-09-03,44,178.62,VIP
+CUST1505,Anna,Johnson,anna.johnson@email.com,+1-553-483-6817,34,Male,New York,IL,2023-02-06,32,4915.21,VIP
+CUST1506,Emma,Anderson,emma.anderson@email.com,+1-888-700-3039,71,Female,Chicago,AZ,2024-03-31,14,4201.36,Inactive
+CUST1507,Chris,Wilson,chris.wilson@email.com,+1-376-324-5785,31,Male,Phoenix,TX,2023-10-13,29,2806.99,Active
+CUST1508,David,Thomas,david.thomas@email.com,+1-295-316-8099,69,Male,Los Angeles,NY,2023-10-12,21,290.68,VIP
+CUST1509,Lisa,Brown,lisa.brown@email.com,+1-261-420-3822,70,Male,Los Angeles,IL,2023-08-01,18,888.78,Active
+CUST1510,John,Brown,john.brown@email.com,+1-588-530-5514,40,Female,Houston,IL,2023-02-22,4,3655.3,Active
+CUST1511,Chris,Taylor,chris.taylor@email.com,+1-255-378-2407,41,Male,Los Angeles,AZ,2023-06-01,46,3895.39,VIP
+CUST1512,Tom,Anderson,tom.anderson@email.com,+1-997-966-4379,71,Female,Phoenix,NY,2023-12-27,48,2444.42,Inactive
+CUST1513,Tom,Johnson,tom.johnson@email.com,+1-554-831-4056,27,Female,Los Angeles,IL,2024-05-18,36,597.69,VIP
+CUST1514,Sarah,Taylor,sarah.taylor@email.com,+1-591-493-7983,55,Male,Houston,NY,2024-10-29,41,1154.39,VIP
+CUST1515,Lisa,Moore,lisa.moore@email.com,+1-177-530-1833,31,Female,Phoenix,IL,2024-10-29,29,355.66,Inactive
+CUST1516,Emma,Thomas,emma.thomas@email.com,+1-887-252-3634,79,Male,Los Angeles,TX,2023-02-14,21,2954.3,Active
+CUST1517,Chris,Johnson,chris.johnson@email.com,+1-541-112-2539,67,Female,Los Angeles,IL,2024-01-10,24,306.37,Inactive
+CUST1518,Sarah,Thomas,sarah.thomas@email.com,+1-536-465-5983,63,Female,Houston,NY,2024-04-30,38,3246.54,Active
+CUST1519,Lisa,Anderson,lisa.anderson@email.com,+1-771-411-5390,60,Female,Los Angeles,NY,2024-10-30,6,957.2,Active
+CUST1520,Tom,Taylor,tom.taylor@email.com,+1-896-311-2864,79,Male,New York,NY,2023-11-02,37,2988.44,VIP
+CUST1521,Tom,Taylor,tom.taylor@email.com,+1-599-215-7985,43,Male,New York,IL,2024-10-08,11,549.17,Inactive
+CUST1522,Sarah,Smith,sarah.smith@email.com,+1-288-682-7638,50,Male,Phoenix,IL,2024-06-08,45,1889.47,Active
+CUST1523,Jane,Davis,jane.davis@email.com,+1-334-157-9671,21,Male,New York,TX,2024-02-24,21,1413.38,Active
+CUST1524,David,Jackson,david.jackson@email.com,+1-355-962-2890,77,Female,Houston,TX,2023-01-01,38,1395.7,Active
+CUST1525,Tom,Thomas,tom.thomas@email.com,+1-342-849-8195,59,Male,New York,NY,2023-02-03,27,1619.01,Active
+CUST1526,Emma,Moore,emma.moore@email.com,+1-891-489-1802,21,Female,Houston,AZ,2023-07-12,8,901.97,Inactive
+CUST1527,Tom,Moore,tom.moore@email.com,+1-155-746-9352,77,Female,Phoenix,TX,2024-01-10,44,2300.19,Inactive
+CUST1528,Lisa,Jackson,lisa.jackson@email.com,+1-800-102-4329,46,Male,Los Angeles,NY,2023-01-29,1,1506.21,VIP
+CUST1529,Anna,Moore,anna.moore@email.com,+1-212-434-3142,53,Female,Chicago,AZ,2024-08-17,6,1543.56,VIP
+CUST1530,Jane,Moore,jane.moore@email.com,+1-495-913-7492,18,Male,Chicago,TX,2023-05-22,21,3153.88,Active
+CUST1531,Jane,Taylor,jane.taylor@email.com,+1-938-191-3758,29,Female,Chicago,AZ,2024-07-03,44,3892.99,VIP
+CUST1532,Jane,Wilson,jane.wilson@email.com,+1-231-733-8743,45,Male,Houston,CA,2023-08-05,1,4284.32,VIP
+CUST1533,Lisa,Moore,lisa.moore@email.com,+1-142-977-4449,71,Female,Phoenix,CA,2024-06-10,35,3520.65,Active
+CUST1534,Tom,Thomas,tom.thomas@email.com,+1-644-484-8669,34,Male,Phoenix,TX,2024-08-08,43,1542.22,Inactive
+CUST1535,Chris,Thomas,chris.thomas@email.com,+1-159-500-4646,62,Male,Chicago,NY,2024-06-02,6,2048.54,Active
+CUST1536,Anna,Davis,anna.davis@email.com,+1-981-838-2700,78,Male,Chicago,TX,2023-12-19,42,4442.53,VIP
+CUST1537,Chris,Jackson,chris.jackson@email.com,+1-814-614-8516,26,Male,Phoenix,IL,2024-01-01,15,1007.86,Inactive
+CUST1538,Chris,Smith,chris.smith@email.com,+1-333-260-5873,48,Male,Houston,AZ,2023-10-06,30,2940.05,VIP
+CUST1539,Lisa,Brown,lisa.brown@email.com,+1-340-658-5524,58,Female,Houston,IL,2023-04-20,32,3112.03,Active
+CUST1540,Lisa,Taylor,lisa.taylor@email.com,+1-452-810-7222,56,Male,Houston,IL,2024-02-19,26,4107.56,Inactive
+CUST1541,Anna,Thomas,anna.thomas@email.com,+1-640-903-3222,20,Male,New York,CA,2024-04-20,9,1500.74,VIP
+CUST1542,Lisa,Davis,lisa.davis@email.com,+1-146-658-7122,51,Male,New York,CA,2024-02-27,42,573.67,Active
+CUST1543,Mike,Thomas,mike.thomas@email.com,+1-773-520-1220,28,Female,Houston,TX,2024-01-22,45,2116.81,Active
+CUST1544,John,Anderson,john.anderson@email.com,+1-501-736-2297,39,Male,Los Angeles,NY,2024-12-25,5,1692.28,VIP
+CUST1545,Mike,Davis,mike.davis@email.com,+1-241-990-2182,50,Female,Houston,TX,2023-01-05,23,3682.67,VIP
+CUST1546,Chris,Brown,chris.brown@email.com,+1-999-692-4046,48,Male,New York,CA,2024-04-21,11,2380.77,Inactive
+CUST1547,Chris,Wilson,chris.wilson@email.com,+1-188-193-3691,28,Female,Phoenix,TX,2024-12-16,35,3860.13,Active
+CUST1548,Chris,Anderson,chris.anderson@email.com,+1-797-440-8830,43,Female,Los Angeles,AZ,2024-02-08,31,1351.17,Inactive
+CUST1549,Jane,Brown,jane.brown@email.com,+1-130-709-4035,71,Female,Houston,AZ,2024-09-29,1,3308.31,Inactive
+CUST1550,Lisa,Jackson,lisa.jackson@email.com,+1-813-420-7738,76,Male,Phoenix,TX,2024-07-22,10,118.04,Active
+CUST1551,Anna,Johnson,anna.johnson@email.com,+1-619-999-6927,54,Male,Houston,NY,2024-03-08,37,1796.73,Active
+CUST1552,Tom,Davis,tom.davis@email.com,+1-761-286-7674,63,Female,Phoenix,NY,2023-03-03,44,785.3,Inactive
+CUST1553,Anna,Brown,anna.brown@email.com,+1-300-687-9161,49,Female,Houston,TX,2024-03-16,22,4439.41,Inactive
+CUST1554,Emma,Moore,emma.moore@email.com,+1-964-182-4959,23,Female,Chicago,IL,2024-01-21,29,406.61,Active
+CUST1555,Anna,Jackson,anna.jackson@email.com,+1-259-866-6024,43,Male,Chicago,TX,2023-10-11,38,1385.81,Active
+CUST1556,Jane,Johnson,jane.johnson@email.com,+1-936-921-4546,34,Male,Los Angeles,IL,2023-03-14,2,2335.73,Inactive
+CUST1557,Anna,Thomas,anna.thomas@email.com,+1-824-973-7203,18,Female,Phoenix,NY,2024-07-02,40,4440.8,VIP
+CUST1558,Chris,Thomas,chris.thomas@email.com,+1-236-700-6460,74,Female,Houston,NY,2023-03-01,32,4469.83,Inactive
+CUST1559,Emma,Johnson,emma.johnson@email.com,+1-896-174-6934,22,Male,Los Angeles,NY,2023-08-31,3,2739.45,VIP
+CUST1560,David,Taylor,david.taylor@email.com,+1-558-584-9961,27,Male,Houston,TX,2024-12-22,26,630.15,Inactive
+CUST1561,John,Anderson,john.anderson@email.com,+1-716-755-1581,26,Male,New York,NY,2023-10-01,22,4959.12,Inactive
+CUST1562,Jane,Brown,jane.brown@email.com,+1-725-627-6394,25,Female,Phoenix,TX,2023-10-10,22,4682.04,VIP
+CUST1563,Tom,Jackson,tom.jackson@email.com,+1-266-560-1439,67,Male,Chicago,TX,2024-09-17,13,516.48,VIP
+CUST1564,Emma,Anderson,emma.anderson@email.com,+1-993-343-8331,45,Female,New York,AZ,2023-04-21,29,2554.19,VIP
+CUST1565,Anna,Jackson,anna.jackson@email.com,+1-327-234-2302,54,Male,Phoenix,TX,2024-11-04,16,3879.17,Inactive
+CUST1566,Anna,Smith,anna.smith@email.com,+1-257-776-8213,61,Female,Los Angeles,TX,2024-12-05,23,1529.75,VIP
+CUST1567,Mike,Brown,mike.brown@email.com,+1-719-656-6624,27,Female,Houston,TX,2023-08-16,32,274.95,Inactive
+CUST1568,John,Wilson,john.wilson@email.com,+1-921-846-9107,18,Male,New York,NY,2023-12-31,23,299.59,VIP
+CUST1569,Lisa,Brown,lisa.brown@email.com,+1-639-857-6583,79,Female,New York,TX,2023-04-28,42,780.28,Active
+CUST1570,Mike,Moore,mike.moore@email.com,+1-728-548-9466,73,Male,Los Angeles,TX,2024-09-20,4,3236.86,VIP
+CUST1571,Tom,Thomas,tom.thomas@email.com,+1-823-919-3515,22,Female,New York,NY,2023-02-09,40,752.48,VIP
+CUST1572,Tom,Smith,tom.smith@email.com,+1-722-941-2955,43,Male,Phoenix,AZ,2024-09-11,20,2131.83,Active
+CUST1573,Chris,Davis,chris.davis@email.com,+1-753-242-3133,74,Female,Los Angeles,TX,2024-02-05,11,3356.72,Inactive
+CUST1574,Sarah,Moore,sarah.moore@email.com,+1-345-825-6138,28,Female,Phoenix,NY,2024-01-31,45,4597.3,Active
+CUST1575,Chris,Anderson,chris.anderson@email.com,+1-634-529-5854,76,Male,Chicago,IL,2023-01-04,22,3046.5,VIP
+CUST1576,Lisa,Johnson,lisa.johnson@email.com,+1-470-279-2389,32,Male,New York,AZ,2024-02-07,37,4459.99,VIP
+CUST1577,John,Johnson,john.johnson@email.com,+1-263-130-2939,23,Male,Chicago,NY,2023-04-24,44,1708.05,VIP
+CUST1578,Sarah,Anderson,sarah.anderson@email.com,+1-530-363-1381,68,Female,Houston,NY,2024-11-09,25,3705.82,Inactive
+CUST1579,Emma,Smith,emma.smith@email.com,+1-189-107-4444,67,Male,Houston,IL,2023-09-25,20,857.54,Active
+CUST1580,Mike,Wilson,mike.wilson@email.com,+1-215-209-3024,38,Female,Chicago,NY,2023-05-11,39,621.53,VIP
+CUST1581,Sarah,Wilson,sarah.wilson@email.com,+1-588-693-3327,77,Female,Houston,NY,2023-06-07,39,3436.32,VIP
+CUST1582,David,Johnson,david.johnson@email.com,+1-558-558-8421,59,Male,Houston,NY,2023-12-23,47,1284.9,Active
+CUST1583,Jane,Smith,jane.smith@email.com,+1-483-503-8439,39,Male,Chicago,IL,2023-10-04,6,297.75,VIP
+CUST1584,Sarah,Johnson,sarah.johnson@email.com,+1-175-382-6484,18,Female,Los Angeles,CA,2024-06-11,19,2662.42,Active
+CUST1585,Chris,Taylor,chris.taylor@email.com,+1-681-460-4497,30,Male,Chicago,CA,2023-07-15,2,1445.69,VIP
+CUST1586,Mike,Anderson,mike.anderson@email.com,+1-281-140-7583,34,Female,New York,TX,2024-04-03,48,3906.51,VIP
+CUST1587,John,Smith,john.smith@email.com,+1-903-495-9335,74,Female,Phoenix,CA,2024-11-09,38,1561.19,Active
+CUST1588,John,Johnson,john.johnson@email.com,+1-864-553-7691,24,Male,Houston,TX,2024-08-31,8,273.66,Inactive
+CUST1589,Sarah,Taylor,sarah.taylor@email.com,+1-354-363-3100,43,Female,Los Angeles,TX,2023-04-24,34,1676.47,Inactive
+CUST1590,John,Anderson,john.anderson@email.com,+1-916-437-2870,43,Male,New York,TX,2024-02-02,38,2902.4,VIP
+CUST1591,Anna,Taylor,anna.taylor@email.com,+1-441-824-2120,38,Male,Chicago,IL,2024-05-01,11,3552.29,Active
+CUST1592,David,Davis,david.davis@email.com,+1-251-336-5174,59,Male,Houston,AZ,2023-12-09,50,4293.6,Inactive
+CUST1593,Jane,Johnson,jane.johnson@email.com,+1-153-977-1260,78,Male,Chicago,IL,2024-08-04,20,3476.14,Active
+CUST1594,Lisa,Jackson,lisa.jackson@email.com,+1-284-373-7147,58,Female,Phoenix,AZ,2024-04-20,33,3488.5,VIP
+CUST1595,Emma,Jackson,emma.jackson@email.com,+1-679-333-9361,63,Male,New York,AZ,2024-02-13,23,3939.44,Active
+CUST1596,Anna,Jackson,anna.jackson@email.com,+1-208-813-2529,50,Female,Houston,IL,2024-06-29,4,3463.8,Active
+CUST1597,Mike,Anderson,mike.anderson@email.com,+1-490-138-6194,26,Female,Houston,TX,2023-04-04,8,157.53,Active
+CUST1598,David,Davis,david.davis@email.com,+1-532-173-3826,18,Female,New York,IL,2023-12-17,12,4997.33,Inactive
+CUST1599,David,Taylor,david.taylor@email.com,+1-838-257-6383,43,Male,Los Angeles,IL,2023-07-02,47,2236.16,Inactive
+CUST1600,Tom,Taylor,tom.taylor@email.com,+1-455-508-5635,44,Male,Chicago,CA,2024-10-07,17,4158.36,VIP
+CUST1601,Tom,Taylor,tom.taylor@email.com,+1-177-927-9594,34,Male,Houston,AZ,2023-03-19,38,3341.23,Active
+CUST1602,Chris,Brown,chris.brown@email.com,+1-774-301-9607,39,Female,New York,TX,2024-12-01,43,979.08,VIP
+CUST1603,Lisa,Smith,lisa.smith@email.com,+1-447-745-8366,65,Male,Houston,CA,2024-07-13,7,918.0,Active
+CUST1604,Emma,Smith,emma.smith@email.com,+1-762-976-7956,79,Male,Los Angeles,CA,2024-09-13,22,4837.98,Inactive
+CUST1605,Tom,Smith,tom.smith@email.com,+1-470-143-7815,46,Female,Houston,IL,2023-11-03,26,762.84,VIP
+CUST1606,Chris,Taylor,chris.taylor@email.com,+1-167-911-3955,43,Female,Phoenix,AZ,2023-12-17,30,3096.39,Active
+CUST1607,Tom,Davis,tom.davis@email.com,+1-625-366-1577,77,Female,Phoenix,AZ,2024-05-13,22,682.92,Inactive
+CUST1608,Mike,Anderson,mike.anderson@email.com,+1-726-136-5437,29,Male,Phoenix,IL,2024-04-07,22,675.47,Active
+CUST1609,Sarah,Moore,sarah.moore@email.com,+1-711-387-4983,63,Male,Phoenix,NY,2024-11-03,36,4947.24,Active
+CUST1610,Jane,Moore,jane.moore@email.com,+1-705-938-3721,20,Male,Phoenix,TX,2023-10-13,47,2836.72,Active
+CUST1611,Lisa,Taylor,lisa.taylor@email.com,+1-667-771-6617,52,Female,Phoenix,NY,2024-03-25,22,4634.61,VIP
+CUST1612,Lisa,Wilson,lisa.wilson@email.com,+1-288-579-6445,67,Male,Houston,AZ,2024-03-13,29,3707.25,Inactive
+CUST1613,Sarah,Wilson,sarah.wilson@email.com,+1-128-596-7581,77,Male,Houston,CA,2024-04-03,47,4566.32,VIP
+CUST1614,Emma,Thomas,emma.thomas@email.com,+1-476-322-5939,80,Female,Chicago,IL,2023-10-22,33,3994.44,Active
+CUST1615,Anna,Wilson,anna.wilson@email.com,+1-727-833-7137,44,Female,Phoenix,CA,2024-01-08,27,1043.55,VIP
+CUST1616,David,Johnson,david.johnson@email.com,+1-781-744-6897,50,Male,Chicago,CA,2024-07-21,27,2099.5,Inactive
+CUST1617,Tom,Taylor,tom.taylor@email.com,+1-313-638-6314,46,Male,Phoenix,NY,2024-01-05,17,2944.03,VIP
+CUST1618,Jane,Moore,jane.moore@email.com,+1-722-837-1533,33,Female,Chicago,IL,2024-11-17,39,1256.38,Inactive
+CUST1619,Mike,Brown,mike.brown@email.com,+1-575-840-5725,26,Female,Phoenix,IL,2024-06-26,16,4719.0,Active
+CUST1620,Jane,Smith,jane.smith@email.com,+1-521-547-1669,55,Male,New York,AZ,2023-11-27,46,1210.44,Active
+CUST1621,Tom,Jackson,tom.jackson@email.com,+1-403-359-2568,49,Male,Chicago,AZ,2024-03-16,14,4035.96,Inactive
+CUST1622,Emma,Taylor,emma.taylor@email.com,+1-148-380-8045,73,Male,Houston,IL,2024-03-31,46,2579.84,Inactive
+CUST1623,Mike,Davis,mike.davis@email.com,+1-331-541-6678,25,Female,New York,AZ,2024-06-07,22,3432.21,VIP
+CUST1624,Lisa,Johnson,lisa.johnson@email.com,+1-458-100-4163,75,Male,Los Angeles,AZ,2024-03-20,36,1145.76,Inactive
+CUST1625,John,Thomas,john.thomas@email.com,+1-507-449-4369,26,Male,Chicago,NY,2024-05-05,48,4317.04,VIP
+CUST1626,Jane,Taylor,jane.taylor@email.com,+1-971-721-8342,76,Female,Houston,TX,2024-12-27,23,1018.66,Active
+CUST1627,Mike,Davis,mike.davis@email.com,+1-754-417-2813,40,Female,Houston,AZ,2024-09-17,29,316.1,Active
+CUST1628,Emma,Wilson,emma.wilson@email.com,+1-492-632-3990,18,Male,Chicago,AZ,2023-04-25,6,1935.63,Inactive
+CUST1629,Mike,Smith,mike.smith@email.com,+1-851-134-7743,33,Female,Phoenix,AZ,2024-07-24,50,100.14,Active
+CUST1630,Jane,Wilson,jane.wilson@email.com,+1-352-928-8854,62,Female,Houston,NY,2023-03-26,15,4994.22,Active
+CUST1631,Anna,Wilson,anna.wilson@email.com,+1-581-513-4271,50,Female,New York,AZ,2024-10-14,38,3718.31,VIP
+CUST1632,Jane,Brown,jane.brown@email.com,+1-693-363-3450,28,Female,Chicago,CA,2024-12-04,32,2692.96,VIP
+CUST1633,Anna,Wilson,anna.wilson@email.com,+1-553-706-1781,68,Male,New York,AZ,2023-09-05,20,3567.72,Active
+CUST1634,Mike,Taylor,mike.taylor@email.com,+1-556-833-9441,57,Male,Houston,NY,2024-09-17,35,473.44,Active
+CUST1635,Jane,Moore,jane.moore@email.com,+1-408-256-1244,43,Male,Los Angeles,CA,2023-01-20,4,3084.44,Inactive
+CUST1636,John,Moore,john.moore@email.com,+1-974-385-2257,71,Male,Phoenix,NY,2023-06-25,37,2251.43,Inactive
+CUST1637,John,Smith,john.smith@email.com,+1-756-276-3622,41,Female,Chicago,AZ,2024-08-26,46,2756.33,Active
+CUST1638,Mike,Taylor,mike.taylor@email.com,+1-222-511-2391,35,Male,Phoenix,IL,2023-05-22,12,641.21,Active
+CUST1639,Sarah,Anderson,sarah.anderson@email.com,+1-712-512-8943,49,Female,Houston,AZ,2024-02-13,13,4828.31,Active
+CUST1640,Jane,Jackson,jane.jackson@email.com,+1-804-511-1910,79,Male,Houston,CA,2024-12-23,30,4203.25,Active
+CUST1641,Tom,Taylor,tom.taylor@email.com,+1-265-539-8761,36,Male,Chicago,TX,2023-02-26,3,137.12,Inactive
+CUST1642,Sarah,Moore,sarah.moore@email.com,+1-465-570-3928,60,Male,Phoenix,IL,2024-05-22,50,3882.19,Inactive
+CUST1643,David,Thomas,david.thomas@email.com,+1-745-912-7127,75,Male,New York,AZ,2024-11-27,3,543.91,Active
+CUST1644,Emma,Brown,emma.brown@email.com,+1-130-746-4945,42,Female,Houston,CA,2023-09-17,12,2972.78,VIP
+CUST1645,Tom,Smith,tom.smith@email.com,+1-124-195-4845,27,Male,New York,AZ,2024-09-09,35,4454.7,VIP
+CUST1646,Jane,Smith,jane.smith@email.com,+1-441-497-7195,21,Male,Phoenix,AZ,2024-03-06,22,304.19,VIP
+CUST1647,John,Anderson,john.anderson@email.com,+1-144-433-7776,20,Male,Los Angeles,IL,2024-06-16,26,3456.13,Inactive
+CUST1648,Jane,Johnson,jane.johnson@email.com,+1-524-527-9961,60,Male,Phoenix,AZ,2024-05-26,31,3634.56,VIP
+CUST1649,Anna,Taylor,anna.taylor@email.com,+1-214-184-4068,61,Female,Chicago,NY,2024-09-06,2,4905.44,Active
+CUST1650,Lisa,Brown,lisa.brown@email.com,+1-454-517-7386,23,Male,Los Angeles,NY,2023-07-23,47,3296.34,Inactive
+CUST1651,Emma,Moore,emma.moore@email.com,+1-114-431-7867,43,Female,New York,NY,2023-11-03,3,4026.76,Inactive
+CUST1652,Lisa,Smith,lisa.smith@email.com,+1-303-168-6417,61,Male,Chicago,IL,2024-01-11,49,3731.4,VIP
+CUST1653,Sarah,Thomas,sarah.thomas@email.com,+1-310-964-1229,35,Male,New York,CA,2024-04-07,30,436.93,VIP
+CUST1654,David,Jackson,david.jackson@email.com,+1-806-516-9730,32,Male,Chicago,NY,2023-04-27,33,613.19,VIP
+CUST1655,Tom,Thomas,tom.thomas@email.com,+1-768-277-7691,48,Female,Los Angeles,CA,2024-03-29,18,2106.31,Inactive
+CUST1656,Tom,Jackson,tom.jackson@email.com,+1-242-206-1223,61,Female,New York,AZ,2024-07-17,12,4994.81,Inactive
+CUST1657,Tom,Brown,tom.brown@email.com,+1-287-767-3471,78,Male,Houston,AZ,2023-08-18,30,828.92,Inactive
+CUST1658,John,Smith,john.smith@email.com,+1-519-255-7140,56,Female,Los Angeles,CA,2023-05-19,13,2755.15,VIP
+CUST1659,Jane,Davis,jane.davis@email.com,+1-904-444-7731,38,Female,Houston,IL,2024-11-03,4,3628.75,VIP
+CUST1660,Jane,Anderson,jane.anderson@email.com,+1-565-348-7303,80,Male,Houston,AZ,2023-03-23,14,518.89,Inactive
+CUST1661,Anna,Thomas,anna.thomas@email.com,+1-812-972-6635,54,Female,New York,AZ,2024-01-04,21,2684.01,Inactive
+CUST1662,Sarah,Brown,sarah.brown@email.com,+1-315-111-2282,33,Female,Los Angeles,NY,2024-04-21,46,208.79,Active
+CUST1663,David,Davis,david.davis@email.com,+1-751-917-3662,34,Male,Chicago,AZ,2024-08-23,21,3400.88,VIP
+CUST1664,Sarah,Jackson,sarah.jackson@email.com,+1-963-985-8878,39,Male,Los Angeles,NY,2024-09-07,10,1140.4,VIP
+CUST1665,Lisa,Moore,lisa.moore@email.com,+1-620-770-3712,46,Male,New York,NY,2024-07-28,15,1103.5,Inactive
+CUST1666,David,Johnson,david.johnson@email.com,+1-235-195-9349,47,Male,Chicago,TX,2024-10-18,9,4125.58,VIP
+CUST1667,Anna,Wilson,anna.wilson@email.com,+1-379-529-9552,77,Female,Houston,AZ,2023-08-19,44,716.86,Active
+CUST1668,Chris,Jackson,chris.jackson@email.com,+1-669-737-8264,64,Female,Chicago,NY,2023-05-11,3,125.0,Active
+CUST1669,Chris,Wilson,chris.wilson@email.com,+1-361-692-4725,79,Female,Phoenix,NY,2023-10-24,13,922.24,Active
+CUST1670,Emma,Taylor,emma.taylor@email.com,+1-779-910-4482,36,Female,Los Angeles,CA,2024-11-29,45,763.54,Inactive
+CUST1671,Tom,Wilson,tom.wilson@email.com,+1-895-819-4031,74,Male,Chicago,CA,2023-02-24,10,4871.75,Active
+CUST1672,Chris,Brown,chris.brown@email.com,+1-195-815-2335,74,Female,New York,IL,2023-08-27,44,1580.73,VIP
+CUST1673,Lisa,Taylor,lisa.taylor@email.com,+1-384-386-6941,62,Female,Houston,NY,2024-01-09,18,1348.09,Inactive
+CUST1674,Sarah,Jackson,sarah.jackson@email.com,+1-293-675-1708,76,Male,New York,TX,2024-08-25,14,1232.25,Active
+CUST1675,Tom,Wilson,tom.wilson@email.com,+1-172-937-5282,25,Male,Los Angeles,TX,2024-07-14,11,3451.37,Active
+CUST1676,Lisa,Davis,lisa.davis@email.com,+1-870-473-3701,36,Female,New York,AZ,2024-09-18,10,4848.93,Active
+CUST1677,Sarah,Davis,sarah.davis@email.com,+1-685-675-8011,54,Female,Houston,AZ,2024-03-06,49,3336.68,VIP
+CUST1678,John,Anderson,john.anderson@email.com,+1-303-604-1558,34,Female,Chicago,NY,2024-04-27,22,3624.13,VIP
+CUST1679,Sarah,Moore,sarah.moore@email.com,+1-417-968-1191,70,Male,Houston,AZ,2023-09-11,12,883.9,VIP
+CUST1680,Anna,Thomas,anna.thomas@email.com,+1-440-857-9567,51,Male,Phoenix,TX,2024-02-09,39,475.73,VIP
+CUST1681,David,Brown,david.brown@email.com,+1-656-612-7702,43,Male,Los Angeles,TX,2024-08-06,15,4100.14,Inactive
+CUST1682,Emma,Anderson,emma.anderson@email.com,+1-651-643-6917,80,Male,Phoenix,AZ,2023-03-16,10,762.69,VIP
+CUST1683,Tom,Thomas,tom.thomas@email.com,+1-304-273-9876,43,Female,New York,NY,2023-05-26,8,2689.6,VIP
+CUST1684,Lisa,Brown,lisa.brown@email.com,+1-267-808-9347,51,Male,Chicago,AZ,2023-03-08,38,4567.5,Active
+CUST1685,David,Brown,david.brown@email.com,+1-831-208-1984,37,Male,Houston,IL,2023-01-31,20,4211.17,VIP
+CUST1686,Lisa,Jackson,lisa.jackson@email.com,+1-448-816-4215,24,Male,Los Angeles,CA,2023-07-23,47,423.54,Inactive
+CUST1687,Chris,Wilson,chris.wilson@email.com,+1-939-584-4504,70,Male,Chicago,AZ,2024-09-21,36,1184.6,Inactive
+CUST1688,Jane,Taylor,jane.taylor@email.com,+1-123-105-2364,54,Female,Phoenix,IL,2024-02-09,45,2436.81,VIP
+CUST1689,John,Smith,john.smith@email.com,+1-503-653-7846,38,Female,Houston,CA,2023-05-31,42,4530.27,Active
+CUST1690,Chris,Davis,chris.davis@email.com,+1-946-261-2942,63,Female,Phoenix,CA,2023-09-10,40,1144.5,Inactive
+CUST1691,Chris,Brown,chris.brown@email.com,+1-873-359-1085,60,Female,Chicago,NY,2024-04-06,25,445.75,Inactive
+CUST1692,Sarah,Johnson,sarah.johnson@email.com,+1-563-197-2741,18,Female,New York,NY,2024-11-03,17,1465.77,Active
+CUST1693,Anna,Thomas,anna.thomas@email.com,+1-354-448-2589,70,Male,New York,NY,2024-08-04,50,1975.52,VIP
+CUST1694,Jane,Johnson,jane.johnson@email.com,+1-147-499-4726,39,Female,Chicago,CA,2024-03-01,36,1802.16,VIP
+CUST1695,Anna,Anderson,anna.anderson@email.com,+1-690-754-5080,53,Male,Houston,AZ,2024-04-06,12,4696.93,VIP
+CUST1696,Chris,Davis,chris.davis@email.com,+1-959-954-8391,78,Male,Los Angeles,CA,2023-07-11,11,2535.38,VIP
+CUST1697,Emma,Moore,emma.moore@email.com,+1-145-313-9598,27,Male,Los Angeles,TX,2023-01-31,49,674.58,VIP
+CUST1698,Chris,Moore,chris.moore@email.com,+1-238-835-6690,68,Female,Chicago,TX,2023-02-13,22,4192.38,Inactive
+CUST1699,Anna,Davis,anna.davis@email.com,+1-915-523-7242,49,Male,New York,IL,2023-01-19,47,160.45,VIP
+CUST1700,Tom,Brown,tom.brown@email.com,+1-823-921-5097,61,Male,Chicago,TX,2023-12-12,35,3874.03,VIP
+CUST1701,Tom,Anderson,tom.anderson@email.com,+1-375-955-3570,36,Male,Phoenix,CA,2023-01-30,31,4243.08,VIP
+CUST1702,Sarah,Smith,sarah.smith@email.com,+1-358-435-2298,36,Male,Chicago,IL,2023-07-09,13,314.19,Inactive
+CUST1703,Jane,Davis,jane.davis@email.com,+1-990-659-6820,64,Female,Houston,AZ,2023-09-02,48,4428.49,VIP
+CUST1704,Emma,Smith,emma.smith@email.com,+1-325-300-1788,28,Male,Houston,CA,2023-05-19,5,3717.34,Inactive
+CUST1705,John,Moore,john.moore@email.com,+1-739-382-7472,19,Male,Houston,AZ,2024-03-26,31,1024.1,VIP
+CUST1706,Jane,Moore,jane.moore@email.com,+1-671-315-9721,24,Male,New York,NY,2023-11-29,39,737.44,Active
+CUST1707,Chris,Johnson,chris.johnson@email.com,+1-443-680-9852,39,Female,Phoenix,TX,2023-02-18,6,4383.88,Inactive
+CUST1708,Sarah,Taylor,sarah.taylor@email.com,+1-291-476-8066,54,Female,New York,CA,2024-06-21,48,1838.92,VIP
+CUST1709,Sarah,Thomas,sarah.thomas@email.com,+1-581-441-6109,53,Male,Chicago,IL,2024-09-16,5,3299.08,Active
+CUST1710,Chris,Anderson,chris.anderson@email.com,+1-281-322-1633,76,Female,New York,TX,2023-07-31,39,973.45,Inactive
+CUST1711,Sarah,Davis,sarah.davis@email.com,+1-639-360-1341,25,Male,Chicago,CA,2023-11-24,25,2618.82,Inactive
+CUST1712,Jane,Jackson,jane.jackson@email.com,+1-249-726-7466,49,Female,Phoenix,TX,2023-10-20,31,4825.52,Active
+CUST1713,Mike,Taylor,mike.taylor@email.com,+1-787-753-8740,53,Male,Los Angeles,CA,2024-04-01,28,1128.6,Active
+CUST1714,Jane,Thomas,jane.thomas@email.com,+1-391-198-7482,27,Male,Houston,IL,2023-12-05,30,3391.22,Active
+CUST1715,Anna,Wilson,anna.wilson@email.com,+1-676-770-5188,22,Male,Phoenix,NY,2024-04-25,38,685.28,Active
+CUST1716,Mike,Brown,mike.brown@email.com,+1-178-862-4565,62,Female,Chicago,IL,2023-08-05,17,120.14,Inactive
+CUST1717,Jane,Brown,jane.brown@email.com,+1-788-807-2185,36,Female,New York,AZ,2023-10-18,31,3664.55,VIP
+CUST1718,Anna,Brown,anna.brown@email.com,+1-932-564-2062,68,Female,Houston,IL,2023-11-27,34,3872.04,Active
+CUST1719,Mike,Jackson,mike.jackson@email.com,+1-910-745-2784,49,Male,Houston,NY,2024-12-26,5,530.54,VIP
+CUST1720,John,Brown,john.brown@email.com,+1-863-360-7068,73,Male,Houston,AZ,2024-11-16,40,4526.52,VIP
+CUST1721,Anna,Brown,anna.brown@email.com,+1-926-160-5043,35,Female,Los Angeles,CA,2023-01-16,11,3647.68,Inactive
+CUST1722,Jane,Thomas,jane.thomas@email.com,+1-438-319-6785,22,Male,Chicago,IL,2024-05-14,42,1025.26,Inactive
+CUST1723,Emma,Brown,emma.brown@email.com,+1-905-922-7239,21,Female,Houston,CA,2024-02-26,5,1613.75,Inactive
+CUST1724,Lisa,Davis,lisa.davis@email.com,+1-949-335-5619,47,Male,Houston,CA,2024-07-08,28,2630.99,Active
+CUST1725,Jane,Thomas,jane.thomas@email.com,+1-884-379-7173,66,Male,New York,IL,2023-11-10,37,3167.07,Inactive
+CUST1726,David,Thomas,david.thomas@email.com,+1-506-759-7923,34,Male,New York,IL,2024-05-28,50,3840.06,Active
+CUST1727,Mike,Moore,mike.moore@email.com,+1-431-513-7039,68,Female,Phoenix,NY,2023-02-12,42,1141.21,Active
+CUST1728,Jane,Davis,jane.davis@email.com,+1-235-387-3533,65,Female,Houston,TX,2023-07-10,23,4042.26,Active
+CUST1729,Emma,Anderson,emma.anderson@email.com,+1-441-589-3498,39,Male,Houston,AZ,2023-05-27,7,1148.22,VIP
+CUST1730,Lisa,Anderson,lisa.anderson@email.com,+1-493-925-5005,73,Male,Los Angeles,IL,2024-09-10,41,2232.09,VIP
+CUST1731,Anna,Jackson,anna.jackson@email.com,+1-559-805-5897,52,Female,Houston,IL,2024-12-20,17,4510.85,VIP
+CUST1732,Lisa,Johnson,lisa.johnson@email.com,+1-236-527-5829,51,Male,Houston,CA,2023-02-12,13,1088.43,Inactive
+CUST1733,Tom,Anderson,tom.anderson@email.com,+1-396-632-6147,39,Male,New York,CA,2024-01-14,30,2154.59,Active
+CUST1734,Sarah,Taylor,sarah.taylor@email.com,+1-360-541-8264,36,Female,Houston,AZ,2024-09-21,34,3642.67,Inactive
+CUST1735,Mike,Moore,mike.moore@email.com,+1-231-458-1099,70,Male,Houston,IL,2023-06-23,13,2240.74,VIP
+CUST1736,David,Brown,david.brown@email.com,+1-173-895-8400,36,Male,Houston,NY,2024-01-19,4,2286.64,Active
+CUST1737,Lisa,Anderson,lisa.anderson@email.com,+1-242-211-5957,24,Male,Phoenix,IL,2023-07-26,34,1802.82,VIP
+CUST1738,Tom,Davis,tom.davis@email.com,+1-783-355-6317,59,Female,Houston,AZ,2023-10-02,38,2657.91,VIP
+CUST1739,Jane,Moore,jane.moore@email.com,+1-425-907-7374,65,Male,New York,TX,2024-09-26,49,3456.05,VIP
+CUST1740,Anna,Brown,anna.brown@email.com,+1-559-228-4684,64,Male,Los Angeles,NY,2024-12-26,8,404.81,Inactive
+CUST1741,Lisa,Brown,lisa.brown@email.com,+1-636-314-4923,20,Male,Phoenix,IL,2024-06-15,31,1486.52,Active
+CUST1742,Mike,Anderson,mike.anderson@email.com,+1-137-734-3111,46,Male,Phoenix,TX,2023-10-18,10,736.49,Active
+CUST1743,Anna,Davis,anna.davis@email.com,+1-558-850-2902,60,Female,Los Angeles,CA,2023-06-04,22,1728.72,VIP
+CUST1744,Sarah,Wilson,sarah.wilson@email.com,+1-346-495-8732,66,Female,Phoenix,CA,2024-01-03,16,2064.95,Inactive
+CUST1745,Lisa,Smith,lisa.smith@email.com,+1-468-965-3884,66,Female,Los Angeles,IL,2024-12-08,41,4351.12,Active
+CUST1746,Chris,Jackson,chris.jackson@email.com,+1-994-529-6727,31,Male,Los Angeles,IL,2024-09-02,22,1456.46,VIP
+CUST1747,Mike,Wilson,mike.wilson@email.com,+1-785-347-8695,26,Female,Phoenix,TX,2023-12-27,1,3685.44,VIP
+CUST1748,Anna,Johnson,anna.johnson@email.com,+1-362-833-5760,36,Male,New York,CA,2023-08-06,22,4126.59,Active
+CUST1749,Anna,Taylor,anna.taylor@email.com,+1-602-167-8451,39,Female,Los Angeles,TX,2024-10-29,47,3794.38,Active
+CUST1750,David,Brown,david.brown@email.com,+1-239-840-7255,56,Female,Los Angeles,TX,2024-09-19,40,2137.82,Inactive
+CUST1751,John,Taylor,john.taylor@email.com,+1-647-798-2757,42,Female,Phoenix,TX,2024-01-27,1,847.91,Inactive
+CUST1752,Tom,Davis,tom.davis@email.com,+1-526-439-9432,22,Female,New York,CA,2024-02-16,38,4442.1,VIP
+CUST1753,John,Brown,john.brown@email.com,+1-146-999-9877,31,Female,Houston,AZ,2024-08-14,47,3977.3,Inactive
+CUST1754,Mike,Taylor,mike.taylor@email.com,+1-232-684-6407,70,Female,Chicago,CA,2024-07-02,24,1710.02,Active
+CUST1755,Tom,Johnson,tom.johnson@email.com,+1-105-766-6083,51,Male,Chicago,IL,2024-09-29,49,2828.16,Inactive
+CUST1756,Jane,Davis,jane.davis@email.com,+1-298-337-9069,43,Male,New York,NY,2024-06-14,41,2440.0,VIP
+CUST1757,Lisa,Johnson,lisa.johnson@email.com,+1-629-351-4106,23,Female,Houston,AZ,2023-09-15,10,4114.88,Active
+CUST1758,Chris,Moore,chris.moore@email.com,+1-543-763-7816,80,Male,New York,TX,2023-01-12,44,2195.99,Active
+CUST1759,Tom,Johnson,tom.johnson@email.com,+1-896-361-1580,28,Female,Houston,IL,2024-11-24,46,2144.22,Active
+CUST1760,Mike,Taylor,mike.taylor@email.com,+1-935-877-5936,56,Female,Phoenix,NY,2024-05-22,3,173.56,VIP
+CUST1761,John,Wilson,john.wilson@email.com,+1-442-257-8720,52,Male,Houston,IL,2024-07-07,42,472.98,Inactive
+CUST1762,Jane,Taylor,jane.taylor@email.com,+1-242-168-1239,73,Female,Chicago,TX,2023-04-03,18,1841.14,VIP
+CUST1763,Lisa,Thomas,lisa.thomas@email.com,+1-909-733-3873,33,Female,Houston,CA,2024-12-12,42,4894.0,Inactive
+CUST1764,Emma,Jackson,emma.jackson@email.com,+1-404-911-5536,27,Male,New York,AZ,2024-12-18,36,2888.77,VIP
+CUST1765,Lisa,Brown,lisa.brown@email.com,+1-242-850-7560,18,Male,Houston,AZ,2023-05-13,39,4335.25,Inactive
+CUST1766,Emma,Jackson,emma.jackson@email.com,+1-279-559-2746,32,Female,New York,AZ,2024-03-16,29,3804.74,Active
+CUST1767,Sarah,Wilson,sarah.wilson@email.com,+1-108-663-4717,35,Male,Houston,NY,2024-03-30,50,322.19,Active
+CUST1768,John,Taylor,john.taylor@email.com,+1-785-865-2527,63,Male,Houston,TX,2024-11-09,36,1237.51,Inactive
+CUST1769,Emma,Brown,emma.brown@email.com,+1-653-149-7530,49,Female,Chicago,NY,2023-04-16,1,2906.83,Active
+CUST1770,Tom,Taylor,tom.taylor@email.com,+1-454-209-7662,34,Male,Chicago,IL,2023-07-17,30,1899.18,Active
+CUST1771,Mike,Moore,mike.moore@email.com,+1-438-823-2659,22,Male,Phoenix,AZ,2024-03-29,36,3195.89,VIP
+CUST1772,Mike,Smith,mike.smith@email.com,+1-590-284-1973,76,Female,Houston,NY,2023-10-05,1,3094.5,Inactive
+CUST1773,Chris,Smith,chris.smith@email.com,+1-684-530-4829,75,Female,Houston,IL,2024-03-25,25,2425.64,Active
+CUST1774,Anna,Davis,anna.davis@email.com,+1-530-549-5534,55,Male,Los Angeles,AZ,2024-05-07,30,4715.37,Active
+CUST1775,Sarah,Thomas,sarah.thomas@email.com,+1-603-158-3188,29,Male,Los Angeles,NY,2023-01-20,21,3648.96,VIP
+CUST1776,John,Davis,john.davis@email.com,+1-975-217-7412,62,Male,Los Angeles,TX,2024-03-07,42,1304.18,VIP
+CUST1777,Sarah,Thomas,sarah.thomas@email.com,+1-491-352-9591,69,Male,Los Angeles,CA,2024-04-05,23,1178.93,VIP
+CUST1778,John,Anderson,john.anderson@email.com,+1-745-370-1197,69,Male,Phoenix,NY,2024-03-22,49,223.75,Active
+CUST1779,Anna,Thomas,anna.thomas@email.com,+1-738-951-8419,64,Male,Phoenix,NY,2023-11-07,14,4006.42,Inactive
+CUST1780,Jane,Brown,jane.brown@email.com,+1-917-557-9587,69,Male,New York,TX,2024-06-28,17,845.32,VIP
+CUST1781,Jane,Brown,jane.brown@email.com,+1-478-688-7235,53,Female,Chicago,IL,2023-03-28,24,1861.66,Inactive
+CUST1782,Jane,Taylor,jane.taylor@email.com,+1-563-577-2124,71,Male,New York,IL,2023-10-03,20,4707.73,Active
+CUST1783,Sarah,Johnson,sarah.johnson@email.com,+1-793-251-1616,27,Female,Los Angeles,NY,2023-01-04,9,1737.18,Inactive
+CUST1784,Sarah,Johnson,sarah.johnson@email.com,+1-304-982-9312,45,Male,Phoenix,AZ,2023-08-26,17,1274.65,VIP
+CUST1785,Mike,Anderson,mike.anderson@email.com,+1-334-307-4547,73,Female,Phoenix,IL,2024-02-04,22,2379.47,Inactive
+CUST1786,Emma,Moore,emma.moore@email.com,+1-155-862-1358,79,Male,Los Angeles,IL,2024-07-21,38,4822.31,Inactive
+CUST1787,Mike,Taylor,mike.taylor@email.com,+1-624-566-7834,25,Female,New York,TX,2023-08-01,33,4988.31,Active
+CUST1788,Tom,Wilson,tom.wilson@email.com,+1-413-824-7157,39,Female,Chicago,CA,2023-11-29,15,173.16,Active
+CUST1789,Mike,Wilson,mike.wilson@email.com,+1-538-313-8584,56,Female,Houston,NY,2024-06-28,4,3988.82,Active
+CUST1790,Lisa,Wilson,lisa.wilson@email.com,+1-653-477-9910,67,Male,New York,NY,2024-11-09,26,3790.14,Inactive
+CUST1791,Jane,Johnson,jane.johnson@email.com,+1-688-666-2456,80,Male,Phoenix,TX,2024-03-30,26,640.43,Active
+CUST1792,Anna,Davis,anna.davis@email.com,+1-271-864-3687,57,Female,Los Angeles,AZ,2023-06-05,39,3770.51,Active
+CUST1793,Emma,Johnson,emma.johnson@email.com,+1-390-654-7379,57,Male,Houston,TX,2023-02-01,2,2847.87,VIP
+CUST1794,Tom,Davis,tom.davis@email.com,+1-508-968-4719,57,Male,Phoenix,TX,2023-04-25,18,3663.46,VIP
+CUST1795,Lisa,Smith,lisa.smith@email.com,+1-450-695-4175,21,Male,Houston,NY,2024-06-29,25,2406.86,Active
+CUST1796,Jane,Wilson,jane.wilson@email.com,+1-166-817-2019,70,Female,New York,CA,2024-09-21,33,1294.44,Inactive
+CUST1797,Tom,Moore,tom.moore@email.com,+1-297-592-8243,76,Male,Houston,NY,2023-04-18,4,911.28,Active
+CUST1798,David,Davis,david.davis@email.com,+1-524-452-8808,55,Female,Los Angeles,NY,2023-04-15,46,661.22,VIP
+CUST1799,Anna,Wilson,anna.wilson@email.com,+1-559-572-1670,52,Male,Chicago,IL,2023-11-09,34,1264.28,VIP
+CUST1800,Emma,Jackson,emma.jackson@email.com,+1-578-720-1008,68,Male,Phoenix,NY,2024-06-25,30,1263.23,Inactive
+CUST1801,Emma,Wilson,emma.wilson@email.com,+1-648-652-9993,73,Female,Los Angeles,NY,2024-05-19,23,1031.38,Inactive
+CUST1802,Lisa,Wilson,lisa.wilson@email.com,+1-646-857-3632,48,Female,Chicago,CA,2023-10-08,17,2430.67,VIP
+CUST1803,Tom,Thomas,tom.thomas@email.com,+1-684-923-1832,44,Female,Phoenix,IL,2024-09-09,44,3186.96,Inactive
+CUST1804,Anna,Smith,anna.smith@email.com,+1-150-736-9083,48,Male,New York,CA,2024-02-03,21,2983.64,Inactive
+CUST1805,Emma,Brown,emma.brown@email.com,+1-424-831-7278,47,Male,New York,NY,2023-12-27,16,1638.76,Active
+CUST1806,Sarah,Jackson,sarah.jackson@email.com,+1-335-931-5579,29,Female,Chicago,AZ,2023-11-17,50,3736.53,Inactive
+CUST1807,David,Wilson,david.wilson@email.com,+1-873-137-5026,43,Female,Phoenix,NY,2023-03-31,23,768.23,Inactive
+CUST1808,Tom,Jackson,tom.jackson@email.com,+1-187-439-6223,64,Male,New York,AZ,2024-05-01,1,451.53,Inactive
+CUST1809,Emma,Jackson,emma.jackson@email.com,+1-417-326-6165,80,Female,Chicago,CA,2023-02-26,10,550.62,Active
+CUST1810,Mike,Wilson,mike.wilson@email.com,+1-517-494-2048,20,Male,Phoenix,NY,2024-06-20,27,224.23,VIP
+CUST1811,John,Wilson,john.wilson@email.com,+1-731-315-9627,23,Female,Los Angeles,AZ,2023-11-07,27,3615.04,Inactive
+CUST1812,Tom,Brown,tom.brown@email.com,+1-889-795-7493,46,Female,Phoenix,NY,2024-11-11,19,324.68,VIP
+CUST1813,Lisa,Smith,lisa.smith@email.com,+1-737-361-4596,63,Male,Chicago,NY,2023-03-30,4,3654.74,Inactive
+CUST1814,Lisa,Wilson,lisa.wilson@email.com,+1-531-498-3172,19,Female,New York,IL,2024-07-18,18,4032.72,Inactive
+CUST1815,Chris,Jackson,chris.jackson@email.com,+1-889-916-5666,73,Male,Chicago,TX,2024-04-02,1,246.81,Inactive
+CUST1816,Lisa,Johnson,lisa.johnson@email.com,+1-574-828-6073,26,Female,Phoenix,CA,2024-01-10,24,1570.06,Inactive
+CUST1817,Chris,Thomas,chris.thomas@email.com,+1-337-134-8337,53,Male,New York,TX,2024-04-02,7,2637.96,Active
+CUST1818,Tom,Jackson,tom.jackson@email.com,+1-672-583-1191,74,Female,New York,CA,2024-05-24,7,2976.39,Active
+CUST1819,John,Thomas,john.thomas@email.com,+1-225-659-9803,73,Male,Chicago,NY,2024-11-18,33,1006.07,Active
+CUST1820,Chris,Anderson,chris.anderson@email.com,+1-891-338-1652,19,Female,Los Angeles,NY,2024-10-26,48,3156.76,VIP
+CUST1821,Emma,Anderson,emma.anderson@email.com,+1-553-229-3939,54,Female,Houston,TX,2023-07-12,40,2963.65,Inactive
+CUST1822,Chris,Thomas,chris.thomas@email.com,+1-913-483-5238,26,Female,New York,CA,2023-12-09,29,1668.43,Inactive
+CUST1823,Lisa,Smith,lisa.smith@email.com,+1-895-251-9865,60,Male,Los Angeles,NY,2023-05-01,33,4026.48,VIP
+CUST1824,Sarah,Wilson,sarah.wilson@email.com,+1-591-766-2651,58,Female,Phoenix,AZ,2024-03-28,40,1288.84,VIP
+CUST1825,Chris,Taylor,chris.taylor@email.com,+1-657-296-8754,38,Male,Los Angeles,AZ,2023-08-31,34,1399.22,Active
+CUST1826,Lisa,Wilson,lisa.wilson@email.com,+1-502-258-5602,78,Male,Los Angeles,AZ,2024-01-04,50,2085.85,Inactive
+CUST1827,Emma,Jackson,emma.jackson@email.com,+1-619-259-4204,58,Male,Chicago,TX,2023-06-01,43,1632.34,Active
+CUST1828,Emma,Johnson,emma.johnson@email.com,+1-688-983-3862,73,Female,Chicago,IL,2023-03-06,36,4661.26,Active
+CUST1829,Chris,Jackson,chris.jackson@email.com,+1-443-648-5446,59,Female,Houston,IL,2024-10-05,19,160.9,VIP
+CUST1830,Anna,Anderson,anna.anderson@email.com,+1-360-237-1352,79,Male,Houston,IL,2023-09-29,27,3482.26,Active
+CUST1831,Emma,Moore,emma.moore@email.com,+1-313-290-4483,72,Male,New York,NY,2023-04-08,16,4236.06,Active
+CUST1832,Chris,Anderson,chris.anderson@email.com,+1-524-252-9708,39,Female,Chicago,CA,2023-08-13,28,2449.57,Inactive
+CUST1833,Chris,Thomas,chris.thomas@email.com,+1-355-295-3883,39,Male,Los Angeles,CA,2023-09-02,42,2508.48,VIP
+CUST1834,Mike,Anderson,mike.anderson@email.com,+1-216-911-9441,61,Male,New York,TX,2023-01-17,33,3858.08,Inactive
+CUST1835,Chris,Smith,chris.smith@email.com,+1-843-972-6124,52,Male,Los Angeles,IL,2024-07-22,26,2533.42,VIP
+CUST1836,Anna,Taylor,anna.taylor@email.com,+1-228-304-5770,54,Male,Los Angeles,IL,2023-11-25,5,3060.31,VIP
+CUST1837,John,Brown,john.brown@email.com,+1-492-827-8650,69,Male,Los Angeles,IL,2023-12-21,14,4694.29,Inactive
+CUST1838,David,Thomas,david.thomas@email.com,+1-983-618-4552,75,Male,Los Angeles,CA,2024-02-21,2,4127.23,Active
+CUST1839,Lisa,Johnson,lisa.johnson@email.com,+1-310-423-2196,49,Male,New York,NY,2023-05-03,35,3986.97,VIP
+CUST1840,Anna,Taylor,anna.taylor@email.com,+1-331-716-2297,59,Male,Chicago,AZ,2023-01-14,12,871.51,Inactive
+CUST1841,Tom,Brown,tom.brown@email.com,+1-944-539-8721,67,Male,New York,NY,2023-12-09,4,879.0,Inactive
+CUST1842,Emma,Thomas,emma.thomas@email.com,+1-657-879-1117,75,Female,Chicago,TX,2023-02-18,13,1558.49,Active
+CUST1843,Lisa,Wilson,lisa.wilson@email.com,+1-753-390-1876,31,Male,New York,IL,2024-07-17,10,4948.97,VIP
+CUST1844,Sarah,Thomas,sarah.thomas@email.com,+1-482-966-6519,35,Male,Phoenix,CA,2023-06-10,14,2205.99,VIP
+CUST1845,Mike,Jackson,mike.jackson@email.com,+1-484-296-6830,76,Female,New York,NY,2023-05-05,27,3600.49,VIP
+CUST1846,John,Wilson,john.wilson@email.com,+1-582-298-1420,25,Male,Houston,AZ,2023-12-05,13,2588.97,Inactive
+CUST1847,David,Jackson,david.jackson@email.com,+1-561-649-9227,45,Female,New York,IL,2024-04-15,17,2765.44,VIP
+CUST1848,Jane,Moore,jane.moore@email.com,+1-874-904-4368,50,Female,Los Angeles,NY,2024-01-10,15,3998.41,Inactive
+CUST1849,Emma,Davis,emma.davis@email.com,+1-329-203-5820,69,Female,Houston,CA,2024-03-28,7,2921.47,VIP
+CUST1850,Lisa,Thomas,lisa.thomas@email.com,+1-159-538-3927,25,Female,Los Angeles,IL,2023-06-10,41,1304.45,Inactive
+CUST1851,John,Wilson,john.wilson@email.com,+1-454-642-4641,20,Male,New York,CA,2024-03-08,15,1417.87,VIP
+CUST1852,Anna,Jackson,anna.jackson@email.com,+1-199-446-9942,35,Female,Los Angeles,AZ,2023-01-31,38,3615.93,Active
+CUST1853,Lisa,Moore,lisa.moore@email.com,+1-885-618-7958,34,Male,Houston,CA,2024-09-14,26,1531.5,Inactive
+CUST1854,David,Brown,david.brown@email.com,+1-746-864-4589,57,Female,Los Angeles,CA,2024-07-25,33,2798.96,Inactive
+CUST1855,Mike,Davis,mike.davis@email.com,+1-312-373-3132,20,Female,Los Angeles,TX,2024-02-25,2,1182.72,Active
+CUST1856,John,Smith,john.smith@email.com,+1-276-809-1354,69,Female,Houston,CA,2024-08-25,33,4985.81,VIP
+CUST1857,David,Brown,david.brown@email.com,+1-368-198-4057,68,Female,Chicago,TX,2023-05-31,14,3917.66,VIP
+CUST1858,Chris,Moore,chris.moore@email.com,+1-112-355-9489,53,Male,Los Angeles,TX,2024-12-30,35,4529.63,Active
+CUST1859,Lisa,Thomas,lisa.thomas@email.com,+1-320-597-4994,80,Female,New York,TX,2024-03-27,22,376.15,VIP
+CUST1860,Sarah,Wilson,sarah.wilson@email.com,+1-367-958-1107,79,Female,Houston,CA,2024-11-21,16,375.0,Inactive
+CUST1861,Lisa,Wilson,lisa.wilson@email.com,+1-425-849-4154,69,Female,Chicago,TX,2024-08-19,18,3577.19,Active
+CUST1862,Mike,Johnson,mike.johnson@email.com,+1-696-789-2832,53,Female,Los Angeles,NY,2023-07-05,12,1240.6,Active
+CUST1863,John,Brown,john.brown@email.com,+1-340-824-6783,25,Female,Chicago,IL,2024-04-11,19,2933.71,VIP
+CUST1864,Mike,Anderson,mike.anderson@email.com,+1-408-689-9810,42,Female,Chicago,TX,2023-01-01,30,3988.41,VIP
+CUST1865,Jane,Anderson,jane.anderson@email.com,+1-438-886-8556,80,Female,Houston,IL,2024-06-14,7,4633.27,VIP
+CUST1866,Lisa,Taylor,lisa.taylor@email.com,+1-254-629-5344,79,Male,Phoenix,AZ,2024-04-15,1,2107.45,Active
+CUST1867,Tom,Davis,tom.davis@email.com,+1-815-762-8428,54,Male,Phoenix,AZ,2024-12-17,29,1753.35,VIP
+CUST1868,Chris,Wilson,chris.wilson@email.com,+1-505-492-8474,80,Female,Phoenix,TX,2024-04-04,46,2925.64,Inactive
+CUST1869,David,Wilson,david.wilson@email.com,+1-276-545-5986,74,Female,Los Angeles,AZ,2023-09-21,40,4454.23,VIP
+CUST1870,Lisa,Smith,lisa.smith@email.com,+1-260-566-7308,75,Male,Chicago,NY,2023-07-02,19,346.11,Inactive
+CUST1871,Mike,Davis,mike.davis@email.com,+1-687-735-4751,66,Female,Phoenix,CA,2024-10-26,5,426.1,Inactive
+CUST1872,Sarah,Moore,sarah.moore@email.com,+1-736-671-8123,46,Male,Phoenix,CA,2023-02-13,19,1208.51,Inactive
+CUST1873,Tom,Johnson,tom.johnson@email.com,+1-825-967-7344,44,Male,Phoenix,TX,2024-02-17,15,2881.38,Active
+CUST1874,Tom,Johnson,tom.johnson@email.com,+1-564-836-1312,62,Male,Chicago,NY,2023-03-13,37,4639.91,Active
+CUST1875,Emma,Smith,emma.smith@email.com,+1-668-678-7320,34,Male,Houston,IL,2024-09-16,21,3306.74,Inactive
+CUST1876,Chris,Brown,chris.brown@email.com,+1-595-895-9526,61,Male,New York,TX,2023-05-04,21,2537.63,Inactive
+CUST1877,Jane,Thomas,jane.thomas@email.com,+1-268-915-5350,30,Male,Chicago,NY,2023-03-12,17,251.33,Inactive
+CUST1878,Sarah,Smith,sarah.smith@email.com,+1-442-852-4461,62,Female,Los Angeles,TX,2024-03-24,11,1568.64,Inactive
+CUST1879,Jane,Taylor,jane.taylor@email.com,+1-591-631-1774,75,Female,New York,CA,2023-08-21,49,3201.22,Inactive
+CUST1880,Mike,Davis,mike.davis@email.com,+1-893-551-7988,67,Female,Houston,IL,2024-08-03,19,1124.54,VIP
+CUST1881,Chris,Wilson,chris.wilson@email.com,+1-795-591-2211,46,Male,New York,IL,2024-05-28,32,3357.36,Inactive
+CUST1882,Tom,Brown,tom.brown@email.com,+1-830-431-2347,67,Female,Houston,CA,2024-05-05,10,918.57,Inactive
+CUST1883,Jane,Thomas,jane.thomas@email.com,+1-973-438-2256,20,Female,Los Angeles,IL,2024-12-04,34,2766.03,VIP
+CUST1884,Sarah,Anderson,sarah.anderson@email.com,+1-771-812-6019,58,Female,Phoenix,TX,2024-11-20,18,1083.11,Active
+CUST1885,Lisa,Johnson,lisa.johnson@email.com,+1-879-644-2361,79,Male,Chicago,CA,2023-01-27,11,2595.96,Active
+CUST1886,Emma,Moore,emma.moore@email.com,+1-801-826-2230,26,Female,Chicago,AZ,2024-04-25,4,3792.4,VIP
+CUST1887,Anna,Davis,anna.davis@email.com,+1-986-889-8992,59,Female,Chicago,CA,2024-03-29,34,2477.14,Inactive
+CUST1888,Mike,Brown,mike.brown@email.com,+1-917-653-8598,46,Male,Phoenix,AZ,2024-11-06,46,3111.75,VIP
+CUST1889,Chris,Davis,chris.davis@email.com,+1-510-183-4949,36,Male,Houston,AZ,2024-02-23,25,1194.41,Inactive
+CUST1890,John,Brown,john.brown@email.com,+1-469-943-7687,29,Male,New York,NY,2023-07-09,6,3790.07,Active
+CUST1891,Emma,Johnson,emma.johnson@email.com,+1-537-527-9550,55,Female,Houston,AZ,2023-09-07,48,601.92,Inactive
+CUST1892,John,Brown,john.brown@email.com,+1-514-883-8972,31,Male,Los Angeles,NY,2023-08-12,27,4990.25,Active
+CUST1893,David,Johnson,david.johnson@email.com,+1-632-960-3719,80,Female,Phoenix,TX,2024-04-04,36,3830.55,Active
+CUST1894,Emma,Jackson,emma.jackson@email.com,+1-562-454-3448,67,Female,Phoenix,TX,2024-05-16,5,4823.89,Active
+CUST1895,Anna,Johnson,anna.johnson@email.com,+1-503-344-3043,39,Male,New York,AZ,2024-11-06,36,1193.08,Active
+CUST1896,John,Taylor,john.taylor@email.com,+1-789-206-1732,37,Male,Chicago,TX,2023-10-03,6,2331.18,VIP
+CUST1897,Jane,Anderson,jane.anderson@email.com,+1-783-582-2830,60,Female,New York,TX,2023-04-11,34,2844.57,Active
+CUST1898,Jane,Davis,jane.davis@email.com,+1-446-726-8018,53,Male,Phoenix,TX,2023-09-15,44,3841.56,VIP
+CUST1899,Sarah,Smith,sarah.smith@email.com,+1-960-179-3700,56,Female,Los Angeles,NY,2024-09-30,16,326.67,Active
+CUST1900,Tom,Johnson,tom.johnson@email.com,+1-349-370-2458,61,Female,Phoenix,TX,2023-10-03,26,2008.1,Inactive
+CUST1901,Mike,Moore,mike.moore@email.com,+1-101-598-7616,69,Male,Los Angeles,NY,2024-06-21,38,3216.91,Active
+CUST1902,Chris,Jackson,chris.jackson@email.com,+1-391-788-9944,36,Male,Houston,IL,2023-07-11,3,2810.02,Inactive
+CUST1903,Jane,Taylor,jane.taylor@email.com,+1-882-986-3741,78,Female,Houston,NY,2024-04-13,36,4840.83,VIP
+CUST1904,John,Brown,john.brown@email.com,+1-368-674-5838,26,Female,Chicago,IL,2023-08-13,19,3135.11,Inactive
+CUST1905,Sarah,Taylor,sarah.taylor@email.com,+1-187-265-5938,65,Male,Phoenix,TX,2024-04-22,26,2131.31,Active
+CUST1906,John,Moore,john.moore@email.com,+1-144-468-1328,31,Female,Phoenix,TX,2023-10-27,9,728.97,Inactive
+CUST1907,Anna,Davis,anna.davis@email.com,+1-616-635-7885,73,Female,Chicago,IL,2023-06-10,7,4231.19,Inactive
+CUST1908,John,Smith,john.smith@email.com,+1-853-789-3984,19,Male,Los Angeles,NY,2024-07-14,35,124.77,Active
+CUST1909,Chris,Thomas,chris.thomas@email.com,+1-466-538-2501,70,Male,Chicago,IL,2023-12-25,7,568.23,Active
+CUST1910,Tom,Anderson,tom.anderson@email.com,+1-407-963-8000,38,Female,Phoenix,NY,2023-06-01,29,2063.66,Active
+CUST1911,David,Wilson,david.wilson@email.com,+1-101-903-2300,70,Female,New York,CA,2024-01-13,49,2446.27,Inactive
+CUST1912,Emma,Taylor,emma.taylor@email.com,+1-664-808-5332,29,Female,Chicago,NY,2024-04-08,27,4904.89,Active
+CUST1913,Sarah,Thomas,sarah.thomas@email.com,+1-223-517-9291,43,Female,Phoenix,AZ,2023-10-09,24,2212.93,Inactive
+CUST1914,Emma,Jackson,emma.jackson@email.com,+1-520-951-7631,77,Male,Houston,NY,2023-09-16,49,342.4,VIP
+CUST1915,David,Wilson,david.wilson@email.com,+1-164-606-4703,64,Male,Phoenix,IL,2024-05-22,4,4878.51,Inactive
+CUST1916,John,Johnson,john.johnson@email.com,+1-909-487-3662,28,Female,Phoenix,NY,2024-09-24,49,3723.21,Active
+CUST1917,Sarah,Anderson,sarah.anderson@email.com,+1-619-676-6505,51,Female,Chicago,TX,2024-09-12,43,3855.73,Inactive
+CUST1918,Emma,Johnson,emma.johnson@email.com,+1-136-905-4635,57,Female,Phoenix,NY,2023-10-16,24,4595.75,Inactive
+CUST1919,John,Anderson,john.anderson@email.com,+1-588-527-8363,43,Male,Phoenix,AZ,2024-04-18,26,2889.36,VIP
+CUST1920,Tom,Thomas,tom.thomas@email.com,+1-859-457-1661,20,Female,Los Angeles,TX,2024-11-06,37,4258.85,Inactive
+CUST1921,Mike,Thomas,mike.thomas@email.com,+1-893-394-1282,26,Male,Chicago,AZ,2023-11-18,23,1000.84,Active
+CUST1922,Emma,Davis,emma.davis@email.com,+1-492-326-2242,30,Female,Phoenix,IL,2023-09-14,43,3203.12,Inactive
+CUST1923,Anna,Jackson,anna.jackson@email.com,+1-832-679-5000,77,Female,Phoenix,NY,2023-06-12,41,1678.43,Active
+CUST1924,Emma,Smith,emma.smith@email.com,+1-721-240-3592,45,Male,Chicago,NY,2024-07-22,35,3943.15,Active
+CUST1925,Lisa,Wilson,lisa.wilson@email.com,+1-486-605-3203,56,Female,Phoenix,NY,2024-10-26,38,1201.07,VIP
+CUST1926,John,Moore,john.moore@email.com,+1-161-744-3121,28,Male,Phoenix,CA,2023-02-08,45,684.44,Inactive
+CUST1927,Lisa,Anderson,lisa.anderson@email.com,+1-221-326-8332,56,Male,Los Angeles,AZ,2023-01-12,43,1941.28,Active
+CUST1928,Emma,Brown,emma.brown@email.com,+1-497-758-3122,29,Female,Houston,AZ,2024-04-11,47,1986.35,Active
+CUST1929,David,Jackson,david.jackson@email.com,+1-831-222-4364,41,Male,Los Angeles,NY,2023-03-20,20,256.94,VIP
+CUST1930,David,Taylor,david.taylor@email.com,+1-397-871-1346,18,Female,New York,CA,2023-10-03,4,2098.25,Inactive
+CUST1931,Jane,Johnson,jane.johnson@email.com,+1-236-103-7357,57,Female,New York,IL,2024-10-03,7,1265.85,Active
+CUST1932,Anna,Jackson,anna.jackson@email.com,+1-700-424-1955,60,Male,Houston,NY,2024-10-04,26,2254.58,Inactive
+CUST1933,David,Wilson,david.wilson@email.com,+1-426-808-1933,64,Female,Houston,CA,2024-12-07,15,4889.0,Active
+CUST1934,Chris,Thomas,chris.thomas@email.com,+1-598-952-7874,36,Female,Los Angeles,CA,2024-09-14,39,4651.95,Active
+CUST1935,Sarah,Davis,sarah.davis@email.com,+1-408-275-9244,68,Female,Chicago,AZ,2023-10-08,24,3519.94,Inactive
+CUST1936,Anna,Taylor,anna.taylor@email.com,+1-828-113-7916,47,Male,Los Angeles,IL,2023-12-19,1,4751.43,VIP
+CUST1937,Chris,Wilson,chris.wilson@email.com,+1-152-578-2043,24,Male,Los Angeles,NY,2024-09-02,30,2237.94,VIP
+CUST1938,Sarah,Davis,sarah.davis@email.com,+1-843-533-1220,54,Male,Los Angeles,TX,2024-07-11,30,3598.89,VIP
+CUST1939,Tom,Thomas,tom.thomas@email.com,+1-774-773-3149,52,Male,Phoenix,TX,2023-09-09,17,3124.1,VIP
+CUST1940,John,Taylor,john.taylor@email.com,+1-523-853-5636,54,Male,Phoenix,IL,2023-10-26,48,4495.27,VIP
+CUST1941,Lisa,Johnson,lisa.johnson@email.com,+1-482-766-2517,66,Female,New York,AZ,2024-02-25,49,456.06,Active
+CUST1942,David,Moore,david.moore@email.com,+1-283-132-7122,78,Male,New York,AZ,2023-02-13,39,4338.08,VIP
+CUST1943,Mike,Jackson,mike.jackson@email.com,+1-248-585-2170,30,Male,New York,AZ,2023-07-29,24,2366.62,Inactive
+CUST1944,Chris,Smith,chris.smith@email.com,+1-185-876-2927,48,Female,Phoenix,AZ,2023-11-21,13,396.05,VIP
+CUST1945,Emma,Brown,emma.brown@email.com,+1-963-846-5332,34,Female,Chicago,CA,2024-05-18,38,2708.02,Inactive
+CUST1946,Chris,Taylor,chris.taylor@email.com,+1-626-280-3778,21,Female,Houston,CA,2023-02-20,1,1169.87,VIP
+CUST1947,Jane,Wilson,jane.wilson@email.com,+1-497-530-7394,62,Male,Chicago,NY,2024-11-15,9,3470.4,VIP
+CUST1948,Tom,Anderson,tom.anderson@email.com,+1-221-151-4772,28,Male,Los Angeles,AZ,2024-02-22,33,1319.56,VIP
+CUST1949,John,Moore,john.moore@email.com,+1-693-638-7551,80,Female,New York,NY,2024-12-21,3,3689.15,Active
+CUST1950,Emma,Johnson,emma.johnson@email.com,+1-550-789-3605,42,Male,Phoenix,TX,2023-11-08,44,865.67,Active
+CUST1951,Lisa,Taylor,lisa.taylor@email.com,+1-653-384-7820,41,Male,New York,AZ,2024-07-06,25,2546.12,Active
+CUST1952,Emma,Brown,emma.brown@email.com,+1-676-455-8337,33,Male,New York,TX,2024-05-05,16,3990.02,VIP
+CUST1953,Tom,Wilson,tom.wilson@email.com,+1-431-454-6867,35,Female,Houston,CA,2023-05-31,43,3347.7,Inactive
+CUST1954,David,Wilson,david.wilson@email.com,+1-935-268-4115,39,Male,Phoenix,AZ,2024-05-29,9,3545.09,Inactive
+CUST1955,Jane,Moore,jane.moore@email.com,+1-637-964-2577,24,Female,Chicago,AZ,2023-11-10,45,1022.09,Active
+CUST1956,John,Jackson,john.jackson@email.com,+1-605-628-3071,49,Female,Chicago,AZ,2023-07-02,8,3161.55,Inactive
+CUST1957,Mike,Brown,mike.brown@email.com,+1-206-119-2937,57,Female,Houston,AZ,2023-07-28,47,3029.24,Inactive
+CUST1958,Emma,Johnson,emma.johnson@email.com,+1-618-322-1363,31,Male,Chicago,CA,2023-09-27,48,2294.84,Active
+CUST1959,Jane,Moore,jane.moore@email.com,+1-293-414-3447,32,Female,Chicago,CA,2024-01-07,42,1643.71,Inactive
+CUST1960,Tom,Taylor,tom.taylor@email.com,+1-348-836-8150,50,Male,Los Angeles,AZ,2024-07-02,3,3030.72,VIP
+CUST1961,Jane,Taylor,jane.taylor@email.com,+1-776-966-8501,61,Male,Phoenix,IL,2024-03-21,26,2504.79,Active
+CUST1962,Lisa,Moore,lisa.moore@email.com,+1-264-158-4061,47,Male,Phoenix,NY,2024-08-22,30,1675.99,Inactive
+CUST1963,Chris,Wilson,chris.wilson@email.com,+1-627-255-9916,50,Male,Chicago,AZ,2023-05-10,33,2856.93,VIP
+CUST1964,Mike,Moore,mike.moore@email.com,+1-961-706-8628,39,Male,Chicago,TX,2023-01-07,31,2135.3,Active
+CUST1965,Lisa,Davis,lisa.davis@email.com,+1-525-393-3282,70,Male,New York,TX,2023-02-13,1,361.1,VIP
+CUST1966,Mike,Brown,mike.brown@email.com,+1-272-954-5174,25,Male,Houston,TX,2024-11-19,48,1864.74,VIP
+CUST1967,Tom,Smith,tom.smith@email.com,+1-992-893-5869,45,Female,Houston,TX,2024-02-09,21,1479.19,Active
+CUST1968,John,Wilson,john.wilson@email.com,+1-789-819-4689,32,Female,Los Angeles,NY,2024-05-10,17,1648.04,Inactive
+CUST1969,John,Smith,john.smith@email.com,+1-727-690-9755,18,Female,Los Angeles,NY,2024-08-31,42,737.85,Active
+CUST1970,Emma,Jackson,emma.jackson@email.com,+1-343-515-7073,77,Male,Houston,NY,2024-04-25,28,1293.8,Active
+CUST1971,John,Jackson,john.jackson@email.com,+1-764-425-9216,33,Male,Chicago,CA,2024-10-16,34,4796.51,Inactive
+CUST1972,Chris,Taylor,chris.taylor@email.com,+1-219-824-1475,35,Male,Chicago,CA,2023-02-18,2,1817.64,Active
+CUST1973,David,Johnson,david.johnson@email.com,+1-298-810-8549,76,Male,Houston,TX,2024-03-14,42,1078.67,Active
+CUST1974,Anna,Smith,anna.smith@email.com,+1-303-716-4021,58,Female,Houston,AZ,2023-08-22,22,250.69,VIP
+CUST1975,Anna,Taylor,anna.taylor@email.com,+1-315-705-8012,69,Female,Phoenix,AZ,2023-10-14,8,1877.67,VIP
+CUST1976,Tom,Taylor,tom.taylor@email.com,+1-832-917-1013,67,Male,Houston,NY,2024-11-13,7,3288.06,VIP
+CUST1977,Anna,Johnson,anna.johnson@email.com,+1-254-949-3477,72,Male,Los Angeles,AZ,2023-11-06,4,1388.74,Inactive
+CUST1978,Chris,Anderson,chris.anderson@email.com,+1-376-968-9793,41,Male,Phoenix,IL,2024-09-23,7,2779.97,Active
+CUST1979,Jane,Jackson,jane.jackson@email.com,+1-790-935-8176,78,Female,Houston,CA,2023-10-12,31,1511.15,VIP
+CUST1980,Mike,Smith,mike.smith@email.com,+1-309-500-7891,29,Male,Los Angeles,NY,2024-08-31,33,897.69,Active
+CUST1981,Anna,Thomas,anna.thomas@email.com,+1-858-424-1185,40,Female,Chicago,TX,2023-01-01,36,1726.97,VIP
+CUST1982,Chris,Davis,chris.davis@email.com,+1-116-743-5851,77,Female,Chicago,NY,2024-10-29,30,3340.41,Inactive
+CUST1983,David,Moore,david.moore@email.com,+1-316-928-4480,34,Female,New York,NY,2023-07-18,9,4194.52,VIP
+CUST1984,Mike,Anderson,mike.anderson@email.com,+1-290-229-5017,39,Female,Phoenix,AZ,2024-03-17,34,2796.46,Active
+CUST1985,Tom,Jackson,tom.jackson@email.com,+1-809-717-2616,44,Male,Houston,CA,2024-04-11,27,1679.39,Active
+CUST1986,Sarah,Brown,sarah.brown@email.com,+1-463-781-8258,44,Female,Chicago,NY,2024-06-30,21,4168.95,VIP
+CUST1987,Emma,Jackson,emma.jackson@email.com,+1-103-266-3434,27,Male,Phoenix,IL,2024-10-10,36,617.6,Inactive
+CUST1988,Lisa,Davis,lisa.davis@email.com,+1-356-976-7050,39,Male,Houston,AZ,2024-05-27,48,4686.03,VIP
+CUST1989,Lisa,Taylor,lisa.taylor@email.com,+1-260-797-2270,48,Female,Phoenix,CA,2023-12-27,15,3985.91,VIP
+CUST1990,Lisa,Smith,lisa.smith@email.com,+1-131-587-4418,32,Male,Phoenix,AZ,2024-12-08,5,1820.46,VIP
+CUST1991,John,Brown,john.brown@email.com,+1-233-152-4413,69,Female,Phoenix,AZ,2024-12-18,7,4840.12,Active
+CUST1992,David,Jackson,david.jackson@email.com,+1-311-618-1264,66,Female,New York,NY,2023-11-14,37,2069.55,VIP
+CUST1993,Tom,Jackson,tom.jackson@email.com,+1-263-841-9490,60,Male,Los Angeles,TX,2023-05-19,3,1115.72,Active
+CUST1994,Chris,Thomas,chris.thomas@email.com,+1-736-637-8045,70,Male,Houston,IL,2023-03-13,31,326.94,Inactive
+CUST1995,Emma,Davis,emma.davis@email.com,+1-585-965-9390,64,Male,Chicago,AZ,2024-02-17,38,3769.18,VIP
+CUST1996,Jane,Jackson,jane.jackson@email.com,+1-223-593-2194,70,Female,New York,IL,2023-04-15,4,1395.51,Inactive
+CUST1997,David,Jackson,david.jackson@email.com,+1-695-837-7004,45,Female,Phoenix,TX,2023-08-20,8,1279.37,Active
+CUST1998,Tom,Johnson,tom.johnson@email.com,+1-285-361-6274,80,Male,Los Angeles,AZ,2023-05-04,10,3597.45,VIP
+CUST1999,Emma,Jackson,emma.jackson@email.com,+1-194-935-6198,78,Female,Houston,IL,2024-08-08,32,4656.21,VIP

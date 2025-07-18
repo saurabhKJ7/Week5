@@ -1,0 +1,92 @@
+SKU,Product_Name,Category,Brand,Unit_Cost,Selling_Price,Stock_Quantity,Reorder_Level,Supplier,Last_Updated,Warehouse,Status
+ELELAP001,Laptop,Electronics,Brand B,466.43,708.59,68,10,Supplier X,2025-07-07 18:29:30.581946,Warehouse B,Out of Stock
+ELELAP002,Laptop,Electronics,Brand A,151.13,691.62,312,21,Supplier X,2025-06-25 18:29:30.581958,Warehouse A,In Stock
+ELELAP003,Laptop,Electronics,Brand C,270.44,136.3,279,39,Supplier X,2025-07-11 18:29:30.581963,Warehouse B,In Stock
+ELELAP004,Laptop,Electronics,Brand D,179.77,482.46,348,36,Supplier Y,2025-06-23 18:29:30.581967,Warehouse A,Low Stock
+ELELAP005,Laptop,Electronics,Brand D,14.78,67.17,422,34,Supplier X,2025-07-04 18:29:30.581970,Warehouse B,In Stock
+ELEPHO001,Phone,Electronics,Brand A,235.12,137.76,263,21,Supplier X,2025-06-22 18:29:30.581974,Warehouse A,Out of Stock
+ELEPHO002,Phone,Electronics,Brand B,165.95,239.42,238,35,Supplier Y,2025-07-05 18:29:30.581978,Warehouse B,In Stock
+ELEPHO003,Phone,Electronics,Brand A,204.13,690.87,178,37,Supplier Y,2025-07-10 18:29:30.581981,Warehouse A,Out of Stock
+ELEPHO004,Phone,Electronics,Brand A,17.09,695.03,439,35,Supplier X,2025-07-01 18:29:30.581985,Warehouse A,In Stock
+ELETAB001,Tablet,Electronics,Brand A,491.99,18.2,190,32,Supplier Y,2025-07-03 18:29:30.581988,Warehouse B,Low Stock
+ELETAB002,Tablet,Electronics,Brand D,429.84,206.9,55,45,Supplier Z,2025-07-18 18:29:30.581992,Warehouse B,In Stock
+ELETAB003,Tablet,Electronics,Brand C,39.71,785.47,270,19,Supplier X,2025-06-24 18:29:30.581995,Warehouse C,Low Stock
+ELETAB004,Tablet,Electronics,Brand B,46.95,182.02,77,31,Supplier Z,2025-07-07 18:29:30.581998,Warehouse C,Low Stock
+ELEHEA001,Headphones,Electronics,Brand A,57.13,711.77,181,44,Supplier X,2025-06-21 18:29:30.582002,Warehouse B,In Stock
+ELEHEA002,Headphones,Electronics,Brand B,6.17,503.11,395,38,Supplier X,2025-06-18 18:29:30.582005,Warehouse C,Low Stock
+ELEHEA003,Headphones,Electronics,Brand B,40.64,826.58,288,17,Supplier Z,2025-06-20 18:29:30.582008,Warehouse B,Out of Stock
+ELECAM001,Camera,Electronics,Brand A,14.83,811.9,41,24,Supplier Y,2025-07-07 18:29:30.582012,Warehouse C,Out of Stock
+ELECAM002,Camera,Electronics,Brand A,133.93,839.65,436,41,Supplier Z,2025-06-26 18:29:30.582015,Warehouse A,In Stock
+ELECAM003,Camera,Electronics,Brand B,346.08,414.36,457,36,Supplier Z,2025-06-24 18:29:30.582018,Warehouse A,Low Stock
+ELECAM004,Camera,Electronics,Brand D,319.44,153.0,168,30,Supplier Y,2025-07-06 18:29:30.582022,Warehouse C,Out of Stock
+ELECAM005,Camera,Electronics,Brand D,336.98,34.31,443,34,Supplier Y,2025-07-03 18:29:30.582025,Warehouse B,Low Stock
+CLOT-S001,T-Shirt,Clothing,Brand B,180.43,81.92,48,49,Supplier Y,2025-06-23 18:29:30.582029,Warehouse C,In Stock
+CLOT-S002,T-Shirt,Clothing,Brand B,19.66,513.43,168,35,Supplier X,2025-07-14 18:29:30.582032,Warehouse B,In Stock
+CLOT-S003,T-Shirt,Clothing,Brand C,456.77,47.82,331,42,Supplier Y,2025-07-09 18:29:30.582035,Warehouse C,Low Stock
+CLOT-S004,T-Shirt,Clothing,Brand D,231.51,484.41,182,33,Supplier Z,2025-07-10 18:29:30.582038,Warehouse C,Out of Stock
+CLOT-S005,T-Shirt,Clothing,Brand D,439.2,439.71,41,24,Supplier Y,2025-06-26 18:29:30.582042,Warehouse C,Low Stock
+CLOJEA001,Jeans,Clothing,Brand C,309.77,452.51,14,36,Supplier Z,2025-07-10 18:29:30.582045,Warehouse A,Out of Stock
+CLOJEA002,Jeans,Clothing,Brand A,398.78,17.19,459,27,Supplier Z,2025-06-29 18:29:30.582048,Warehouse C,Out of Stock
+CLOJEA003,Jeans,Clothing,Brand C,177.38,607.36,134,30,Supplier X,2025-06-25 18:29:30.582051,Warehouse B,Low Stock
+CLOJEA004,Jeans,Clothing,Brand D,154.74,741.92,35,31,Supplier Z,2025-07-15 18:29:30.582054,Warehouse A,In Stock
+CLOJAC001,Jacket,Clothing,Brand B,221.3,321.52,225,14,Supplier Z,2025-06-28 18:29:30.582088,Warehouse A,Out of Stock
+CLOJAC002,Jacket,Clothing,Brand B,147.1,21.4,90,17,Supplier X,2025-06-23 18:29:30.582104,Warehouse B,Out of Stock
+CLOJAC003,Jacket,Clothing,Brand D,289.32,388.84,322,32,Supplier Y,2025-07-10 18:29:30.582114,Warehouse B,Low Stock
+CLOJAC004,Jacket,Clothing,Brand A,280.99,857.71,104,48,Supplier Z,2025-06-22 18:29:30.582122,Warehouse B,In Stock
+CLOJAC005,Jacket,Clothing,Brand D,433.39,561.05,452,48,Supplier X,2025-07-12 18:29:30.582166,Warehouse C,In Stock
+CLOSHO001,Shoes,Clothing,Brand D,307.3,424.02,126,48,Supplier Z,2025-07-13 18:29:30.582205,Warehouse B,Out of Stock
+CLOSHO002,Shoes,Clothing,Brand C,289.27,736.62,413,26,Supplier Y,2025-06-21 18:29:30.582237,Warehouse A,In Stock
+CLOSHO003,Shoes,Clothing,Brand A,183.27,868.11,420,38,Supplier X,2025-06-24 18:29:30.582243,Warehouse A,In Stock
+CLOHAT001,Hat,Clothing,Brand B,217.11,507.61,170,48,Supplier Z,2025-07-07 18:29:30.582248,Warehouse B,Out of Stock
+CLOHAT002,Hat,Clothing,Brand A,342.91,298.43,87,22,Supplier Y,2025-07-14 18:29:30.582276,Warehouse C,Low Stock
+CLOHAT003,Hat,Clothing,Brand D,430.1,50.56,282,49,Supplier Z,2025-07-11 18:29:30.582288,Warehouse A,Out of Stock
+BOOFIC001,Fiction,Books,Brand C,182.14,45.03,207,28,Supplier Z,2025-07-06 18:29:30.582299,Warehouse A,In Stock
+BOOFIC002,Fiction,Books,Brand B,77.73,75.99,177,37,Supplier X,2025-06-29 18:29:30.582344,Warehouse A,Out of Stock
+BOOFIC003,Fiction,Books,Brand C,351.94,721.49,8,24,Supplier X,2025-07-18 18:29:30.582357,Warehouse C,Low Stock
+BOONON001,Non-Fiction,Books,Brand C,209.79,326.35,491,48,Supplier Y,2025-07-02 18:29:30.582368,Warehouse A,Low Stock
+BOONON002,Non-Fiction,Books,Brand B,32.12,925.43,122,21,Supplier X,2025-07-01 18:29:30.582377,Warehouse C,Out of Stock
+BOONON003,Non-Fiction,Books,Brand D,202.38,455.65,424,36,Supplier Y,2025-06-28 18:29:30.582385,Warehouse C,Low Stock
+BOONON004,Non-Fiction,Books,Brand B,295.05,948.73,492,18,Supplier X,2025-07-04 18:29:30.582394,Warehouse B,In Stock
+BOONON005,Non-Fiction,Books,Brand A,391.38,231.95,241,47,Supplier Z,2025-06-27 18:29:30.582409,Warehouse A,Out of Stock
+BOOBIO001,Biography,Books,Brand C,251.8,723.69,162,11,Supplier Z,2025-07-13 18:29:30.582429,Warehouse C,In Stock
+BOOBIO002,Biography,Books,Brand C,287.89,828.21,411,26,Supplier X,2025-07-01 18:29:30.582553,Warehouse C,In Stock
+BOOBIO003,Biography,Books,Brand A,440.43,520.87,279,42,Supplier X,2025-07-01 18:29:30.582563,Warehouse A,Out of Stock
+BOOBIO004,Biography,Books,Brand A,30.55,898.16,135,43,Supplier X,2025-06-28 18:29:30.582572,Warehouse C,Low Stock
+BOOSCI001,Science,Books,Brand A,471.27,987.85,407,11,Supplier Z,2025-07-07 18:29:30.582583,Warehouse C,In Stock
+BOOSCI002,Science,Books,Brand C,78.32,592.34,19,26,Supplier X,2025-06-28 18:29:30.582591,Warehouse B,Low Stock
+BOOSCI003,Science,Books,Brand C,273.71,984.56,402,30,Supplier Y,2025-06-20 18:29:30.582599,Warehouse A,Out of Stock
+BOOHIS001,History,Books,Brand A,256.19,798.99,450,49,Supplier X,2025-07-18 18:29:30.582609,Warehouse C,Out of Stock
+BOOHIS002,History,Books,Brand B,408.31,120.55,0,11,Supplier Z,2025-07-05 18:29:30.582618,Warehouse C,Out of Stock
+SPOBAS001,Basketball,Sports,Brand D,495.02,649.88,403,27,Supplier Z,2025-07-17 18:29:30.582628,Warehouse A,Low Stock
+SPOBAS002,Basketball,Sports,Brand B,113.31,705.3,41,20,Supplier Y,2025-07-10 18:29:30.582636,Warehouse C,Out of Stock
+SPOFOO001,Football,Sports,Brand C,471.42,535.04,357,23,Supplier X,2025-07-07 18:29:30.582654,Warehouse A,Low Stock
+SPOFOO002,Football,Sports,Brand A,156.35,266.17,191,26,Supplier Y,2025-07-06 18:29:30.582660,Warehouse A,Out of Stock
+SPOFOO003,Football,Sports,Brand D,67.69,215.26,188,18,Supplier Y,2025-07-09 18:29:30.582663,Warehouse B,Low Stock
+SPOFOO004,Football,Sports,Brand C,389.0,968.36,442,37,Supplier X,2025-06-28 18:29:30.582676,Warehouse B,Low Stock
+SPOFOO005,Football,Sports,Brand C,426.24,909.57,477,11,Supplier Z,2025-07-17 18:29:30.582702,Warehouse B,Low Stock
+SPOTEN001,Tennis,Sports,Brand A,253.12,867.92,419,29,Supplier Z,2025-07-15 18:29:30.582717,Warehouse B,Out of Stock
+SPOTEN002,Tennis,Sports,Brand C,329.08,482.41,349,39,Supplier X,2025-07-18 18:29:30.582726,Warehouse A,Out of Stock
+SPOTEN003,Tennis,Sports,Brand D,48.8,350.38,298,19,Supplier Y,2025-06-25 18:29:30.582734,Warehouse A,In Stock
+SPOTEN004,Tennis,Sports,Brand D,50.38,957.44,469,35,Supplier Z,2025-06-19 18:29:30.582758,Warehouse A,Out of Stock
+SPOGOL001,Golf,Sports,Brand D,268.34,532.22,128,36,Supplier Z,2025-07-05 18:29:30.582766,Warehouse A,Low Stock
+SPOGOL002,Golf,Sports,Brand B,495.72,465.4,402,43,Supplier Z,2025-06-21 18:29:30.582769,Warehouse A,In Stock
+SPOGOL003,Golf,Sports,Brand B,324.7,909.04,316,10,Supplier X,2025-06-22 18:29:30.582786,Warehouse C,Low Stock
+SPOSOC001,Soccer,Sports,Brand D,436.12,928.05,5,11,Supplier X,2025-06-28 18:29:30.582791,Warehouse B,Low Stock
+SPOSOC002,Soccer,Sports,Brand B,110.46,464.67,58,43,Supplier X,2025-06-18 18:29:30.582795,Warehouse B,In Stock
+SPOSOC003,Soccer,Sports,Brand A,267.01,511.34,151,48,Supplier X,2025-07-02 18:29:30.582798,Warehouse C,In Stock
+HOMFUR001,Furniture,Home,Brand A,478.11,704.8,494,37,Supplier Y,2025-06-24 18:29:30.582802,Warehouse C,Low Stock
+HOMFUR002,Furniture,Home,Brand A,386.96,923.32,209,11,Supplier X,2025-06-27 18:29:30.582805,Warehouse B,Out of Stock
+HOMFUR003,Furniture,Home,Brand A,295.63,924.89,226,46,Supplier Y,2025-07-14 18:29:30.582809,Warehouse A,Out of Stock
+HOMFUR004,Furniture,Home,Brand B,233.17,689.99,209,29,Supplier Z,2025-07-02 18:29:30.582813,Warehouse C,In Stock
+HOMAPP001,Appliances,Home,Brand C,377.14,904.57,374,20,Supplier X,2025-06-25 18:29:30.582817,Warehouse A,In Stock
+HOMAPP002,Appliances,Home,Brand D,472.36,173.63,90,23,Supplier Y,2025-07-10 18:29:30.582820,Warehouse B,Out of Stock
+HOMDEC001,Decor,Home,Brand D,454.93,221.29,490,37,Supplier Y,2025-07-12 18:29:30.582824,Warehouse A,In Stock
+HOMDEC002,Decor,Home,Brand A,213.11,50.43,38,22,Supplier Y,2025-07-07 18:29:30.582848,Warehouse A,In Stock
+HOMDEC003,Decor,Home,Brand B,311.54,936.9,370,15,Supplier X,2025-07-08 18:29:30.582852,Warehouse A,Out of Stock
+HOMDEC004,Decor,Home,Brand A,407.76,623.19,391,30,Supplier X,2025-07-02 18:29:30.582891,Warehouse C,In Stock
+HOMKIT001,Kitchen,Home,Brand A,288.53,555.31,259,19,Supplier X,2025-07-18 18:29:30.582949,Warehouse C,Out of Stock
+HOMKIT002,Kitchen,Home,Brand A,44.89,650.72,4,38,Supplier Y,2025-07-01 18:29:30.582971,Warehouse C,In Stock
+HOMKIT003,Kitchen,Home,Brand C,443.19,793.49,411,28,Supplier Y,2025-07-18 18:29:30.582981,Warehouse B,Low Stock
+HOMGAR001,Garden,Home,Brand C,429.79,865.1,433,28,Supplier Z,2025-06-21 18:29:30.582990,Warehouse A,In Stock
+HOMGAR002,Garden,Home,Brand B,447.25,730.84,42,16,Supplier Y,2025-06-20 18:29:30.582999,Warehouse B,In Stock
+HOMGAR003,Garden,Home,Brand A,498.19,969.62,75,21,Supplier X,2025-06-23 18:29:30.583007,Warehouse B,Low Stock

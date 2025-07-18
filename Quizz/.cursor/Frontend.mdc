@@ -1,5 +1,906 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+# Frontend Architecture
+## Automated Quiz Generator
+
+### 1. Technology Stack
+
+#### 1.1 Core Technologies
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite for fast development and building
+- **State Management:** Redux Toolkit + RTK Query
+- **Styling:** Tailwind CSS with shadcn/ui components
+- **Routing:** React Router v6
+- **Forms:** React Hook Form with Zod validation
+- **File Upload:** React Dropzone
+- **Charts:** Recharts for analytics
+
+#### 1.2 Project Structure
+```
+src/
+├── components/
+│   ├── ui/              # Reusable UI components
+│   ├── layout/          # Layout components
+│   ├── forms/           # Form components
+│   └── charts/          # Chart components
+├── pages/
+│   ├── Dashboard/
+│   ├── Documents/
+│   ├── QuizGeneration/
+│   └── Analytics/
+├── hooks/               # Custom React hooks
+├── store/              # Redux store configuration
+├── services/           # API service layer
+├── utils/              # Utility functions
+└── types/              # TypeScript type definitions
+```
+
+### 2. Core Components
+
+#### 2.1 Document Management
+```typescript
+// DocumentUpload.tsx
+interface DocumentUploadProps {
+  onUpload: (files: File[]) => void;
+  acceptedTypes: string[];
+  maxSize: number;
+}
+
+#### 8.2 API Error Handling
+```typescript
+// utils/errorHandler.ts
+export const handleApiError = (error: any): string => {
+  if (error?.data?.message) {
+    return error.data.message;
+  }
+  
+  if (error?.status === 404) {
+    return 'Resource not found';
+  }
+  
+  if (error?.status === 500) {
+    return 'Internal server error';
+  }
+  
+  return 'An unexpected error occurred';
+};
+
+// Custom error hook
+export const useErrorHandler = () => {
+  const handleError = (error: any) => {
+    const message = handleApiError(error);
+    toast.error(message);
+  };
+  
+  return { handleError };
+};
+```
+
+### 9. Testing Strategy
+
+#### 9.1 Component Testing
+```typescript
+// __tests__/components/QuestionCard.test.tsx
+import { render, screen, fireEvent } from '@testing-library/react';
+import { QuestionCard } from '../components/QuestionCard';
+
+describe('QuestionCard', () => {
+  const mockQuestion = {
+    id: '1',
+    type: 'mcq',
+    question: 'What is React?',
+    options: ['Library', 'Framework', 'Language'],
+    correctAnswer: 'Library',
+    explanation: 'React is a JavaScript library',
+    difficulty: 2,
+    topic: 'React'
+  };
+
+  test('renders question and options', () => {
+    render(
+      <QuestionCard
+        question={mockQuestion}
+        answer=""
+        onAnswerChange={jest.fn()}
+      />
+    );
+
+    expect(screen.getByText('What is React?')).toBeInTheDocument();
+    expect(screen.getByText('Library')).toBeInTheDocument();
+    expect(screen.getByText('Framework')).toBeInTheDocument();
+    expect(screen.getByText('Language')).toBeInTheDocument();
+  });
+
+  test('calls onAnswerChange when option is clicked', () => {
+    const mockOnAnswerChange = jest.fn();
+    
+    render(
+      <QuestionCard
+        question={mockQuestion}
+        answer=""
+        onAnswerChange={mockOnAnswerChange}
+      />
+    );
+
+    fireEvent.click(screen.getByText('Library'));
+    expect(mockOnAnswerChange).toHaveBeenCalledWith('1', 'Library');
+  });
+});
+```
+
+#### 9.2 Hook Testing
+```typescript
+// __tests__/hooks/useDocuments.test.tsx
+import { renderHook, act } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { store } from '../../store';
+import { useDocuments } from '../../hooks/useDocuments';
+
+const wrapper = ({ children }) => (
+  <Provider store={store}>{children}</Provider>
+);
+
+describe('useDocuments', () => {
+  test('should upload documents successfully', async () => {
+    const { result } = renderHook(() => useDocuments(), { wrapper });
+    
+    const mockFiles = [
+      new File(['content'], 'test.pdf', { type: 'application/pdf' })
+    ];
+
+    await act(async () => {
+      await result.current.uploadDocument(mockFiles);
+    });
+
+    // Assert expected behavior
+    expect(result.current.documents).toBeDefined();
+  });
+});
+```
+
+### 10. Accessibility Features
+
+#### 10.1 Keyboard Navigation
+```typescript
+// components/QuizNavigation.tsx
+const QuizNavigation: React.FC<QuizNavigationProps> = ({
+  currentQuestion,
+  totalQuestions,
+  onPrevious,
+  onNext,
+  onSubmit
+}) => {
+  const handleKeyPress = (event: React.KeyboardEvent) => {
+    if (event.key === 'ArrowLeft' && currentQuestion > 0) {
+      onPrevious();
+    } else if (event.key === 'ArrowRight' && currentQuestion < totalQuestions - 1) {
+      onNext();
+    } else if (event.key === 'Enter' && currentQuestion === totalQuestions - 1) {
+      onSubmit();
+    }
+  };
+
+  return (
+    <div 
+      className="flex justify-between mt-6"
+      onKeyDown={handleKeyPress}
+      tabIndex={0}
+    >
+      <button
+        onClick={onPrevious}
+        disabled={currentQuestion === 0}
+        className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md disabled:opacity-50"
+        aria-label="Previous question"
+      >
+        Previous
+      </button>
+
+      {currentQuestion === totalQuestions - 1 ? (
+        <button
+          onClick={onSubmit}
+          className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+          aria-label="Submit quiz"
+        >
+          Submit Quiz
+        </button>
+      ) : (
+        <button
+          onClick={onNext}
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          aria-label="Next question"
+        >
+          Next
+        </button>
+      )}
+    </div>
+  );
+};
+```
+
+#### 10.2 Screen Reader Support
+```typescript
+// components/QuizProgress.tsx
+const QuizProgress: React.FC<QuizProgressProps> = ({
+  currentQuestion,
+  totalQuestions
+}) => {
+  const progressPercentage = ((currentQuestion + 1) / totalQuestions) * 100;
+
+  return (
+    <div className="mb-4">
+      <div className="flex justify-between items-center mb-2">
+        <span className="text-sm font-medium">
+          Question {currentQuestion + 1} of {totalQuestions}
+        </span>
+        <span className="text-sm text-gray-500">
+          {Math.round(progressPercentage)}% Complete
+        </span>
+      </div>
+      <div className="w-full bg-gray-200 rounded-full h-2">
+        <div
+          className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+          style={{ width: `${progressPercentage}%` }}
+          role="progressbar"
+          aria-valuenow={progressPercentage}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`Quiz progress: ${Math.round(progressPercentage)}% complete`}
+        />
+      </div>
+    </div>
+  );
+};
+```
+
+### 11. Deployment Configuration
+
+#### 11.1 Build Configuration
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+        },
+      },
+    },
+  },
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+    },
+  },
+});
+```
+
+#### 11.2 Environment Configuration
+```typescript
+// .env.local
+VITE_API_BASE_URL=http://localhost:8000/api
+VITE_APP_NAME=Quiz Generator
+VITE_APP_VERSION=1.0.0
+```
+
+### 12. Progressive Web App Features
+
+#### 12.1 Service Worker
+```typescript
+// public/sw.js
+const CACHE_NAME = 'quiz-generator-v1';
+const urlsToCache = [
+  '/',
+  '/static/js/bundle.js',
+  '/static/css/main.css',
+  '/manifest.json'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+  );
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );
+});
+```
+
+#### 12.2 PWA Manifest
+```json
+{
+  "name": "Quiz Generator",
+  "short_name": "QuizGen",
+  "description": "Automated Quiz Generation System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+const DocumentUpload: React.FC<DocumentUploadProps> = ({
+  onUpload,
+  acceptedTypes,
+  maxSize
+}) => {
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+    accept: acceptedTypes,
+    maxSize,
+    onDrop: onUpload
+  });
+
+  return (
+    <div
+      {...getRootProps()}
+      className={`border-2 border-dashed p-8 rounded-lg cursor-pointer
+        ${isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'}`}
+    >
+      <input {...getInputProps()} />
+      <div className="text-center">
+        <Upload className="mx-auto h-12 w-12 text-gray-400" />
+        <p className="mt-2 text-sm text-gray-600">
+          Drag & drop documents here, or click to select
+        </p>
+      </div>
+    </div>
+  );
+};
+```
+
+#### 2.2 Quiz Generation Interface
+```typescript
+// QuizGenerator.tsx
+interface QuizGeneratorProps {
+  documents: Document[];
+  onGenerate: (config: QuizConfig) => void;
+}
+
+const QuizGenerator: React.FC<QuizGeneratorProps> = ({
+  documents,
+  onGenerate
+}) => {
+  const { register, handleSubmit, watch, formState: { errors } } = useForm<QuizConfig>({
+    resolver: zodResolver(quizConfigSchema)
+  });
+
+  const selectedDocuments = watch('selectedDocuments');
+
+  return (
+    <form onSubmit={handleSubmit(onGenerate)} className="space-y-6">
+      <div>
+        <label className="block text-sm font-medium text-gray-700">
+          Select Documents
+        </label>
+        <div className="mt-2 space-y-2">
+          {documents.map(doc => (
+            <label key={doc.id} className="flex items-center">
+              <input
+                type="checkbox"
+                value={doc.id}
+                {...register('selectedDocuments')}
+                className="mr-2"
+              />
+              <span className="text-sm">{doc.filename}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Number of Questions
+          </label>
+          <input
+            type="number"
+            min="1"
+            max="50"
+            {...register('numQuestions')}
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Difficulty Level
+          </label>
+          <select
+            {...register('difficulty')}
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+          >
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+      >
+        Generate Quiz
+      </button>
+    </form>
+  );
+};
+```
+
+#### 2.3 Quiz Display Component
+```typescript
+// QuizDisplay.tsx
+interface QuizDisplayProps {
+  quiz: Quiz;
+  onSubmit: (answers: QuizAnswers) => void;
+}
+
+const QuizDisplay: React.FC<QuizDisplayProps> = ({ quiz, onSubmit }) => {
+  const [answers, setAnswers] = useState<QuizAnswers>({});
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  const handleAnswerChange = (questionId: string, answer: string) => {
+    setAnswers(prev => ({
+      ...prev,
+      [questionId]: answer
+    }));
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <div className="mb-4">
+        <div className="flex justify-between items-center">
+          <h2 className="text-2xl font-bold">{quiz.title}</h2>
+          <span className="text-sm text-gray-500">
+            Question {currentQuestion + 1} of {quiz.questions.length}
+          </span>
+        </div>
+        <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div
+            className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+            style={{ width: `${((currentQuestion + 1) / quiz.questions.length) * 100}%` }}
+          />
+        </div>
+      </div>
+
+      <QuestionCard
+        question={quiz.questions[currentQuestion]}
+        answer={answers[quiz.questions[currentQuestion].id]}
+        onAnswerChange={handleAnswerChange}
+      />
+
+      <div className="flex justify-between mt-6">
+        <button
+          onClick={() => setCurrentQuestion(prev => Math.max(0, prev - 1))}
+          disabled={currentQuestion === 0}
+          className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md disabled:opacity-50"
+        >
+          Previous
+        </button>
+
+        {currentQuestion === quiz.questions.length - 1 ? (
+          <button
+            onClick={() => onSubmit(answers)}
+            className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+          >
+            Submit Quiz
+          </button>
+        ) : (
+          <button
+            onClick={() => setCurrentQuestion(prev => prev + 1)}
+            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          >
+            Next
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+```
+
+### 3. State Management
+
+#### 3.1 Redux Store Configuration
+```typescript
+// store/index.ts
+import { configureStore } from '@reduxjs/toolkit';
+import { documentsApi } from './api/documentsApi';
+import { quizApi } from './api/quizApi';
+import documentSlice from './slices/documentSlice';
+import quizSlice from './slices/quizSlice';
+
+export const store = configureStore({
+  reducer: {
+    documents: documentSlice,
+    quiz: quizSlice,
+    [documentsApi.reducerPath]: documentsApi.reducer,
+    [quizApi.reducerPath]: quizApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(
+      documentsApi.middleware,
+      quizApi.middleware
+    ),
+});
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+```
+
+#### 3.2 API Service Layer
+```typescript
+// services/api.ts
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
+export const documentsApi = createApi({
+  reducerPath: 'documentsApi',
+  baseQuery: fetchBaseQuery({
+    baseUrl: '/api/documents',
+  }),
+  tagTypes: ['Document'],
+  endpoints: (builder) => ({
+    getDocuments: builder.query<Document[], void>({
+      query: () => '/',
+      providesTags: ['Document'],
+    }),
+    uploadDocument: builder.mutation<Document, FormData>({
+      query: (formData) => ({
+        url: '/upload',
+        method: 'POST',
+        body: formData,
+      }),
+      invalidatesTags: ['Document'],
+    }),
+    deleteDocument: builder.mutation<void, string>({
+      query: (id) => ({
+        url: `/${id}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['Document'],
+    }),
+  }),
+});
+
+export const quizApi = createApi({
+  reducerPath: 'quizApi',
+  baseQuery: fetchBaseQuery({
+    baseUrl: '/api/quizzes',
+  }),
+  tagTypes: ['Quiz'],
+  endpoints: (builder) => ({
+    generateQuiz: builder.mutation<Quiz, QuizConfig>({
+      query: (config) => ({
+        url: '/generate',
+        method: 'POST',
+        body: config,
+      }),
+      invalidatesTags: ['Quiz'],
+    }),
+    getQuizHistory: builder.query<Quiz[], void>({
+      query: () => '/history',
+      providesTags: ['Quiz'],
+    }),
+    evaluateQuiz: builder.mutation<QuizResult, { quizId: string; answers: QuizAnswers }>({
+      query: ({ quizId, answers }) => ({
+        url: `/${quizId}/evaluate`,
+        method: 'POST',
+        body: answers,
+      }),
+    }),
+  }),
+});
+```
+
+### 4. Custom Hooks
+
+#### 4.1 Document Management Hook
+```typescript
+// hooks/useDocuments.ts
+export const useDocuments = () => {
+  const {
+    data: documents,
+    isLoading,
+    error,
+    refetch
+  } = useGetDocumentsQuery();
+
+  const [uploadDocument] = useUploadDocumentMutation();
+  const [deleteDocument] = useDeleteDocumentMutation();
+
+  const handleUpload = async (files: File[]) => {
+    try {
+      const formData = new FormData();
+      files.forEach(file => formData.append('files', file));
+      
+      await uploadDocument(formData).unwrap();
+      toast.success('Documents uploaded successfully');
+    } catch (error) {
+      toast.error('Failed to upload documents');
+    }
+  };
+
+  const handleDelete = async (id: string) => {
+    try {
+      await deleteDocument(id).unwrap();
+      toast.success('Document deleted successfully');
+    } catch (error) {
+      toast.error('Failed to delete document');
+    }
+  };
+
+  return {
+    documents: documents || [],
+    isLoading,
+    error,
+    uploadDocument: handleUpload,
+    deleteDocument: handleDelete,
+    refetch
+  };
+};
+```
+
+#### 4.2 Quiz Generation Hook
+```typescript
+// hooks/useQuizGeneration.ts
+export const useQuizGeneration = () => {
+  const [generateQuiz, { isLoading: isGenerating }] = useGenerateQuizMutation();
+  const [evaluateQuiz, { isLoading: isEvaluating }] = useEvaluateQuizMutation();
+
+  const handleGenerate = async (config: QuizConfig) => {
+    try {
+      const quiz = await generateQuiz(config).unwrap();
+      toast.success('Quiz generated successfully');
+      return quiz;
+    } catch (error) {
+      toast.error('Failed to generate quiz');
+      throw error;
+    }
+  };
+
+  const handleEvaluate = async (quizId: string, answers: QuizAnswers) => {
+    try {
+      const result = await evaluateQuiz({ quizId, answers }).unwrap();
+      toast.success('Quiz evaluated successfully');
+      return result;
+    } catch (error) {
+      toast.error('Failed to evaluate quiz');
+      throw error;
+    }
+  };
+
+  return {
+    generateQuiz: handleGenerate,
+    evaluateQuiz: handleEvaluate,
+    isGenerating,
+    isEvaluating
+  };
+};
+```
+
+### 5. TypeScript Definitions
+
+#### 5.1 Core Types
+```typescript
+// types/index.ts
+export interface Document {
+  id: string;
+  filename: string;
+  contentType: string;
+  uploadDate: string;
+  processed: boolean;
+  metadata: Record<string, any>;
+}
+
+export interface QuizConfig {
+  selectedDocuments: string[];
+  numQuestions: number;
+  difficulty: 'easy' | 'medium' | 'hard';
+  questionTypes: QuestionType[];
+  topics?: string[];
+}
+
+export interface Question {
+  id: string;
+  type: QuestionType;
+  question: string;
+  options?: string[];
+  correctAnswer: string;
+  explanation: string;
+  difficulty: number;
+  topic: string;
+}
+
+export interface Quiz {
+  id: string;
+  title: string;
+  questions: Question[];
+  difficulty: string;
+  createdAt: string;
+  metadata: Record<string, any>;
+}
+
+export interface QuizAnswers {
+  [questionId: string]: string;
+}
+
+export interface QuizResult {
+  score: number;
+  totalQuestions: number;
+  correctAnswers: number;
+  results: QuestionResult[];
+  feedback: string;
+}
+
+export type QuestionType = 'mcq' | 'true_false' | 'short_answer' | 'essay';
+```
+
+### 6. Styling with Tailwind CSS
+
+#### 6.1 Custom Component Styles
+```css
+/* styles/components.css */
+.quiz-card {
+  @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+}
+
+.quiz-card:hover {
+  @apply shadow-lg border-gray-300;
+}
+
+.question-card {
+  @apply bg-gray-50 rounded-lg p-4 mb-4;
+}
+
+.option-button {
+  @apply w-full text-left p-3 rounded-md border border-gray-300 hover:bg-gray-50;
+}
+
+.option-button.selected {
+  @apply bg-blue-50 border-blue-500 text-blue-700;
+}
+
+.option-button.correct {
+  @apply bg-green-50 border-green-500 text-green-700;
+}
+
+.option-button.incorrect {
+  @apply bg-red-50 border-red-500 text-red-700;
+}
+```
+
+### 7. Performance Optimizations
+
+#### 7.1 Code Splitting
+```typescript
+// Lazy load components
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const Documents = lazy(() => import('./pages/Documents'));
+const QuizGeneration = lazy(() => import('./pages/QuizGeneration'));
+const Analytics = lazy(() => import('./pages/Analytics'));
+
+// Route configuration
+const AppRoutes = () => (
+  <Suspense fallback={<LoadingSpinner />}>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/documents" element={<Documents />} />
+      <Route path="/quiz" element={<QuizGeneration />} />
+      <Route path="/analytics" element={<Analytics />} />
+    </Routes>
+  </Suspense>
+);
+```
+
+#### 7.2 Memoization
+```typescript
+// Memoized components
+const QuestionCard = React.memo<QuestionCardProps>(({ question, answer, onAnswerChange }) => {
+  return (
+    <div className="question-card">
+      <h3 className="text-lg font-semibold mb-4">{question.question}</h3>
+      {question.options?.map((option, index) => (
+        <button
+          key={index}
+          onClick={() => onAnswerChange(question.id, option)}
+          className={`option-button ${answer === option ? 'selected' : ''}`}
+        >
+          {option}
+        </button>
+      ))}
+    </div>
+  );
+});
+```
+
+### 8. Error Handling
+
+#### 8.1 Error Boundaries
+```typescript
+// components/ErrorBoundary.tsx
+interface ErrorBoundaryState {
+  hasError: boolean;
+  error?: Error;
+}
+
+export class ErrorBoundary extends React.Component<
+  React.PropsWithChildren<{}>,
+  ErrorBoundaryState
+> {
+  constructor(props: React.PropsWithChildren<{}>) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    console.error('Error caught by boundary:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50">
+          <div className="bg-white p-8 rounded-lg shadow-md max-w-md">
+            <h2 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h2>
+            <p className="text-gray-600 mb-4">
+              We're sorry, but something unexpected happened. Please try refreshing the page.
+            </p>
+            <button
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+            >
+              Refresh Page
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}

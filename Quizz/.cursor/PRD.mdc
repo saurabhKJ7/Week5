@@ -1,5 +1,93 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+
+# Product Requirements Document (PRD)
+## Automated Quiz Generator
+
+### 1. Product Overview
+**Vision:** Create an intelligent assessment generation system that transforms educational content into personalized quizzes, assignments, and tests with advanced AI capabilities.
+
+**Target Users:** Educators, instructors, and content creators working in local environments.
+
+### 2. Core Features
+
+#### 2.1 Content Processing
+- **Document Upload:** Support for PDF, DOCX, TXT, and markdown files
+- **Content Extraction:** Intelligent text extraction and preprocessing
+- **Topic Identification:** Automatic detection of learning objectives and key concepts
+- **Metadata Generation:** Extract difficulty levels, subject areas, and learning outcomes
+
+#### 2.2 Hybrid RAG System
+- **Dense Retrieval:** Sentence-transformers for semantic search
+- **Sparse Retrieval:** BM25 for keyword-based matching
+- **Fusion Strategy:** Reciprocal Rank Fusion (RRF) for combining results
+- **Dynamic Chunking:** Context-aware chunk sizing based on content type
+
+#### 2.3 Advanced Reranking
+- **Cross-encoder Models:** Sophisticated relevance scoring
+- **Multi-stage Filtering:** Progressive refinement of candidate passages
+- **Contextual Relevance:** Content-query alignment optimization
+
+#### 2.4 Question Generation
+- **Multiple Question Types:** MCQ, True/False, Short Answer, Essay questions
+- **Difficulty Scaling:** Adaptive difficulty based on Bloom's taxonomy
+- **Explanation Generation:** Detailed answer explanations and rationales
+- **Distractor Creation:** Intelligent wrong answer generation for MCQs
+
+#### 2.5 Caching Layer
+- **Redis Integration:** High-performance caching for frequently accessed data
+- **Cache Strategies:** Document chunks, generated assessments, user preferences
+- **Cache Invalidation:** Smart cache management and updates
+
+#### 2.6 Tool Calling Integration
+- **Educational APIs:** Integration with external educational content sources
+- **Dynamic Adjustment:** Performance-based difficulty scaling
+- **Content Enrichment:** Additional context and examples
+
+### 3. Technical Requirements
+
+#### 3.1 Performance
+- **Response Time:** < 2 seconds for quiz generation
+- **Cache Hit Rate:** > 80% for frequently accessed content
+- **Concurrent Users:** Support for 10+ simultaneous sessions
+
+#### 3.2 Scalability
+- **Document Storage:** Handle 1000+ documents efficiently
+- **Memory Management:** Optimized embedding storage and retrieval
+- **Processing Speed:** Batch processing for large document sets
+
+#### 3.3 Quality Metrics
+- **Retrieval Accuracy:** > 85% relevance score
+- **Question Quality:** Validated against educational standards
+- **Diversity Score:** Varied question types and difficulty levels
+
+### 4. User Stories
+
+#### 4.1 Content Upload
+- As an instructor, I want to upload multiple educational documents so that the system can generate quizzes from my course materials.
+
+#### 4.2 Quiz Generation
+- As an instructor, I want to generate quizzes with specific difficulty levels and question types based on selected topics.
+
+#### 4.3 Performance Tracking
+- As an instructor, I want to track quiz performance to adjust difficulty and content focus.
+
+### 5. Success Criteria
+- **Accuracy:** Generated questions align with uploaded content
+- **Efficiency:** Fast quiz generation with minimal waiting time
+- **Usability:** Intuitive interface for content management and quiz creation
+- **Reliability:** Consistent performance across different content types
+
+### 6. Constraints
+- **Local Deployment:** System must run entirely on local infrastructure
+- **Resource Limitations:** Optimize for standard desktop/laptop hardware
+- **No Internet Dependency:** Core functionality works offline
+- **Data Privacy:** All content remains on local system
+
+### 7. Future Enhancements
+- **Multi-language Support:** Content processing in multiple languages
+- **Collaborative Features:** Shared quiz banks and templates
+- **Advanced Analytics:** Detailed performance insights and recommendations
+- **Integration APIs:** Connect with Learning Management Systems

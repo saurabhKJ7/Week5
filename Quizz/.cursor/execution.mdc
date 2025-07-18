@@ -1,5 +1,457 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+# Execution Plan
+## Automated Quiz Generator
+
+
+### 2. Phase 1: Foundation Setup (Week 1-2)
+
+#### 2.1 Development Environment Setup
+```bash
+# Backend setup
+
+cd quiz-generator-backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install fastapi uvicorn sqlalchemy redis sentence-transformers
+pip install transformers torch faiss-cpu rank-bm25 python-multipart
+```
+
+#### 2.2 Database & Cache Setup
+```bash
+# Install Redis locally
+# Ubuntu/Debian
+sudo apt-get install redis-server
+# macOS
+brew install redis
+# Windows - Download from Redis website
+
+# Start Redis
+redis-server
+
+# Database setup (SQLite for local)
+pip install alembic
+alembic init alembic
+```
+
+#### 2.3 Frontend Setup
+```bash
+# Frontend setup
+npm create vite@latest quiz-generator-frontend -- --template react-ts
+cd quiz-generator-frontend
+npm install @reduxjs/toolkit react-redux react-router-dom
+npm install @hookform/resolvers react-hook-form zod
+npm install tailwindcss @tailwindcss/forms lucide-react
+npm install react-dropzone recharts
+```
+
+**Deliverables:**
+- [x] Development environment configured
+- [x] Database schema designed
+- [x] Redis cache configured
+- [x] Basic project structure created
+
+### 3. Phase 2: Core Backend Development (Week 3-4)
+
+#### 3.1 Document Processing Service
+```python
+# Priority tasks:
+1. File upload handling (PDF, DOCX, TXT)
+2. Text extraction and preprocessing
+3. Document chunking strategy
+4. Basic embedding generation
+```
+
+#### 3.2 Hybrid RAG Implementation
+```python
+# Implementation order:
+1. Dense retrieval with sentence-transformers
+2. Sparse retrieval with BM25
+3. Fusion algorithm (RRF)
+4. Basic reranking
+```
+
+#### 3.3 API Development
+```python
+# FastAPI endpoints:
+1. POST /api/documents/upload
+2. GET /api/documents/
+3. POST /api/documents/process
+4. GET /api/health
+```
+
+**Daily Tasks:**
+- **Day 1-2:** Document upload and processing
+- **Day 3-4:** Dense retrieval implementation
+- **Day 5-6:** Sparse retrieval and fusion
+- **Day 7:** API testing and documentation
+
+**Deliverables:**
+- [x] Document processing pipeline
+- [x] Basic RAG system working
+- [x] API endpoints functional
+- [x] Unit tests for core functions
+
+### 4. Phase 3: Question Generation Engine (Week 5-6)
+
+#### 4.1 Question Generation Models
+```python
+# Implementation priority:
+1. MCQ generator using T5/GPT models
+2. True/False question generator
+3. Short answer questions
+4. Essay prompts
+```
+
+#### 4.2 Difficulty Adjustment
+```python
+# Bloom's taxonomy implementation:
+1. Knowledge level questions
+2. Comprehension questions
+3. Application questions
+4. Analysis questions
+5. Synthesis questions
+6. Evaluation questions
+```
+
+#### 4.3 Advanced Features
+```python
+# Week 6 tasks:
+1. Cross-encoder reranking
+2. Contextual compression
+3. Question diversity algorithms
+4. Answer explanation generation
+```
+
+**Daily Tasks:**
+- **Day 1-2:** Basic MCQ generation
+- **Day 3-4:** Multiple question types
+- **Day 5-6:** Difficulty adjustment
+- **Day 7:** Advanced reranking
+
+**Deliverables:**
+- [x] Question generation working
+- [x] Multiple question types supported
+- [x] Difficulty levels implemented
+- [x] Cross-encoder reranking active
+
+### 5. Phase 4: Frontend Development (Week 7-8)
+
+#### 5.1 Core Components
+```typescript
+// Week 7 priorities:
+1. Document upload interface
+2. Document management dashboard
+3. Quiz generation form
+4. Basic quiz display
+```
+
+#### 5.2 Advanced UI Features
+```typescript
+// Week 8 priorities:
+1. Quiz taking interface
+2. Results and analytics
+3. Progress tracking
+4. Error handling
+```
+
+#### 5.3 Integration & Testing
+```typescript
+// Integration tasks:
+1. API integration with RTK Query
+2. State management setup
+3. Form validation
+4. Loading states
+```
+
+**Daily Tasks:**
+- **Day 1-2:** Document management UI
+- **Day 3-4:** Quiz generation interface
+- **Day 5-6:** Quiz taking experience
+- **Day 7:** Analytics and results
+
+**Deliverables:**
+- [x] Complete frontend application
+- [x] API integration working
+- [x] User-friendly interface
+- [x] Error handling implemented
+
+### 6. Phase 5: Integration & Optimization (Week 9-10)
+
+#### 6.1 System Integration
+```bash
+# Integration checklist:
+1. Frontend-backend communication
+2. Redis caching optimization
+3. Error handling across layers
+4. Performance monitoring
+```
+
+#### 6.2 Performance Optimization
+```python
+# Optimization tasks:
+1. Embedding cache optimization
+2. Database query optimization
+3. API response time improvement
+4. Memory usage optimization
+```
+
+#### 6.3 Testing & Documentation
+```bash
+# Final testing:
+1. Unit tests coverage > 80%
+2. Integration tests
+3. Performance benchmarks
+4. User acceptance testing
+```
+
+**Deliverables:**
+- [x] Fully integrated system
+- [x] Performance optimized
+- [x] Comprehensive testing
+- [x] Documentation complete
+
+### 7. Development Best Practices
+
+#### 7.1 Code Quality
+```bash
+# Backend
+pip install black flake8 mypy pytest
+black .
+flake8 .
+mypy .
+pytest tests/
+
+# Frontend
+npm install -D eslint @typescript-eslint/parser prettier
+npm run lint
+npm run format
+npm run test
+```
+
+#### 7.2 Git Workflow
+```bash
+# Branch strategy
+git checkout -b feature/document-processing
+git checkout -b feature/quiz-generation
+git checkout -b feature/frontend-ui
+git checkout -b hotfix/urgent-fix
+
+# Commit conventions
+git commit -m "feat: add document upload functionality"
+git commit -m "fix: resolve cache invalidation issue"
+git commit -m "docs: update API documentation"
+```
+
+#### 7.3 Documentation
+```markdown
+# Required documentation:
+1. API documentation (OpenAPI/Swagger)
+2. Setup instructions
+3. Architecture overview
+4. User guide
+5. Troubleshooting guide
+```
+
+### 8. Risk Management
+
+#### 8.1 Technical Risks
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|------------|
+| Model performance issues | Medium | High | Use pre-trained models, fallback options |
+| Memory constraints | High | Medium | Implement efficient caching, optimize embeddings |
+| API response times | Medium | Medium | Implement caching, optimize queries |
+| Integration complexity | Low | High | Incremental integration, thorough testing |
+
+#### 8.2 Mitigation Strategies
+```python
+# Performance monitoring
+import time
+import logging
+
+def monitor_performance(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        execution_time = time.time() - start_time
+        
+        if execution_time > 5.0:  # 5 second threshold
+            logging.warning(f"{func.__name__} took {execution_time:.2f}s")
+        
+        return result
+    return wrapper
+```
+
+### 9. Resource Requirements
+
+#### 9.1 Hardware Requirements
+```bash
+# Minimum requirements:
+- CPU: 4 cores, 2.5GHz
+- RAM: 8GB (16GB recommended)
+- Storage: 20GB free space
+- GPU: Optional (for faster inference)
+
+# Recommended setup:
+- CPU: 8 cores, 3.0GHz
+- RAM: 16GB
+- Storage: 50GB SSD
+- GPU: NVIDIA GTX 1060 or better
+```
+
+#### 9.2 Software Dependencies
+```bash
+# Backend dependencies
+Python 3.8+
+FastAPI 0.104+
+Redis 6.0+
+SQLite 3.36+
+PyTorch 1.12+
+Transformers 4.21+
+Sentence-transformers 2.2+
+
+# Frontend dependencies
+Node.js 18+
+React 18+
+TypeScript 4.9+
+Vite 4.0+
+Tailwind CSS 3.0+
+```
+
+### 10. Testing Strategy
+
+#### 10.1 Backend Testing
+```python
+# Test categories:
+1. Unit tests for core functions
+2. Integration tests for API endpoints
+3. Performance tests for RAG system
+4. Load tests for concurrent users
+
+# Test execution:
+pytest tests/ -v --cov=src --cov-report=html
+```
+
+#### 10.2 Frontend Testing
+```bash
+# Test types:
+1. Component tests with Jest/React Testing Library
+2. Integration tests for API calls
+3. E2E tests with Cypress
+4. Accessibility tests
+
+# Test execution:
+npm test
+npm run test:e2e
+npm run test:a11y
+```
+
+### 11. Deployment Guide
+
+#### 11.1 Backend Deployment
+```bash
+# Production setup
+python -m venv production_venv
+source production_venv/bin/activate
+pip install -r requirements.txt
+
+# Environment variables
+export DATABASE_URL="sqlite:///./quiz_generator.db"
+export REDIS_URL="redis://localhost:6379"
+export MODEL_CACHE_DIR="./models"
+
+# Start services
+redis-server &
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+#### 11.2 Frontend Deployment
+```bash
+# Build for production
+npm run build
+
+# Serve static files
+npm install -g serve
+serve -s dist -l 3000
+
+# Or use local server
+python -m http.server 3000 -d dist
+```
+
+### 12. Monitoring & Maintenance
+
+#### 12.1 Performance Monitoring
+```python
+# Key metrics to track:
+1. API response times
+2. Cache hit rates
+3. Memory usage
+4. Question generation quality
+5. User engagement metrics
+```
+
+#### 12.2 Maintenance Tasks
+```bash
+# Weekly tasks:
+1. Database cleanup
+2. Cache optimization
+3. Model updates
+4. Performance reviews
+5. Backup verification
+
+# Monthly tasks:
+1. Security updates
+2. Dependency updates
+3. Performance analysis
+4. Feature usage review
+```
+
+### 13. Success Metrics
+
+#### 13.1 Technical KPIs
+- **Response Time:** < 2 seconds for quiz generation
+- **Cache Hit Rate:** > 80%
+- **System Uptime:** > 99%
+- **Question Quality Score:** > 8/10
+- **User Satisfaction:** > 4.5/5
+
+#### 13.2 Functional KPIs
+- **Document Processing Success Rate:** > 95%
+- **Quiz Generation Success Rate:** > 98%
+- **Question Variety Score:** > 7/10
+- **Difficulty Accuracy:** > 85%
+
+### 14. Troubleshooting Guide
+
+#### 14.1 Common Issues
+```bash
+# Redis connection issues
+redis-cli ping
+# Expected: PONG
+
+# Database connection issues
+python -c "import sqlite3; print('SQLite working')"
+
+# Model loading issues
+python -c "from sentence_transformers import SentenceTransformer; print('Models loading')"
+
+# API issues
+curl -X GET http://localhost:8000/api/health
+```
+
+#### 14.2 Debug Commands
+```bash
+# Check system resources
+htop
+df -h
+free -h
+
+# Monitor API logs
+tail -f quiz_generator.log
+
+# Redis monitoring
+redis-cli monitor
+```
+
+This execution plan provides a comprehensive roadmap for building your Automated Quiz Generator system with clear timelines, deliverables, and success metrics.

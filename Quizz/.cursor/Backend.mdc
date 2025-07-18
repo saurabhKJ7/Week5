@@ -1,5 +1,339 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
+
+# Backend Architecture
+## Automated Quiz Generator
+
+### 1. System Architecture
+
+#### 1.1 Core Components
+```
+├── API Layer (FastAPI)
+├── Document Processing Service
+├── Hybrid RAG Engine
+├── Question Generation Service
+├── Caching Layer (Redis)
+├── Database Layer (SQLite/PostgreSQL)
+└── Tool Calling Framework
+```
+
+#### 1.2 Technology Stack
+- **Framework:** FastAPI with Pydantic models
+- **Database:** SQLite for local deployment, PostgreSQL for production
+- **Cache:** Redis for high-performance caching
+- **ML/AI:** Hugging Face Transformers, sentence-transformers
+- **Search:** Elasticsearch/Whoosh for BM25, FAISS for vector search
+- **Task Queue:** Celery for background processing
+
+### 2. API Endpoints
+
+#### 2.1 Document Management
+```python
+POST /api/documents/upload
+GET /api/documents/
+GET /api/documents/{doc_id}
+DELETE /api/documents/{doc_id}
+POST /api/documents/{doc_id}/process
+```
+
+#### 2.2 Quiz Generation
+```python
+POST /api/quizzes/generate
+GET /api/quizzes/{quiz_id}
+POST /api/quizzes/{quiz_id}/evaluate
+GET /api/quizzes/history
+```
+
+#### 2.3 Cache Management
+```python
+GET /api/cache/stats
+POST /api/cache/clear
+GET /api/cache/health
+```
+
+### 3. Hybrid RAG Implementation
+
+#### 3.1 Dense Retrieval
+```python
+class DenseRetriever:
+    def __init__(self, model_name="all-MiniLM-L6-v2"):
+        self.encoder = SentenceTransformer(model_name)
+        self.index = faiss.IndexFlatIP(384)
+    
+    def encode_documents(self, documents):
+        embeddings = self.encoder.encode(documents)
+        self.index.add(embeddings)
+    
+    def search(self, query, k=10):
+        query_embedding = self.encoder.encode([query])
+        scores, indices = self.index.search(query_embedding, k)
+        return scores, indices
+```
+
+#### 3.2 Sparse Retrieval (BM25)
+```python
+class SparseRetriever:
+    def __init__(self):
+        self.bm25 = BM25Okapi()
+        self.documents = []
+    
+    def add_documents(self, documents):
+        tokenized_docs = [doc.split() for doc in documents]
+        self.bm25 = BM25Okapi(tokenized_docs)
+        self.documents = documents
+    
+    def search(self, query, k=10):
+        tokenized_query = query.split()
+        scores = self.bm25.get_scores(tokenized_query)
+        return scores
+```
+
+#### 3.3 Fusion Strategy
+```python
+class HybridRetriever:
+    def __init__(self, dense_retriever, sparse_retriever):
+        self.dense = dense_retriever
+        self.sparse = sparse_retriever
+    
+    def search(self, query, k=10):
+        dense_results = self.dense.search(query, k*2)
+        sparse_results = self.sparse.search(query, k*2)
+        
+        # Reciprocal Rank Fusion
+        combined_scores = self.rrf_fusion(dense_results, sparse_results)
+        return combined_scores[:k]
+```
+
+### 4. Advanced Reranking
+
+#### 4.1 Cross-encoder Implementation
+```python
+class CrossEncoderReranker:
+    def __init__(self, model_name="cross-encoder/ms-marco-MiniLM-L-6-v2"):
+        self.model = CrossEncoder(model_name)
+    
+    def rerank(self, query, candidates):
+        pairs = [(query, candidate) for candidate in candidates]
+        scores = self.model.predict(pairs)
+        
+        ranked_results = sorted(
+            zip(candidates, scores), 
+            key=lambda x: x[1], 
+            reverse=True
+        )
+        return ranked_results
+```
+
+#### 4.2 Contextual Compression
+```python
+class ContextualCompressor:
+    def __init__(self, max_length=512):
+        self.max_length = max_length
+    
+    def compress(self, documents, query):
+        compressed = []
+        for doc in documents:
+            # Extract most relevant sentences
+            sentences = sent_tokenize(doc)
+            relevance_scores = self.score_sentences(sentences, query)
+            
+            # Select top sentences within token limit
+            selected = self.select_sentences(sentences, relevance_scores)
+            compressed.append(" ".join(selected))
+        
+        return compressed
+```
+
+### 5. Caching Strategy
+
+#### 5.1 Redis Configuration
+```python
+import redis
+from functools import wraps
+
+redis_client = redis.Redis(
+    host='localhost',
+    port=6379,
+    db=0,
+    decode_responses=True
+)
+
+def cache_result(expiry=3600):
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            cache_key = f"{func.__name__}:{hash(str(args)+str(kwargs))}"
+            cached = redis_client.get(cache_key)
+            
+            if cached:
+                return json.loads(cached)
+            
+            result = func(*args, **kwargs)
+            redis_client.setex(cache_key, expiry, json.dumps(result))
+            return result
+        return wrapper
+    return decorator
+```
+
+#### 5.2 Cache Layers
+- **L1 Cache:** Document chunks and embeddings
+- **L2 Cache:** Generated questions and assessments
+- **L3 Cache:** User preferences and history
+
+### 6. Question Generation Service
+
+#### 6.1 Question Types
+```python
+class QuestionGenerator:
+    def __init__(self):
+        self.mcq_generator = MCQGenerator()
+        self.short_answer_generator = ShortAnswerGenerator()
+        self.essay_generator = EssayGenerator()
+    
+    def generate_quiz(self, content, difficulty, num_questions):
+        questions = []
+        
+        for _ in range(num_questions):
+            question_type = self.select_question_type(difficulty)
+            question = self.generate_question(content, question_type, difficulty)
+            questions.append(question)
+        
+        return questions
+```
+
+#### 6.2 Difficulty Adjustment
+```python
+class DifficultyAdjuster:
+    def __init__(self):
+        self.bloom_levels = {
+            'remember': 1,
+            'understand': 2,
+            'apply': 3,
+            'analyze': 4,
+            'evaluate': 5,
+            'create': 6
+        }
+    
+    def adjust_difficulty(self, base_content, target_level):
+        # Adjust question complexity based on Bloom's taxonomy
+        if target_level <= 2:
+            return self.generate_factual_question(base_content)
+        elif target_level <= 4:
+            return self.generate_analytical_question(base_content)
+        else:
+            return self.generate_creative_question(base_content)
+```
+
+### 7. Database Schema
+
+#### 7.1 Core Tables
+```sql
+-- Documents table
+CREATE TABLE documents (
+    id UUID PRIMARY KEY,
+    filename VARCHAR(255),
+    content_type VARCHAR(50),
+    upload_date TIMESTAMP,
+    processed BOOLEAN DEFAULT FALSE,
+    metadata JSONB
+);
+
+-- Chunks table
+CREATE TABLE chunks (
+    id UUID PRIMARY KEY,
+    document_id UUID REFERENCES documents(id),
+    content TEXT,
+    embedding VECTOR(384),
+    chunk_index INTEGER,
+    metadata JSONB
+);
+
+-- Quizzes table
+CREATE TABLE quizzes (
+    id UUID PRIMARY KEY,
+    title VARCHAR(255),
+    difficulty_level INTEGER,
+    created_at TIMESTAMP,
+    questions JSONB,
+    metadata JSONB
+);
+```
+
+### 8. Tool Calling Framework
+
+#### 8.1 Tool Definition
+```python
+class EducationalTool:
+    def __init__(self, name, description, parameters):
+        self.name = name
+        self.description = description
+        self.parameters = parameters
+    
+    def execute(self, **kwargs):
+        # Implementation specific to each tool
+        pass
+
+class WikipediaSearchTool(EducationalTool):
+    def execute(self, query):
+        # Search Wikipedia for additional context
+        return self.search_wikipedia(query)
+```
+
+#### 8.2 Tool Orchestration
+```python
+class ToolOrchestrator:
+    def __init__(self):
+        self.tools = self.load_tools()
+    
+    def call_tool(self, tool_name, **kwargs):
+        tool = self.tools[tool_name]
+        return tool.execute(**kwargs)
+    
+    def enrich_content(self, content, context):
+        # Use multiple tools to enrich content
+        enriched = content
+        for tool in self.applicable_tools(context):
+            enriched = tool.execute(content=enriched)
+        return enriched
+```
+
+### 9. Performance Optimizations
+
+#### 9.1 Batch Processing
+- Process multiple documents simultaneously
+- Vectorize operations for embedding generation
+- Implement connection pooling for database operations
+
+#### 9.2 Memory Management
+- Lazy loading of large models
+- Efficient embedding storage with compression
+- Garbage collection for unused cache entries
+
+### 10. Error Handling & Logging
+
+#### 10.1 Exception Handling
+```python
+class QuizGeneratorException(Exception):
+    pass
+
+class DocumentProcessingError(QuizGeneratorException):
+    pass
+
+class CacheConnectionError(QuizGeneratorException):
+    pass
+```
+
+#### 10.2 Logging Configuration
+```python
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('quiz_generator.log'),
+        logging.StreamHandler()
+    ]
+)
+```
