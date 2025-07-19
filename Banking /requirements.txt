@@ -1,0 +1,50 @@
+# Core LangChain packages (latest versions)
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-experimental
+
+# OpenAI integration for embeddings and LLM
+langchain-openai
+openai
+
+# Supabase vector store
+langchain-postgres
+supabase
+pgvector
+
+# Document processing and loaders
+pypdf
+unstructured
+python-docx
+openpyxl
+pydantic
+
+# Web scraping and additional loaders
+beautifulsoup4
+requests
+
+# FastAPI for backend API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Environment and configuration
+python-dotenv
+pydantic-settings
+
+# Data processing
+pandas
+numpy
+
+# Embedding and vector operations
+sentence-transformers
+faiss-cpu
+
+# Monitoring and debugging
+langsmith
+
+# Additional utilities for table processing
+tabulate
+markdown 

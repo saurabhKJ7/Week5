@@ -1,0 +1,53 @@
+# Copy this file to .env and fill in your actual values
+# Banking RAG System - Environment Configuration Template
+
+# OpenAI API Configuration
+OPENAI_API_KEY=sk-your-openai-api-key-here
+OPENAI_MODEL=gpt-4-turbo-preview
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+
+# Supabase Configuration
+SUPABASE_URL=https://your-project-id.supabase.co
+SUPABASE_KEY=your-supabase-service-key-here
+SUPABASE_SERVICE_KEY=your-supabase-service-role-key-here
+
+# Database Configuration
+DB_HOST=db.your-project-id.supabase.co
+DB_PORT=5432
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASSWORD=your-database-password
+
+# Vector Database Settings
+VECTOR_DIMENSION=1536  # for OpenAI text-embedding-3-small
+VECTOR_COLLECTION_NAME=banking_documents
+
+# LangSmith Configuration (Optional - for monitoring)
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_API_KEY=your-langsmith-api-key
+LANGCHAIN_PROJECT=banking-rag-system
+
+# Application Settings
+APP_HOST=0.0.0.0
+APP_PORT=8000
+DEBUG=true
+
+# Chunking Configuration
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+MAX_CHUNK_SIZE=2000
+
+# Retrieval Settings
+RETRIEVAL_K=5
+RETRIEVAL_SEARCH_TYPE=similarity_score_threshold
+SIMILARITY_THRESHOLD=0.7
+
+# Cost Optimization Settings
+ENABLE_CACHING=true
+BATCH_PROCESSING=true
+MAX_CONCURRENT_REQUESTS=5
+
+# Banking Specific Settings
+ENABLE_COMPLIANCE_CHECK=true
+TABLE_PRESERVATION_MODE=true
+CROSS_REFERENCE_HANDLING=true 
