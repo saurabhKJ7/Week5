@@ -1,0 +1,226 @@
+{
+  "timestamp": "2025-07-20T11:39:09.639630",
+  "dataset_results": {
+    "banking_qa": {
+      "results": [
+        {
+          "question": "What are the current mortgage interest rates?",
+          "response": "## Interest Rates and Pricing Information\n\nBased on the banking documents, here's what I found about current rates:\n\n• **Documents/Banking Law 9.1.pdf**: Lesson 3 Banker – Customer Relationship 101 (d...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.75,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.95,
+          "has_error": false
+        },
+        {
+          "question": "Explain the loan underwriting process step by step",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Disbursement Handbook.pdf**: 3.1.7 Reference Material for electronic disbursement  100.\n• **Documents/Banking Law 9.1.pdf**: Lesson...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.75,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.95,
+          "has_error": false
+        },
+        {
+          "question": "What documentation is required for a business loan application?",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: gives the bank the right of charge over the securities.\n• **Documents/Banking Law 9.1.pdf**: at concessional...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.5,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.9,
+          "has_error": false
+        },
+        {
+          "question": "What are the risk management policies for lending?",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: 3.\n• **Documents/Banking Law 9.1.pdf**: off-balance sheet contracts such as forward contracts, interest rate...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.0,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.8,
+          "has_error": false
+        }
+      ],
+      "avg_score": 0.9,
+      "min_score": 0.8,
+      "max_score": 0.95,
+      "total_tests": 4
+    },
+    "compliance": {
+      "results": [
+        {
+          "question": "What are the KYC requirements for new customers?",
+          "response": "## Regulatory Compliance Information\n\n**Compliance Requirements:**\n• **Documents/policy.pdf**: (ii) deposits, withdrawal, exchange or transfer of funds in whatever currency,  whether in cash o...\n• **...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.75,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.95,
+          "has_error": false
+        },
+        {
+          "question": "Explain the anti-money laundering procedures",
+          "response": "## Banking Process Information\n\n**Step 1**: and trained to practice anti money laundering to safe-guard not only the customers funds, but also to be proactive to...\n\n**Step 2**: Lesson 2 Regulatory Fr...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.25,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.85,
+          "has_error": false
+        },
+        {
+          "question": "What are the disclosure requirements for loan products?",
+          "response": "## Loan Products and Services\n\n**Key Features:**\n• Flexible loan terms and repayment schedules\n• Competitive interest rates based on creditworthiness\n• Various loan types including personal, business,...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.25,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.85,
+          "has_error": false
+        }
+      ],
+      "avg_score": 0.8833333333333333,
+      "min_score": 0.85,
+      "max_score": 0.95,
+      "total_tests": 3
+    },
+    "rates_pricing": {
+      "results": [
+        {
+          "question": "What factors determine personal loan interest rates?",
+          "response": "## Interest Rates and Pricing Information\n\nBased on the banking documents, here's what I found about current rates:\n\n• **Documents/Banking Law 9.1.pdf**: secured loans may turn into partly secured one...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.25,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.85,
+          "has_error": false
+        },
+        {
+          "question": "How do fixed vs variable mortgage rates compare?",
+          "response": "## Interest Rates and Pricing Information\n\nBased on the banking documents, here's what I found about current rates:\n\n• **Documents/Banking Law 9.1.pdf**: ble property and provides that, as between suc...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.0,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.8,
+          "has_error": false
+        },
+        {
+          "question": "What are the fees associated with commercial lending?",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: – Fund of funds is a scheme in which a mutual fund can invest in other mutual funds – Foreign Institutional ...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.0,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.8,
+          "has_error": false
+        }
+      ],
+      "avg_score": 0.8166666666666668,
+      "min_score": 0.8,
+      "max_score": 0.85,
+      "total_tests": 3
+    },
+    "loan_products": {
+      "results": [
+        {
+          "question": "Compare different types of mortgage products available",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: 2.\n• **Documents/Banking Law 9.1.pdf**: the reputation as well.\n• **Documents/Banking Law 9.1.pdf**: of mone...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.5,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.9,
+          "has_error": false
+        },
+        {
+          "question": "What are the eligibility criteria for small business loans?",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: 1965 and Banking Regulation (Amendment) and Miscellaneous Provisions Act, 2004, the provisions of the RBI Ac...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.0,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.8,
+          "has_error": false
+        },
+        {
+          "question": "Explain the differences between secured and unsecured loans",
+          "response": "## Loan Products and Services\n\n**Available Products:**\n• **Documents/Banking Law 9.1.pdf**: areas. Some of the important provisions of the Banking Regulation Act 1949 are listed below.\n• **Documents/B...",
+          "num_sources": 5,
+          "scores": {
+            "topic_coverage": 0.25,
+            "source_citation": 1.0,
+            "response_length": 1.0,
+            "banking_terminology": 1.0,
+            "structure_quality": 1.0
+          },
+          "overall_score": 0.85,
+          "has_error": false
+        }
+      ],
+      "avg_score": 0.85,
+      "min_score": 0.8,
+      "max_score": 0.9,
+      "total_tests": 3
+    }
+  },
+  "overall_metrics": {
+    "total_tests": 13,
+    "avg_score": 0.8653846153846154,
+    "min_score": 0.8,
+    "max_score": 0.95,
+    "pass_rate": 1.0
+  }
+}

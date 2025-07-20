@@ -1,0 +1,41 @@
+{
+  "demo_timestamp": "2025-07-20T11:47:54.775920",
+  "tracing_enabled": true,
+  "results": [
+    {
+      "query_type": "Rates Query",
+      "question": "What are the current mortgage interest rates?",
+      "response_time_ms": 464.65,
+      "response_length": 664,
+      "sources_found": 5,
+      "session_id": "3565c514-b3a2-4f77-8579-94f45626d2c2",
+      "total_sources_available": 3145,
+      "status": "success"
+    },
+    {
+      "query_type": "Compliance Query",
+      "question": "What are the compliance requirements for KYC?",
+      "response_time_ms": 372.7,
+      "response_length": 730,
+      "sources_found": 5,
+      "session_id": "093e0d2a-a3d9-46c7-b66c-3aa9f1bc36fa",
+      "total_sources_available": 3299,
+      "status": "success"
+    },
+    {
+      "query_type": "Process Query",
+      "question": "Explain loan underwriting process",
+      "response_time_ms": 748.2,
+      "response_length": 770,
+      "sources_found": 5,
+      "session_id": "a68062d9-8d2b-4eaa-aad8-6194463dbcaa",
+      "total_sources_available": 788,
+      "status": "success"
+    }
+  ],
+  "summary": {
+    "total_queries": 3,
+    "successful_queries": 3,
+    "avg_response_time_ms": 528.5166666666667
+  }
+}

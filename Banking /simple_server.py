@@ -14,9 +14,20 @@ from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
 import asyncio
+from langsmith import traceable
+from langsmith.wrappers import wrap_openai
+import uuid
+from datetime import datetime
 
 # Load environment variables
 load_dotenv()
+
+# Initialize LangSmith tracing
+import os
+if os.getenv("LANGCHAIN_TRACING_V2", "").lower() == "true":
+    print("✅ LangSmith tracing enabled")
+else:
+    print("⚠️ LangSmith tracing not enabled. Set LANGCHAIN_TRACING_V2=true to enable.")
 
 app = FastAPI(title="Banking RAG Server with OpenAI")
 
@@ -26,7 +37,12 @@ try:
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if openai_api_key and openai_api_key != "placeholder" and not openai_api_key.startswith("sk-placeholder"):
         openai_client = OpenAI(api_key=openai_api_key)
-        print("✅ OpenAI client initialized successfully")
+        # Wrap OpenAI client with LangSmith tracing
+        if os.getenv("LANGCHAIN_TRACING_V2", "").lower() == "true":
+            openai_client = wrap_openai(openai_client)
+            print("✅ OpenAI client initialized with LangSmith tracing")
+        else:
+            print("✅ OpenAI client initialized successfully")
     else:
         print("⚠️ OpenAI API key not found or is placeholder. Using fallback responses.")
 except Exception as e:
@@ -69,8 +85,9 @@ class QueryRequest(BaseModel):
     k: int = 5
 
 @app.get("/health")
+@traceable(name="health_check")
 async def health_check():
-    """Health check endpoint"""
+    """Health check endpoint with LangSmith tracing"""
     # Try to load processed documents if available
     doc_count = 0
     try:
@@ -81,18 +98,24 @@ async def health_check():
     except:
         pass
     
+    langsmith_enabled = os.getenv("LANGCHAIN_TRACING_V2", "").lower() == "true"
+    openai_available = openai_client is not None
+    
     return {
         "status": "healthy",
         "system_ready": True,
         "vector_store_ready": True,
         "documents_in_store": doc_count,
         "sample_data_available": len(SAMPLE_BANKING_DATA),
+        "langsmith_tracing": langsmith_enabled,
+        "openai_available": openai_available,
         "uptime": "test_mode"
     }
 
 @app.get("/search/tables")
+@traceable(name="search_tables")
 async def search_tables(query: str, k: int = 5):
-    """Search for table-related content"""
+    """Search for table-related content with LangSmith tracing"""
     result = search_content(query, k, "tables")
     # Generate AI response for search results
     if openai_client:
@@ -104,8 +127,9 @@ async def search_tables(query: str, k: int = 5):
     return result
 
 @app.get("/search/compliance")
+@traceable(name="search_compliance")
 async def search_compliance(query: str, k: int = 5):
-    """Search for compliance-related content"""
+    """Search for compliance-related content with LangSmith tracing"""
     result = search_content(query, k, "compliance")
     # Generate AI response for search results  
     if openai_client:
@@ -117,16 +141,35 @@ async def search_compliance(query: str, k: int = 5):
     return result
 
 @app.post("/query")
+@traceable(
+    name="banking_rag_query",
+    metadata={"pipeline": "banking_rag", "version": "v1.0"}
+)
 async def query_documents(request: QueryRequest):
-    """General document query endpoint"""
+    """Main Banking RAG pipeline endpoint with comprehensive LangSmith tracing"""
+    
+    # Generate unique session ID for tracing
+    session_id = str(uuid.uuid4())
+    
+    # Log input parameters
+    input_metadata = {
+        "question": request.question,
+        "k": request.k,
+        "use_conversation": request.use_conversation,
+        "include_sources": request.include_sources,
+        "session_id": session_id,
+        "timestamp": datetime.now().isoformat()
+    }
+    
+    # Step 1: Document Retrieval and Search
     result = search_content(request.question, request.k)
     
-    # Generate structured response using OpenAI or fallback
+    # Step 2: Generate AI Response
     structured_response = await generate_ai_response(request.question, result["results"])
     
-    # Format response to match frontend expectations
+    # Step 3: Format Final Response
     if request.include_sources:
-        return {
+        formatted_response = {
             "response": structured_response,
             "sources": [
                 {
@@ -138,16 +181,21 @@ async def query_documents(request: QueryRequest):
                 for item in result["results"]
             ],
             "query": request.question,
-            "total_sources": result["total_found"]
+            "total_sources": result["total_found"],
+            "session_id": session_id
         }
     else:
-        return {
+        formatted_response = {
             "response": structured_response,
-            "query": request.question
+            "query": request.question,
+            "session_id": session_id
         }
+    
+    return formatted_response
 
+@traceable(name="document_search")
 def search_content(query: str, k: int = 5, content_type: str = ""):
-    """Simple keyword-based search through available content"""
+    """Document search with comprehensive LangSmith tracing"""
     
     # Try to use processed documents first
     content_sources = []
@@ -163,7 +211,7 @@ def search_content(query: str, k: int = 5, content_type: str = ""):
     # Add sample data as fallback
     content_sources.extend(SAMPLE_BANKING_DATA)
     
-    # Simple keyword matching
+    # Simple keyword matching with enhanced tracking
     query_words = query.lower().split()
     scored_results = []
     
@@ -190,11 +238,22 @@ def search_content(query: str, k: int = 5, content_type: str = ""):
     scored_results.sort(key=lambda x: x["score"], reverse=True)
     results = scored_results[:k]
     
+    # Log search metrics
+    search_metrics = {
+        "total_documents_searched": len(content_sources),
+        "matching_documents": len(scored_results),
+        "returned_documents": len(results),
+        "search_terms": len(query_words),
+        "content_type_filter": content_type,
+        "avg_relevance_score": sum(r["score"] for r in results) / len(results) if results else 0
+    }
+    
     return {
         "query": query,
         "results": results,
         "total_found": len(scored_results),
-        "source": "processed_documents" if os.path.exists("processed_documents.json") else "sample_data"
+        "source": "processed_documents" if os.path.exists("processed_documents.json") else "sample_data",
+        "search_metrics": search_metrics
     }
 
 @app.get("/")
@@ -206,8 +265,9 @@ async def root():
         "status": "running"
     }
 
+@traceable(name="ai_response_generation")
 async def generate_ai_response(question: str, results: list) -> str:
-    """Generate AI-powered response using OpenAI or fallback to structured response"""
+    """Generate AI-powered response with comprehensive tracing"""
     
     if openai_client and results:
         try:
@@ -218,14 +278,20 @@ async def generate_ai_response(question: str, results: list) -> str:
     else:
         return generate_structured_response(question, results)
 
+@traceable(
+    name="openai_response_generation",
+    metadata={"model_provider": "openai", "response_type": "banking_rag"}
+)
 async def generate_openai_response(question: str, results: list) -> str:
-    """Generate response using OpenAI GPT"""
+    """Generate response using OpenAI GPT with detailed LangSmith tracing"""
     
     if not results:
         return "I couldn't find specific information to answer your question. Please try rephrasing or provide more details."
     
     # Create context from top results
     context_parts = []
+    context_metadata = []
+    
     for i, result in enumerate(results[:4], 1):
         source = result["metadata"].get("source", "Unknown Document")
         page = result["metadata"].get("page", "N/A")
@@ -235,19 +301,32 @@ async def generate_openai_response(question: str, results: list) -> str:
 Document {i}: {source} (Page {page})
 Content: {content}
 """)
+        
+        context_metadata.append({
+            "document_index": i,
+            "source": source,
+            "page": page,
+            "content_length": len(content),
+            "relevance_score": result.get("score", 0)
+        })
     
     context = "\n".join(context_parts)
     
-    # Create specialized prompt based on question type
+    # Analyze question type for specialized prompting
     question_lower = question.lower()
+    question_type = "general"
     
     if any(word in question_lower for word in ["rate", "interest", "pricing", "cost"]):
+        question_type = "rates_pricing"
         system_prompt = """You are a banking expert specializing in interest rates and pricing. Provide detailed, accurate information about banking rates, fees, and pricing structures. Use specific numbers and percentages when available in the documents."""
     elif any(word in question_lower for word in ["loan", "credit", "lending", "product"]):
+        question_type = "loan_products"
         system_prompt = """You are a banking expert specializing in loan products and credit services. Explain loan types, requirements, terms, and processes clearly. Focus on practical information customers need."""
     elif any(word in question_lower for word in ["compliance", "regulation", "requirement", "law"]):
+        question_type = "compliance"
         system_prompt = """You are a banking compliance expert. Explain regulatory requirements, legal obligations, and compliance procedures clearly. Emphasize important regulatory details and consequences."""
     elif any(word in question_lower for word in ["risk", "management", "policy"]):
+        question_type = "risk_management"
         system_prompt = """You are a banking risk management expert. Explain risk policies, assessment procedures, and mitigation strategies. Focus on practical risk management approaches."""
     else:
         system_prompt = """You are a knowledgeable banking expert. Provide comprehensive, accurate information based on banking documents. Be helpful and professional."""
@@ -268,26 +347,54 @@ Instructions:
 
 Answer:"""
 
+    # Create comprehensive metadata for tracing
+    generation_metadata = {
+        "question_type": question_type,
+        "context_length": len(context),
+        "num_documents": len(context_parts),
+        "document_sources": context_metadata,
+        "model": os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+        "temperature": 0.3,
+        "max_tokens": 1200
+    }
+
     try:
         if not openai_client:
             raise Exception("OpenAI client not initialized")
             
+        # Note: OpenAI client is already wrapped with LangSmith tracing
         response = openai_client.chat.completions.create(
-            model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),  # Use gpt-4o-mini as more cost-effective
+            model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
-            temperature=0.3,  # Lower temperature for more consistent banking responses
+            temperature=0.3,
             max_tokens=1200,
             presence_penalty=0.1,
-            frequency_penalty=0.1
+            frequency_penalty=0.1,
+            metadata=generation_metadata  # Pass metadata to LangSmith
         )
         
         ai_response = response.choices[0].message.content
-        return ai_response or "I apologize, but I couldn't generate a proper response. Please try again."
+        final_response = ai_response or "I apologize, but I couldn't generate a proper response. Please try again."
+        
+        # Log response metrics
+        response_metadata = {
+            "response_length": len(final_response),
+            "tokens_used": response.usage.total_tokens if hasattr(response, 'usage') and response.usage else 0,
+            "completion_tokens": response.usage.completion_tokens if hasattr(response, 'usage') and response.usage else 0,
+            "prompt_tokens": response.usage.prompt_tokens if hasattr(response, 'usage') and response.usage else 0
+        }
+        
+        return final_response
         
     except Exception as e:
+        error_metadata = {
+            "error_type": type(e).__name__,
+            "error_message": str(e),
+            "fallback_used": False
+        }
         print(f"OpenAI API error: {e}")
         raise e
 
