@@ -85,27 +85,45 @@ function Chat() {
 
         {response && (
           <div className="mt-6 space-y-4">
-            <div className="bg-gray-50 p-4 rounded-md">
+            <div className={`p-4 rounded-md ${response.blocked ? 'bg-red-50 border border-red-200' : 'bg-gray-50'}`}>
               <div className="flex justify-between items-start">
                 <h3 className="text-md font-medium text-gray-900">Answer</h3>
-                <span
-                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                    response.status === 'safe'
-                      ? 'bg-green-100 text-green-800'
-                      : 'bg-red-100 text-red-800'
-                  }`}
-                >
-                  {response.status}
-                </span>
+                <div className="flex space-x-2">
+                  <span
+                    className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                      response.blocked
+                        ? 'bg-red-100 text-red-800'
+                        : 'bg-green-100 text-green-800'
+                    }`}
+                  >
+                    {response.blocked ? 'BLOCKED' : 'SAFE'}
+                  </span>
+                  {response.safety_result && (
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      Confidence: {(response.safety_result.confidence_score * 100).toFixed(0)}%
+                    </span>
+                  )}
+                </div>
               </div>
               <p className="mt-2 text-sm text-gray-500">{response.answer}</p>
+              
+              {response.blocked && response.violations && (
+                <div className="mt-3 p-3 bg-red-100 border border-red-200 rounded">
+                  <h4 className="text-sm font-medium text-red-800 mb-2">Safety Violations:</h4>
+                  <ul className="text-sm text-red-700 list-disc list-inside">
+                    {response.violations.map((violation, index) => (
+                      <li key={index}>{violation}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
-            {response.metrics && (
+            {response.safety_result && response.safety_result.metrics && (
               <div className="bg-gray-50 p-4 rounded-md">
-                <h3 className="text-md font-medium text-gray-900 mb-2">Metrics</h3>
+                <h3 className="text-md font-medium text-gray-900 mb-2">Safety Metrics</h3>
                 <div className="space-x-2">
-                  {Object.entries(response.metrics).map(([key, value]) => (
+                  {Object.entries(response.safety_result.metrics).map(([key, value]) => (
                     <React.Fragment key={key}>
                       {renderMetricsBadge(key, value)}
                     </React.Fragment>
@@ -114,19 +132,10 @@ function Chat() {
               </div>
             )}
 
-            {response.sources && response.sources.length > 0 && (
+            {response.context && (
               <div className="bg-gray-50 p-4 rounded-md">
-                <h3 className="text-md font-medium text-gray-900 mb-2">Sources</h3>
-                <div className="space-y-2">
-                  {response.sources.map((source, index) => (
-                    <div key={index} className="text-sm text-gray-500">
-                      <p className="font-medium text-gray-700">
-                        Source {index + 1}: {source.metadata.source}
-                      </p>
-                      <p className="mt-1">{source.content}</p>
-                    </div>
-                  ))}
-                </div>
+                <h3 className="text-md font-medium text-gray-900 mb-2">Context Used</h3>
+                <p className="text-sm text-gray-500 max-h-40 overflow-y-auto">{response.context}</p>
               </div>
             )}
           </div>
